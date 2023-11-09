@@ -33,7 +33,9 @@ def split_text(text):
         words = sentence.split()
         # append each word to the list of words
         for word in words:
-            words_list.append(word)
+            # If words anything else than characters, numbers or punctuation, skip it
+            if word.isalnum() and word.isascii():
+                words_list.append(word)
     return words_list
 
 
