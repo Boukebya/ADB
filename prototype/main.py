@@ -2,7 +2,8 @@ from OCR.Detect_imp_sep_block import OCR
 import time
 import tkinter.filedialog as filedialog
 import os
-from prototype.opencv_ocr import opencv_ocr, opencv_ocr_pdf, opencv_ocr_xml
+from prototype.opencv_ocr import opencv_ocr, opencv_ocr_pdf, opencv_ocr_xlsx
+from prototype.perf_measurement import compare_ocr
 
 
 def file_dial():
@@ -20,6 +21,7 @@ def file_dial():
 
 if __name__ == "__main__":
 
+    compare_ocr("data.txt","data.txt")
     detect_file = file_dial()
 
     #Allows us to get the duration of the program
@@ -29,7 +31,7 @@ if __name__ == "__main__":
     if detect_file[0].endswith(".jpg"):
         opencv_ocr(detect_file)
     elif detect_file[0].endswith(".xlsx"):
-        opencv_ocr_xml(detect_file[0])
+        opencv_ocr_xlsx(detect_file[0])
     elif detect_file[0].endswith(".pdf") or detect_file[0].endswith(".doc") or detect_file[0].endswith(".docx"):
         opencv_ocr_pdf(detect_file[0])
     else:

@@ -2,10 +2,7 @@ import shutil
 import cv2
 import pandas as pd
 import pytesseract
-from PIL import Image
-import os
 from ironpdf import *
-import xml.etree.ElementTree as ET
 
 """
 def test():
@@ -94,7 +91,7 @@ def opencv_ocr(img_path):
     """
 
     # Read image from which text needs to be extracted
-    img = cv2.imread(img_path)
+    img = cv2.imread(img_path[0])
     # Convert the image to gray scale to improve contrast for OCR
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # Performing OTSU threshold to minimize background noise
@@ -144,10 +141,10 @@ def opencv_ocr_pdf(img_path):
     shutil.rmtree('images/temp')
 
 
-def opencv_ocr_xml(img_path):
+def opencv_ocr_xlsx(img_path):
     """
-    Method to extract text from an xml file, and keeping the same format as the original file
-    :param img_path: path to the xml file
+    Method to extract text from a xlsx file, and keeping the same format as the original file
+    :param img_path: path to the xlsx file
     """
 
     with open('recognized.txt', 'w', encoding='utf-8') as file:
