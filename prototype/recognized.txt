@@ -1,34 +1,90 @@
-                                                         Rentrée 2022-2023      Unnamed: 1 Unnamed: 2    Unnamed: 3 Unnamed: 4      Unnamed: 5   Unnamed: 6 Unnamed: 7  Unnamed: 8 Unnamed: 9 Unnamed: 10 Unnamed: 11 Unnamed: 12
-                                                        COLLEGE BORIS VIAN             NaN        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                                                       NaN             NaN        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                                                     CROIX             NaN        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                                                       NaN             NaN        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                                 Détail de la liste 6ème\n Toutes matières   Français Mathématiques    Musique Arts Plastiques Histoire-Géo      S.V.T Technologie   Physique     Anglais   Allemand         ULIS
-                                                                    AGENDA               1        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                                                 ECOUTEURS               1        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                                          CAHIER BROUILLON               2        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                      TROUSSE : stylos, ciseaux et crayons divers et colle               1        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                                          POCHETTE FEUTRES               1        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                                       CRAYONS DE COULEURS               1        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                CAHIER 96 PAGES  24x32 grands carreaux couleurs diverses *             NaN          3           NaN        NaN               1            2          1         NaN          1           1           2           1
-                                    CAHIER 96 PAGES  24x32 petis carreaux*             NaN        NaN             3        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                      CAHIER DE TRAVAUX PRATIQUES  24 x 32             NaN        NaN           NaN        NaN               0          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                                      PROTEGE CAHIER 24X32             NaN        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN           2         NaN
-                              POCHETTE 5 FEUILLES PAPIER MILLIMETRE 90g A4             NaN        NaN           NaN        NaN             NaN          NaN        NaN         NaN          1         NaN         NaN         NaN
-                             SACHET 100 POCHETTES PERFOREES GRAIN 5/100ème               1        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN           1
-                                        CLASSEUR POLYPRO SOUPLE 4 ANNEAUX              NaN        NaN           NaN        NaN             NaN          NaN        NaN           1        NaN         NaN         NaN           1
-                                JEU 6 INTERCALAIRES CARTONNES 225g 21x29,7             NaN        NaN           NaN        NaN             NaN          NaN        NaN           1        NaN         NaN         NaN           1
-        PAQUET 400 PAGES COPIES DOUBLES PERF 21x29,7 grands carreaux BLANC               1        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-           PAQUET 50 PAGES FEUILLETS MOBILES 21x29,7 grands carreaux BLANC             NaN        NaN           NaN        NaN             NaN          NaN        NaN           1        NaN         NaN         NaN           1
-                PAQUET 400 FEUILLETS MOBILES 21x29,7 petits carreaux BLANC               1        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                           ROULEAU CRISTAL LISSE 5x0,7m QUALITE SUPERIEURE               1        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                                        PORTE-VUES 60 VUES             NaN        NaN           NaN          1             NaN          NaN        NaN         NaN        NaN         NaN         NaN           1
-                                                         POCHETTE A RABAT              NaN        NaN             1        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                            POCHETTE PAPIER DESSIN type CANSON 21 x29,7 cm             NaN        NaN           NaN        NaN               1          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                                             PAPIER CALQUE             NaN        NaN             1        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                                 PAPIER CARTONNE DE COULEURS (TYPE CANSON)             NaN        NaN             1        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-             INSTRUMENTS DE GEOMETRIE( règle, compas, équerre, rapporteur)             NaN        NaN             1        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                              CALCULATRICE (casio fx92 ou TI-collège plus)             NaN        NaN             1        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-                      BLOUSE MANCHES LONGUES 100% COTON ET GANTS VAISSELLE             NaN        NaN           NaN        NaN             NaN          NaN        NaN         NaN          1         NaN         NaN         NaN
-                                                                       NaN             NaN        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
-* Les cahiers couverture carton devront être protégés d'un protège cahier.             NaN        NaN           NaN        NaN             NaN          NaN        NaN         NaN        NaN         NaN         NaN         NaN
+fOURNlTURES DE RENTREE ANNEE SCOLMRE 2022/2023
+
+Liste du matériel des CM2
+
+ 
+
+Madame, Monsieur,
+Voici la liste des fournitures nécessaires à votre enfant pour sa prochaine rentrée :
+
+POUR TRAVAUX JOURNALIERS
+
+1 trousse suffisamment grande pour mettre :
+o 4 Bics pointes fines : 1 bleu + 1 rouge + 1 vert + 1 noir
+o 1 stylo-plume encre bleue + 1 effaceur
+o 1 porte-mine (0.7mm) + 1 gomme
+o 1 crayon HB papier + 1 taille-crayon
+o 5 surligneurs fluos : 1 jaune + 1 vert + 1 orange + 1 rose + 1 bleu
+o Clé USB de 4Go minimum
+
+1 agenda scolaire
+
+1 ardoise Velléda + 4 feutres Velléda + 1 chiffon
+
+1 bloc-notes bureau 10,5x14,8cm
+
+1 calculatrice Casio collège 2D FX92 (qui servira ensuite pour le collège)
+
+3 grands cahiers couverture polypro. lignés (100 p.) format 21x29,7cm réglure Seyès :
+
+1 rouge + 1 bleu + 1 violet
+
+1 grand cahier 96 p. 21x29,7cm réglure Seyès grands carreaux + 1 protège-cahier transparent 21x29,7cm
+4 chemises élastiques grand format en carton avec rabats : rouge, vert, bleu et jaune
+
+2 paquets de feuilles blanches perforées simples à grands carreaux
+
+1 trieur de 12 compartiments
+
+Le dictionnaire : Dictionnaire Super MAJOR CM1—6ème (Larousse) acheté en CE2
+
+1 Bescherelle de conjugaison
+
+2 paquets de pochettes plastiques perforées pour classeur 21x29,7cm
+
+1 petit cahier couverture polypro. ligné (100 p.) format 17x22cm réglure Seyès : orange
+1 pochette de papier calque
+
+1 pochette Papier à dessin type Canson 24x32cm couleurs vives
+
+OOOOOOOOOO OOOOO
+
+POUR LE DESSIN -T.M. - GEOMETRIE - T. PRATI UES
+
+1 grande règle plate 30 cm rigide, marquée au nom de l'enfant
+1 compas, marqué au nom de l'enfant
+
+1 équerre, marquée au nom de l'enfant
+
+1 paire de bons ciseaux, marqués au nom de l'enfant
+
+5 sticks de colle de type « UHU », marqués au nom de l'enfant
+Feutres et crayons de couleur dans une trousse
+
+2 boîtes de mouchoirs
+
+POUR LES NOUVELLES FAMILLES UNIQUEMENT:
+
+CAHIERS (pas de spirale - papier épais - grands carreaux)
+
+o 2 grands cahiers couverture polypro. lignés (100 p.) format 21x29,7cm réglure Seyès : 1 jaune + 1 vert
+
+o 1 petit cahier couverture polypro. ligné (100 p.) format 17x22cm réglure Seyès: jaune
+
+o 1 grand cahier de Travaux Pratiques couverture polypro. transparente (100 p.) format 21x29,7cm réglure
+Seyès.
+
+OOOOOOO
+
+CLASSEURS
+o 3 grands classeurs rigides (21x29,7cm) 3 cm d'épaisseur à 4 anneaux : 1 bleu + 1 rouge + 1 jaune
+o 3 jeux de 6 intercalaires (24x32cm)
+
+—) Conformez-vous, s'il vous plaît, aux formats demandés. Veillez à ce que votre enfant ait du
+matériel de gualité pour écrire, tracer, travailler... Pour les cahiers, 80 gr est un bon grammage.
+
+D'avance NOUS VOUS remercions.
+
+Ecole Notre Dame de Lourdes 11 rue du Docteur Ducroquet 59700 Marcq-en-Baroeul
+O3.20.72.23.31 www.ecole-ndl-marcq.fr o secretariat@ecole-nd|-marcq.fr
+

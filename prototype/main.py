@@ -4,15 +4,23 @@ import tkinter.filedialog as filedialog
 import os
 from prototype.opencv_ocr import opencv_ocr, opencv_ocr_pdf, opencv_ocr_xml
 
-if __name__ == "__main__":
 
-    # spawn a pop-up window that allows you to select the file you want to detect text in, pop-up must start in project directory
+def file_dial():
+    """
+    Method to open a file dialog and select a file, return the path of the file
+    """
     root = filedialog.Tk()
     root.withdraw()
     # open file dialog with pdf, jpg, xml, doc, docx
     detect_file = filedialog.askopenfilenames(initialdir=os.getcwd(), title="Select file",
                                                 filetypes=(("jpeg files", "*.jpg"), ("all files", "*.*")))
     root.destroy()
+    return detect_file
+
+
+if __name__ == "__main__":
+
+    detect_file = file_dial()
 
     #Allows us to get the duration of the program
     start_time = time.time()
@@ -29,8 +37,7 @@ if __name__ == "__main__":
 
     print("%s seconds to achieve OCR" % (time.time() - start_time))
 
-
     # previous
-    #OCR(detect_file)
-    #filter_list()
-    #panier_excel()
+    # OCR(detect_file)
+    # filter_list()
+    # panier_excel()
