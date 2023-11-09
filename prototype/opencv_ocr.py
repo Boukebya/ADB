@@ -1,9 +1,13 @@
+import shutil
 import cv2
+import pandas as pd
 import pytesseract
 from PIL import Image
 import os
+from ironpdf import *
+import xml.etree.ElementTree as ET
 
-
+"""
 def test():
     # Convert the image to gray scale to improve contrast for OCR
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -68,32 +72,74 @@ def test():
         # loop from the end of the list to the beginning
         for text in extracted_texts[::-1]:
             f.write(text + '\n')
+"""
 
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
+def opencv_ocr(img_path):
+    print(img_path)
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
 
-# Read image from which text needs to be extracted
-img = cv2.imread("images/1.jpg")
+    # Read image from which text needs to be extracted
+    img = cv2.imread(img_path)
 
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-# Performing OTSU threshold to minimize background noise
-ret, thresh1 = cv2.threshold(gray, 0, 255, cv2.THRESH_OTSU | cv2.THRESH_TOZERO)
+    # Performing OTSU threshold to minimize background noise
+    ret, thresh1 = cv2.threshold(gray, 0, 255, cv2.THRESH_OTSU | cv2.THRESH_TOZERO)
 
-# resize img
-# imgdisp = cv2.resize(thresh1, (800,800))
-cv2.imshow('imgdisp', gray)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+    # resize img
+    # imgdisp = cv2.resize(thresh1, (800,800))
+    cv2.imshow('imgdisp', gray)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
-cv2.imshow('imgdisp', thresh1)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+    cv2.imshow('imgdisp', thresh1)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
-text = pytesseract.image_to_string(thresh1, lang='fra')
+    text = pytesseract.image_to_string(thresh1, lang='fra')
 
-print(text)
+    print(text)
 
-# write extracted text to a file
-with open('recognized.txt', 'w', encoding='utf-8') as f:
-    f.write(text)
+    # write extracted text to a file
+    with open('recognized.txt', 'w', encoding='utf-8') as f:
+        f.write(text)
+
+
+def opencv_ocr_pdf(img_path):
+    print(img_path)
+    # create temp folder to store images
+    if not os.path.exists('images/temp'):
+        os.makedirs('images/temp')
+
+    pdf = PdfDocument.FromFile(img_path)
+    # Extract all pages to a folder as image files
+    pdf.RasterizeToImageFiles("images/temp/*.png", DPI=400)
+
+    # Extract text from each page using Tesseract OCR
+    text_data = ''
+    for page in os.listdir('images/temp'):
+        path = os.path.join("images/temp/", page)
+
+        img = cv2.imread(path)
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+        # Performing OTSU threshold to minimize background noise
+        ret, thresh1 = cv2.threshold(gray, 0, 255, cv2.THRESH_OTSU | cv2.THRESH_TOZERO)
+
+        text = pytesseract.image_to_string(thresh1, lang='fra')
+        text_data += text + '\n'
+
+    print(text_data)
+
+    with open('recognized.txt', 'w', encoding='utf-8') as f:
+        f.write(text)
+
+    # delete the temp folder
+    shutil.rmtree('images/temp')
+
+
+def opencv_ocr_xml(img_path):
+    with open('recognized.txt', 'w', encoding= 'utf-8') as file:
+        pd.read_excel(img_path).to_string(file, index=False)
+
