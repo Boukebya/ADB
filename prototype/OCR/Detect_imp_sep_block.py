@@ -165,7 +165,7 @@ def render_doc_text(filein):
                 with open('data.txt', 'a', encoding="utf-8") as f:
                     f.write(text)
 
-    preprocessing('data.txt')
+    #preprocessing('data.txt')
 
 # OCR is used to get the text in the file in input, by using the Google Cloud Vision API
 def OCR(file):
