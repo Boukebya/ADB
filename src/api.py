@@ -47,7 +47,7 @@ def upload_file():
     extension = os.path.splitext(file.filename)[1]
     name = "file" + extension
     print("Chemin du fichier :", file.filename)
-    file.save(os.path.join('../uploads', secure_filename(name)))
+    file.save(os.path.join('uploads', secure_filename(name)))
 
     return jsonify({"message": "File uploaded successfully"}), 200
 

@@ -1,14 +1,13 @@
-Tkinter app
+PLACE DE PARKING
+A LOUER
 
-def 1auncn():
+Salut l'équipe,je suis Yanis mais
+vous pouvez m'appeler Yaya.je
+loue ma super place de parking
+(place 37) carje ne l'utilise pas
 
-# Launch the detectinn
+Appelez moi pour plus
+d'informations : 06 52 45 89 oz
 
-name = stant_uetect1an()
-
-# Launch the viden cnnverter
-use_tnacken(nane)
-
-# Launch the viden
-1nage_ta_v1uea(nane)
+VROUM
 
