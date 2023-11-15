@@ -1,31 +1,50 @@
-document.getElementById('apiButton1').addEventListener('click', () => callApi("uploads/file.png"));
-document.getElementById('apiButton2').addEventListener('click', () => callApi(2));
-document.getElementById('apiButton3').addEventListener('click', () => callApi(3));
+// Appel des fonctions de l'API Flask
+document.getElementById('apiButton1').addEventListener('click', () => call_opencv("uploads/file.png"));
+document.getElementById('apiButton2').addEventListener('click', () => call_vertex("uploads/file.png"));
+document.getElementById('apiButton3').addEventListener('click', () => call_gpt4("uploads/file.png"));
+// Appel de la fonction pour enregistrer l'image dans le serveur
 document.getElementById('uploadButton').addEventListener('click', uploadFile);
 
-function callApi(apiNumber) {
-    const fileInput = document.getElementById('fileInput');
-    if (fileInput.files.length === 0) {
-        alert('Veuillez sélectionner un fichier.');
-        return;
-    }
-
-    // Afficher le nom du fichier
-    document.getElementById('filePathDisplay').innerText = `Fichier sélectionné : ${apiNumber}`;
-
-    fetch(`http://127.0.0.1:5000/use/${apiNumber}`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ apiNumber })
+// Fonctions pour appeler l'API pour openCV, Vertex et GPT-4
+function call_opencv(path) {
+    fetch(`http://127.0.0.1:5000/use_opencv/${path}`, {
+        method: 'GET'
     })
     .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
-
+    .then(data => {
+        console.log(data);
+        getText(); // Appelle getText() après que la réponse a été traitée avec succès.
+    })
+    .catch(error => {
+        console.error(error);
+    });
 }
 
+function call_vertex(path) {
+// TODO
+}
+
+function call_gpt4(path) {
+// TODO
+}
+
+// Fonction pour récupérer le texte de l'OCR
+function getText() {
+    console.log("Fonction getText exécutée");
+    fetch('http://127.0.0.1:5000/get-text')
+    .then(response => {
+        console.log("Réponse reçue");
+        return response.json(); // Convertit la réponse en JSON
+    })
+    .then(data => {
+    // Remplace les sauts de ligne par des balises <br> pour l'affichage HTML
+    const formattedText = data.text.replace(/\n/g, '<br>');
+    document.getElementById('result').innerHTML = formattedText;
+})
+    .catch(error => console.error("Erreur lors de la récupération des données :", error));
+}
+
+// Fonction pour télécharger le fichier sur le serveur
 function uploadFile() {
     const fileInput = document.getElementById('fileInput');
     if (fileInput.files.length === 0) {

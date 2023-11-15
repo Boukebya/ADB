@@ -3,6 +3,7 @@ import cv2
 import pandas as pd
 import pytesseract
 from ironpdf import *
+from flask import Flask, request, jsonify, redirect, url_for
 
 """
 def test():
@@ -105,6 +106,7 @@ def opencv_ocr(img_path):
     # write extracted text to a file
     with open('recognized.txt', 'w', encoding='utf-8') as f:
         f.write(text)
+
 
 
 def opencv_ocr_pdf(img_path):

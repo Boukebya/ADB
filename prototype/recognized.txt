@@ -1,48 +1,14 @@
- 
+Tkinter app
 
+def 1auncn():
 
+# Launch the detectinn
 
-(Celle-ci sera complétée à la rentrée pour chaque classe.)
+name = stant_uetect1an()
 
-Toutes les fourniture: doivent être marquées au nom de l'enfant ; nous vous  
-conseillons vivement de faire de même pour les habits qu’il serait susceptible d'enlever
+# Launch the viden cnnverter
+use_tnacken(nane)
 
-(manteau, gilet, écharpe, bonnet...)
-
-« 1 car-table rigide 
-
-« Dans une premiere trousse :
-» 2 crayons à papier HB
-> 1 gomme blanche
-> 1 taille-crayon à réservoir ( le taille-crayon doit être adapte pour
-
-tous les crayons : fins / larges)
-> 3 stylos (1 bleu, 1 vert, 1 rouge)
-> 2 surligneurs : 1 bleu, 1 orange
-> 1 paire de ciseaux à bouts ronds (attention, paire particulière pour
-
-les gauchers)
-> 2 tubes de colle en bâton
-
-« dans 1 deuxieme trousse :
-> 1 douzaine de feutres à pointe moyenne ( pas de pointe fine)
-
-> 1 douzaine de crayons de couleurs larges ( gros diamètre)
-I ls seront attachés avec un gros élasﬂaue pour éviter les pertes.
-
-« 1 règle plate 20 cm
-« 1 ardoise « effaçable à sec », 2 gros feutres ardoise et 1 chiffon
-
- 
-
-« 1 pochette à élastiques et rabats ( 21 x 29.7 = format A4)
-
-« 1 boite de mouchoirs
-w 1 ramette de papier blanc (809)
-
-ﬂmbandepüwlruncrrüerveaodeco/k. cmyansdpapkf. fourneau-dois:
-…pau°miauwlerlemrlrlelpendmtroutelwvñe. Merci!
-
-Bonnes vacances et d la rentrée prochaine /
-Les maîtresses de CP.
+# Launch the viden
+1nage_ta_v1uea(nane)
 
