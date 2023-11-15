@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explorateur de fichier et API</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e3e3e3; /* Gris clair pour le fond */
+            color: #333333; /* Gris foncé pour le texte */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        input[type="file"], button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        input[type="file"] {
+            border-color: #007bff; /* Bleu pour la bordure du champ de fichier */
+        }
+
+        button {
+            background-color: #007bff; /* Bleu pour le fond des boutons */
+            color: white; /* Texte blanc pour les boutons */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Bleu plus foncé au survol */
+            transform: scale(1.05); /* Légère augmentation de taille au survol */
+        }
+
+        #filePathDisplay {
+            margin-top: 15px;
+            color: #555555; /* Gris moyen pour l'affichage du chemin du fichier */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <input type="file" id="fileInput">
+    <button id="uploadButton">Upload File</button>
+    <button id="apiButton1">API 1</button>
+    <button id="apiButton2">API 2</button>
+    <button id="apiButton3">API 3</button>
+    <p id="filePathDisplay"></p> <!-- Élément pour afficher le nom du fichier -->
+
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

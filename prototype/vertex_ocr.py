@@ -23,8 +23,6 @@ raw_document = documentai.RawDocument(
     mime_type="application/pdf",  # Refer to https://cloud.google.com/document-ai/docs/file-types for supported file types
 )
 
-
-#%%
 request = documentai.ProcessRequest(name=name, raw_document=raw_document)
 
 result = client.process_document(request)
