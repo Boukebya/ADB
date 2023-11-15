@@ -1,4 +1,11 @@
 # ADB
+
+## implementation de gpt4 et vertex
+
+Dans les 2 cas, créer une fonction qui prend en entrée le chemin de l'image (ici le chemin est src/uploads/file.png)
+Ensuite dans api.py il y'a 2 fonction préfaite, il faut juste mettre votre fonction dans la ligne indiquée avec du coup
+en paramètre "file_path" en entrée. Votre output doit être enregistrée dans src/recognized.txt, c'est ce fichier qui
+est lu sur le site web. N'hésitez pas à me demander de l'aide si vous avez du mal à lancer l'application.
  
 ## Previous code analysis
 

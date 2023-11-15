@@ -21,11 +21,31 @@ function call_opencv(path) {
 }
 
 function call_vertex(path) {
-// TODO
+fetch(`http://127.0.0.1:5000/use_vertex/${path}`, {
+        method: 'GET'
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        getText(); // Appelle getText() après que la réponse a été traitée avec succès.
+    })
+    .catch(error => {
+        console.error(error);
+    });
 }
 
 function call_gpt4(path) {
-// TODO
+fetch(`http://127.0.0.1:5000/use_gpt4/${path}`, {
+        method: 'GET'
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        getText(); // Appelle getText() après que la réponse a été traitée avec succès.
+    })
+    .catch(error => {
+        console.error(error);
+    });
 }
 
 // Fonction pour récupérer le texte de l'OCR

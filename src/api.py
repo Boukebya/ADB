@@ -30,7 +30,6 @@ def test_gpt4(file_path):
     print("Chemin du fichier :", file_path)
     # Logique pour traiter le fichier
     # Mettre ici la fonction pour utiliser gpt4
-    main_process(file_path)
     return jsonify({"file_path": file_path})
 
 
