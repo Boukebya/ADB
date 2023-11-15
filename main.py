@@ -1,7 +1,5 @@
-from OCR.Detect_imp_sep_block import OCR
 import time
-from prototype.opencv_ocr import opencv_ocr, opencv_ocr_pdf, opencv_ocr_xlsx
-from prototype.perf_measurement import compare_ocr
+from src.opencv_ocr import opencv_ocr, opencv_ocr_pdf, opencv_ocr_xlsx
 
 
 def main_process(detect_file):

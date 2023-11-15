@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
 from flask_cors import CORS
 
-from prototype.main import main_process
+from main import main_process
 
 app = Flask(__name__)
 CORS(app)
@@ -47,7 +47,7 @@ def upload_file():
     extension = os.path.splitext(file.filename)[1]
     name = "file" + extension
     print("Chemin du fichier :", file.filename)
-    file.save(os.path.join('uploads', secure_filename(name)))
+    file.save(os.path.join('../uploads', secure_filename(name)))
 
     return jsonify({"message": "File uploaded successfully"}), 200
 
