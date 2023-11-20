@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "teak-truck-404413",
+  "private_key_id": "0d4f30803e89699cf05ea319f0f82f04f17e2ed9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkp0DlVwJnqSI6\noeh7P3vNEHlOnxF1SLxYXY0oXxhnjT5jultkqQagNBUuF0ldSSv6lu3eaB/6N7Xj\nFbXf5eE5rBx5Fu2tPZahxVccGorleSsU/o6zhDMq0k4Aw/IxtWpF0pA8C2e5t23P\nf5YcoQ0yzw4JZA42zVbxv5ApwNxjn+tbUdEvcyUzmel8Fn+3V21khFYy4YUdn+2Q\nNPD9D9wwOsVJxaS1I49DSwibZyR1Coh/hYQnKap/7gSbwxUosp27EpW0jdEmqaUU\nPLQmFlbvjdpz5yAPdPkGpzYfbkjkYmaXi4UKXeiEdgfk0YiBIcuRqF9ZHKO02dEM\npKGZLOZLAgMBAAECggEAMPf5KfwFoBTCNFPg037e7+79VO+j/pCiS1mPWLlnhayR\nKJHNCpPmf5Dd17ZfQFo5tS5cEjA/img1NRNI4wz4PfG9ChpSl5pgiT4qmRYfxv2R\nXY4TnLotiYfAYSPljPkaYSetc94kfCxcgUC9wUf4p+rCjvJt88iAGifR1UkhgpMb\n31OPFpwSiHffwOdNnd1mrHloTuA2zNlJB91Rfww+S/inHXStYwdlEhVdWHxamy/T\nVURv1DfjJ8RHdhKhfK6WjL22lPdjWEqFLv7oEzv0JUWeeZcI3WZQ5TbPxfWFXuSK\n5F5YtqPXuYiNwqDN2GUCi4qbTtdHQwMKbHG5kHAJgQKBgQDYWrlMJ5jE9EpH88Hw\nnr2egx60U4W6yM6HjRGW+8JlXAiehn1NYR+xDZRPoWKq3PaD7VJuCJclT8mr1vOj\nDxL2o8q/0phGUe5R+N18pYT8CJQrlUyAHtdCUR2l+pcHNxUGIc8sShvNtBAHeDUQ\ntg8Qpw4sjv/inH9eCrD8JEwWiwKBgQDC0zYSp79bXg2TaoclNJb2zBDd2lxVRyTh\nqAIJ0Mm8cAw7Tar+oucCvjnB7EvOVElcx5SKmUAIO7HGBzPtupVGCZq4upHjdxls\n6LLhk3RZgc4euzoK4vQ9Bry7/TX9XDZhq195I+nqnpby/6exB5/A6VpDRGJ4OO96\nYflzmMQnQQKBgF5sKdZ8qYW7f/erAIc9IFBftTTKBuEf5lLuVDDqq0qFQhW9aE4v\nBx/EZ2fhbShYyxWEq6buBNj523AtnaMaXxJZJZFWHbMC6tnHnRJbQpCkRdZHkF2S\nGCwPLrtThDpX5csJUltn9H5wCVbZNX+XlTeVUPBNcIu79TJbxCYmyTZFAoGAbWKg\n7YB5lBcOkEIzdtQ8Hn0cyzMavFahgoEOA+zSF5bhhzpoU2erRIMBcrv1I/d26Ty1\nTcwVg4ngmkrZARTNUvF5iVZXKttnzxontTdRECAtVlvQjuQ2NT1fIj1c3s+zSMsr\nY5yibTR1lCGuSVr6exmJsFLo5o8xBgmUQS74kwECgYEA1MSuv2Z8IvVneRofnxfQ\na0cy1p9xw7eelfjaK+n0OcadhvuqRisDwiJK+U9DpUbN2nMC0tLlLjNv7RC6g9RE\n2cpPdJVYiU4uHgFI+/8EGZ7fSAP+pMeq06t06VmF9OnO1c5RIp6uQjLLglVQwwFY\nufmO+ptMXkA7JhKP4DgsVhE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "admin-222@teak-truck-404413.iam.gserviceaccount.com",
+  "client_id": "104678713794397521973",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/admin-222%40teak-truck-404413.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

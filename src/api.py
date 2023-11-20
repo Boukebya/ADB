@@ -1,11 +1,14 @@
 import os
+import time
+
 from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
 from flask_cors import CORS
 import base64
 import requests
-
-from main import main_process
+from src.opencv_ocr import opencv_ocr
+from src.perf_measurement import compare_ocr
+from src.vertex_ocr import vertex_ocr
 
 app = Flask(__name__)
 CORS(app)
@@ -14,24 +17,30 @@ def encode_image(image_path):
   with open(image_path, "rb") as image_file:
     return base64.b64encode(image_file.read()).decode('utf-8')
 
+
 @app.route('/use_opencv/<path:file_path>', methods=['GET'])
 def test(file_path):
+    start_time = time.time()
     print("Chemin du fichier :", file_path)
     # Logique pour traiter le fichier
-    main_process(file_path)
-    return jsonify({"file_path": file_path})
+    opencv_ocr(file_path)
+    execution_time = time.time() - start_time
+    return jsonify({"file_path": file_path, "execution_time": execution_time})
 
 
 @app.route('/use_vertex/<path:file_path>', methods=['GET'])
 def test_vertex(file_path):
+    start_time = time.time()
     print("Chemin du fichier :", file_path)
     # Logique pour traiter le fichier
-    # Mettre ici la fonction pour utiliser vertex
-    return jsonify({"file_path": file_path})
+    vertex_ocr(file_path)
+    execution_time = time.time() - start_time
+    return jsonify({"file_path": file_path, "execution_time": execution_time})
 
 
 @app.route('/use_gpt4/<path:file_path>', methods=['GET'])
 def test_gpt4(file_path):
+    start_time = time.time()
     print("Chemin du fichier :", file_path)
     # Logique pour traiter le fichier
 
@@ -60,7 +69,8 @@ def test_gpt4(file_path):
         "content": [
             {
             "type": "text",
-            "text": "fais une liste de toutes les fournitures scolaire dans le texte suivant, sous forme [fourniture:nombre], donne moi que la liste en sortie:"
+                #             "text": "fais une liste de toutes les fournitures scolaire dans le texte suivant, sous forme [fourniture:nombre], donne moi que la liste en sortie:"
+            "text": "Extrais moi tout le texte de l'image suivante, sans faire d'erreur et en gardant la mise en page, n'oublie aucun mot et garde absolument tout le contenu:"
             },
             {
             "type": "image_url",
@@ -71,17 +81,17 @@ def test_gpt4(file_path):
         ]
         }
     ],
-    "max_tokens": 500
+    "max_tokens": 800
     }
 
     response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
     content = response.json()['choices'][0]['message']['content']
     with open('recognized.txt', 'w', encoding='utf-8') as f:
         f.write(content)
+
+    execution_time = time.time() - start_time
     
-    return jsonify({"file_path": file_path})
-
-
+    return jsonify({"file_path": file_path, "execution_time": execution_time})
 
 
 @app.route('/upload', methods=['POST'])
@@ -108,6 +118,11 @@ def get_text():
         content = file.read()
     return jsonify({"text": content}), 200, {'Content-Type': 'application/json; charset=utf-8'}
 
+
+@app.route('/compare')
+def compare():
+    score = compare_ocr("data.txt", "recognized.txt")
+    return jsonify({"score": score}), 200, {'Content-Type': 'application/json; charset=utf-8'}
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -2,84 +2,14 @@
 <html>
 <head>
     <title>Explorateur de fichier et API</title>
-    <style>
-       body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1a1a1a; /* Fond plus sombre */
-    color: #ffffff; /* Texte blanc pour plus de contraste */
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Empile les éléments verticalement */
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.container {
-    background-color: #333333; /* Couleur de fond plus sombre pour le conteneur */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    text-align: center;
-    margin-bottom: 20px; /* Ajoute de l'espace entre les conteneurs */
-}
-
-input[type="file"], button {
-    margin: 10px 0;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 2px solid #8b8bff; /* Bordure bleue pour le bouton et l'input */
-    outline: none;
-}
-
-button {
-    background-color: #8b8bff; /* Bleu pour le fond des boutons */
-    color: white; /* Texte blanc pour les boutons */
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-button:hover {
-    background-color: #8b8bff; /* Bleu plus foncé au survol */
-    transform: scale(1.05); /* Légère augmentation de taille au survol */
-}
-
-#filePathDisplay, #result {
-    background-color: #262626; /* Fond encore plus sombre pour l'affichage */
-    color: #dcdcdc; /* Gris clair pour le texte */
-    padding: 15px;
-    border-radius: 5px;
-    text-align: left;
-    margin-top: 15px;
-    width: 100%;
-    box-sizing: border-box; /* Assure que padding ne déborde pas */
-    word-wrap: break-word; /* Pour éviter le débordement de texte */
-}
-
-#result {
-    border: 1px solid #555555; /* Bordure pour distinguer la zone d'affichage */
-    min-height: 100px; /* Hauteur minimale pour la visibilité */
-    max-height: 300px; /* Hauteur maximale */
-    overflow-y: auto; /* Fait défiler si le contenu est trop long */
-}
-
-
-        #filePathDisplay {
-            margin-top: 15px;
-            color: #555555; /* Gris moyen pour l'affichage du chemin du fichier */
-        }
-
-}
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="container">
     <input type="file" id="fileInput">
     <button id="uploadButton">Upload File</button>
+    <button id="compare">Compare result with true text</button>
     <button id="apiButton1">OpenCV</button>
     <button id="apiButton2">Vertex</button>
     <button id="apiButton3">Gpt4</button>
@@ -87,8 +17,10 @@ button:hover {
 
     <script src="script.js"></script>
 </div>
-    <!-- Cette div sert à afficher le texte en output -->
-
+        <p>Score:</p>
+        <pre id="score"></pre>
+        <p>Execution time:</p>
+        <pre id="time"></pre>
         <p>Output:</p>
         <pre id="result"></pre>
 

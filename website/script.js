@@ -1,9 +1,11 @@
 // Appel des fonctions de l'API Flask
-document.getElementById('apiButton1').addEventListener('click', () => call_opencv("uploads/file.png"));
-document.getElementById('apiButton2').addEventListener('click', () => call_vertex("uploads/file.png"));
-document.getElementById('apiButton3').addEventListener('click', () => call_gpt4("uploads/file.png"));
+document.getElementById('apiButton1').addEventListener('click', () => call_opencv("uploads/file.jpg"));
+document.getElementById('apiButton2').addEventListener('click', () => call_vertex("uploads/file.jpg"));
+document.getElementById('apiButton3').addEventListener('click', () => call_gpt4("uploads/file.jpg"));
 // Appel de la fonction pour enregistrer l'image dans le serveur
 document.getElementById('uploadButton').addEventListener('click', uploadFile);
+document.getElementById('compare').addEventListener('click',load_compare);
+
 
 // Fonctions pour appeler l'API pour openCV, Vertex et GPT-4
 function call_opencv(path) {
@@ -14,7 +16,10 @@ function call_opencv(path) {
     .then(data => {
         console.log(data);
         getText(); // Appelle getText() après que la réponse a été traitée avec succès.
+        document.getElementById('time').innerHTML = data.execution_time;
+
     })
+
     .catch(error => {
         console.error(error);
     });
@@ -28,6 +33,8 @@ fetch(`http://127.0.0.1:5000/use_vertex/${path}`, {
     .then(data => {
         console.log(data);
         getText(); // Appelle getText() après que la réponse a été traitée avec succès.
+        document.getElementById('time').innerHTML = data.execution_time;
+
     })
     .catch(error => {
         console.error(error);
@@ -42,6 +49,7 @@ fetch(`http://127.0.0.1:5000/use_gpt4/${path}`, {
     .then(data => {
         console.log(data);
         getText(); // Appelle getText() après que la réponse a été traitée avec succès.
+        document.getElementById('time').innerHTML = data.execution_time;
     })
     .catch(error => {
         console.error(error);
@@ -90,3 +98,23 @@ function uploadFile() {
         alert('Erreur lors du téléchargement du fichier.');
     });
 }
+
+function load_compare() {
+    fetch('http://127.0.0.1:5000/compare')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Erreur réseau'); // Gère les réponses non-200
+        }
+        return response.json(); // Convertit la réponse en JSON
+    })
+    .then(data => {
+        // Assurez-vous que "score" est bien une clé dans "data"
+        const score = data.score;
+        document.getElementById('score').innerHTML = score;
+    })
+    .catch(error => {
+        console.error('Erreur lors de la récupération des données:', error);
+        // Gérer l'erreur, par exemple en affichant un message à l'utilisateur
+    });
+}
+

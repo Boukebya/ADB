@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container, .results-container {
+    background-color: #333333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="file"], button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #8b8bff;
+    outline: none;
+}
+
+button {
+    background-color: #8b8bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    flex: 1;
+}
+
+button:hover {
+    background-color: #7a7aff;
+    transform: scale(1.05);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+}
+
+#filePathDisplay, #result {
+    background-color: #262626;
+    color: #dcdcdc;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+#result {
+    border: 1px solid #555555;
+    min-height: 100px;
+    max-height: 300px;
+    overflow-y: auto;
+}
