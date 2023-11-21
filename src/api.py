@@ -5,7 +5,6 @@ from werkzeug.utils import secure_filename
 from flask_cors import CORS
 import base64
 import requests
-
 from src.gpt4 import use_gpt4
 from src.opencv_ocr import opencv_ocr
 from src.perf_measurement import compare_ocr

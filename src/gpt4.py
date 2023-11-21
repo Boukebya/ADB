@@ -31,8 +31,8 @@ def use_gpt4(file_path):
                 "content": [
                     {
                         "type": "text",
-                        #             "text": "fais une liste de toutes les fournitures scolaire dans le texte suivant, sous forme [fourniture:nombre], donne moi que la liste en sortie:"
-                        "text": "Extrais moi tout le texte de l'image suivante, sans faire d'erreur et en gardant la mise en page, n'oublie aucun mot et garde absolument tout le contenu:"
+                        "text": "fais une liste de toutes les fournitures scolaire dans le texte suivant, sous forme [fourniture:nombre:couleur], pour une même fourniture fais attention au couleur ou dimension différente, donne moi que la liste en sortie en format json:"
+                        #"text": "Extrais moi tout le texte de l'image suivante, sans faire d'erreur et en gardant la mise en page, n'oublie aucun mot et garde absolument tout le contenu:"
                     },
                     {
                         "type": "image_url",
