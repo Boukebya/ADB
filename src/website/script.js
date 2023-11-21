@@ -1,7 +1,7 @@
 // Appel des fonctions de l'API Flask
-document.getElementById('apiButton1').addEventListener('click', () => call_opencv("uploads/file.jpg"));
-document.getElementById('apiButton2').addEventListener('click', () => call_vertex("uploads/file.jpg"));
-document.getElementById('apiButton3').addEventListener('click', () => call_gpt4("uploads/file.jpg"));
+document.getElementById('apiButton1').addEventListener('click', () => call_opencv("website/uploads/file.png"));
+document.getElementById('apiButton2').addEventListener('click', () => call_vertex("website/uploads/file.png"));
+document.getElementById('apiButton3').addEventListener('click', () => call_gpt4("website/uploads/file.png"));
 // Appel de la fonction pour enregistrer l'image dans le serveur
 document.getElementById('uploadButton').addEventListener('click', uploadFile);
 document.getElementById('compare').addEventListener('click',load_compare);
@@ -99,6 +99,7 @@ function uploadFile() {
     });
 }
 
+// Fonction pour comparer les résultats
 function load_compare() {
     fetch('http://127.0.0.1:5000/compare')
     .then(response => {

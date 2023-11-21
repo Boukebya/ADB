@@ -11,9 +11,12 @@ from src.OCR.vertex_ocr import vertex_ocr
 app = Flask(__name__)
 CORS(app)
 
+
 @app.route('/use_opencv/<path:file_path>', methods=['GET'])
 def test(file_path):
     start_time = time.time()
+    # afficher la localisation actuel du script
+    print("Localisation du script :", os.path.dirname(os.path.realpath(__file__)) + "/api.py")
     print("Chemin du fichier :", file_path)
     # Logique pour traiter le fichier
     opencv_ocr(file_path)
@@ -37,7 +40,7 @@ def test_gpt4(file_path):
     use_gpt4(file_path)
 
     execution_time = time.time() - start_time
-    
+
     return jsonify({"file_path": file_path, "execution_time": execution_time})
 
 
@@ -54,22 +57,23 @@ def upload_file():
     extension = os.path.splitext(file.filename)[1]
     name = "file" + extension
     print("Chemin du fichier :", file.filename)
-    file.save(os.path.join('../website/uploads', secure_filename(name)))
+    file.save(os.path.join('../src/website/uploads', secure_filename(name)))
 
     return jsonify({"message": "File uploaded successfully"}), 200
 
 
 @app.route('/get-text')
 def get_text():
-    with open('../recognized.txt', 'r', encoding='utf-8') as file:  # Assurez-vous d'utiliser l'encodage UTF-8
+    with open('ocr.txt', 'r', encoding='utf-8') as file:  # Assurez-vous d'utiliser l'encodage UTF-8
         content = file.read()
     return jsonify({"text": content}), 200, {'Content-Type': 'application/json; charset=utf-8'}
 
 
 @app.route('/compare')
 def compare():
-    score = compare_ocr("data.txt", "recognized.txt")
+    score = compare_ocr("Furniture_list/data_1.txt", "ocr.txt")
     return jsonify({"score": score}), 200, {'Content-Type': 'application/json; charset=utf-8'}
+
 
 if __name__ == '__main__':
     app.run(debug=True)
