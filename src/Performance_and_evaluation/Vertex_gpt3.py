@@ -2,17 +2,23 @@ import time
 
 from src.Extraction.gpt3_extraction import gpt3_extraction
 from src.OCR.vertex_ocr import vertex_ocr
+from src.Performance_and_evaluation.perf_measurement import compare_ocr
 
 
-def test_gptvertex(file_path):
+def test_gptvertex(file_path,file_verif,file_extract):
     # use vertex ocr
     start_time = time.time()
     vertex_ocr(file_path)
-
+    score = compare_ocr("ocr.txt",file_verif)
     gpt3_extraction("ocr.txt")
+    score_extract = compare_ocr(file_extract,"ocr.txt")
     print("%s seconds to achieve both things" % (time.time() - start_time))
+    print("Score vertex :", score)
+    print("Score gpt3 :", score_extract)
+
+    return score, score_extract
 
 
 
 
-test_gptvertex("../../images/1.jpg","../Furniture_list/data_1.txt","../Furniture_list/data_extraction1.txt")
+data1 = test_gptvertex("../../images/1.jpg","../Furniture_list/data_1.txt","../Furniture_list/data_extraction1.txt")

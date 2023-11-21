@@ -28,5 +28,8 @@ def gpt3_extraction(file_path):
     print(response.usage)
     #print("%s seconds to achieve extraction" % (time.time() - start_time))
 
+    with open('ocr.txt', 'w', encoding='utf-8') as f:
+        f.write(response.choices[0].message.content)
+
 
 #gpt3_extraction("../ocr.txt")

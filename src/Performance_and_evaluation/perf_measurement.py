@@ -77,4 +77,3 @@ def compare_ocr(google_ocr, tess_ocr):
     return score
 
 
-#compare_ocr("recognized.txt", "data.txt")
