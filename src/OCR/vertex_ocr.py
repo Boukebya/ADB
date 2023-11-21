@@ -4,7 +4,7 @@ from google.oauth2 import service_account
 
 def vertex_ocr(file_path):
     # Spécifiez le chemin vers votre fichier de clés de compte de service
-    json_credentials_path = "C:/Users/bouke/PycharmProjects/ADB/google.json"
+    json_credentials_path = "/google.json"
 
     # Chargez explicitement les informations d'identification à partir du fichier JSON
     credentials = service_account.Credentials.from_service_account_file(json_credentials_path)
@@ -53,5 +53,5 @@ def vertex_ocr(file_path):
     print(document.text)
 
     # Enregistrez le texte extrait dans un fichier
-    with open("recognized.txt", "w", encoding="utf-8") as f:
+    with open("../recognized.txt", "w", encoding="utf-8") as f:
         f.write(document.text)

@@ -1,7 +1,15 @@
 from openai import OpenAI
+import time
 
 
 def gpt3_extraction(file_path):
+    """
+    Use GPT-3 to extract the list of school supplies from a text file.
+    Extraction is then done.
+    :param file_path: path to the text file
+    """
+
+    start_time = time.time()
     api_key = "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"
     client = OpenAI(api_key=api_key)
     with open(file_path, "rb") as text_file:
@@ -17,5 +25,8 @@ def gpt3_extraction(file_path):
         ]
     )
     print(response.choices[0].message.content)
+    print(response.usage)
+    print("%s seconds to achieve extraction" % (time.time() - start_time))
 
-gpt3_extraction("recognized.txt")
+
+gpt3_extraction("../recognized.txt")

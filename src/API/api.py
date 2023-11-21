@@ -3,12 +3,10 @@ import time
 from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
 from flask_cors import CORS
-import base64
-import requests
-from src.gpt4 import use_gpt4
-from src.opencv_ocr import opencv_ocr
-from src.perf_measurement import compare_ocr
-from src.vertex_ocr import vertex_ocr
+from src.OCR.gpt4 import use_gpt4
+from src.OCR.opencv_ocr import opencv_ocr
+from src.Performance_and_evaluation.perf_measurement import compare_ocr
+from src.OCR.vertex_ocr import vertex_ocr
 
 app = Flask(__name__)
 CORS(app)
@@ -56,14 +54,14 @@ def upload_file():
     extension = os.path.splitext(file.filename)[1]
     name = "file" + extension
     print("Chemin du fichier :", file.filename)
-    file.save(os.path.join('uploads', secure_filename(name)))
+    file.save(os.path.join('../website/uploads', secure_filename(name)))
 
     return jsonify({"message": "File uploaded successfully"}), 200
 
 
 @app.route('/get-text')
 def get_text():
-    with open('recognized.txt', 'r', encoding='utf-8') as file:  # Assurez-vous d'utiliser l'encodage UTF-8
+    with open('../recognized.txt', 'r', encoding='utf-8') as file:  # Assurez-vous d'utiliser l'encodage UTF-8
         content = file.read()
     return jsonify({"text": content}), 200, {'Content-Type': 'application/json; charset=utf-8'}
 

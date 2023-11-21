@@ -48,5 +48,5 @@ def use_gpt4(file_path):
 
     response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
     content = response.json()['choices'][0]['message']['content']
-    with open('recognized.txt', 'w', encoding='utf-8') as f:
+    with open('../recognized.txt', 'w', encoding='utf-8') as f:
         f.write(content)

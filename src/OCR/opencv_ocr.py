@@ -40,7 +40,7 @@ def opencv_ocr(img_path):
     # print(text)
 
     # write extracted text to a file
-    with open('recognized.txt', 'w', encoding='utf-8') as f:
+    with open('../recognized.txt', 'w', encoding='utf-8') as f:
         f.write(text)
 
 
@@ -73,7 +73,7 @@ def opencv_ocr_pdf(img_path):
         text = pytesseract.image_to_string(thresh1, lang='fra')
         text_data += text + '\n'
 
-    with open('recognized.txt', 'w', encoding='utf-8') as f:
+    with open('../recognized.txt', 'w', encoding='utf-8') as f:
         f.write(text)
 
     # delete the temp folder
@@ -86,5 +86,5 @@ def opencv_ocr_xlsx(img_path):
     :param img_path: path to the xlsx file
     """
 
-    with open('recognized.txt', 'w', encoding='utf-8') as file:
+    with open('../recognized.txt', 'w', encoding='utf-8') as file:
         pd.read_excel(img_path).to_string(file, index=False)
