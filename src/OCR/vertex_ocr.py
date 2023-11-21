@@ -4,7 +4,7 @@ from google.oauth2 import service_account
 
 def vertex_ocr(file_path):
     # Spécifiez le chemin vers votre fichier de clés de compte de service
-    json_credentials_path = "google.json"
+    json_credentials_path = "../google.json"
 
     # Chargez explicitement les informations d'identification à partir du fichier JSON
     credentials = service_account.Credentials.from_service_account_file(json_credentials_path)

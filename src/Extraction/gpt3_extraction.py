@@ -26,7 +26,7 @@ def gpt3_extraction(file_path):
     )
     print(response.choices[0].message.content)
     print(response.usage)
-    print("%s seconds to achieve extraction" % (time.time() - start_time))
+    #print("%s seconds to achieve extraction" % (time.time() - start_time))
 
 
-gpt3_extraction("../recognized.txt")
+#gpt3_extraction("../ocr.txt")
