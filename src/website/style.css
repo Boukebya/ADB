@@ -77,8 +77,9 @@ button:hover {
 #result, #result_extraction {
     border: 1px solid #555555;
     min-height: 100px;
-    max-height: 450px;
+    max-height: 300px;
     overflow-y: auto;
+
 }
 
 #executionTime {

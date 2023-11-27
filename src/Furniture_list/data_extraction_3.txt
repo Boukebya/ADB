@@ -1,56 +1,172 @@
-- 1 cahier grand format 96 pages grands carreaux
-- 1 sac de sport
-- 1 paire de chaussures de sport
-- 1 pull réservé au sport
-- 1 short
-- 1 survêtement
-- 1 protège-documents 21 x 29,7 plastifié (30 pochettes)
-- 1 raquette de badminton
-- 1 raquette de tennis de table
-- 1 agenda scolaire
-- 1 stylo plume
-- 1 tube de colle
-- 1 crayon de bois
-- 1 surligneur
-- 1 règle plate graduée 30 CM
-- 1 clé USB
-- 1 perforatrice
-- 1 taille-crayons
-- 1 clé USB
-- 1 correcteur roller
-- 2 crayons de papier HB et 2B
-- 1 porte vues 60-80 pages
-- 1 pochette de feuilles cartonnées 224g/24x32
-- 1 chemise à élastique 24x32
-- 2 cahiers 24x32 de 96 pages à grands carreaux
-- 1 dictionnaire
-- 1 pochette plastifiée rigide grand format
-- 1 pochette à rabats élastique
-- 1 cahier d'essai petit format grands carreaux
-- 6 ouvrages
-- 2 cahiers 24x32 de 200 pages (petits carreaux)
-- 1 équerre
-- 1 rapporteur
-- 1 compas
-- 1 calculatrice scientifique
-- 1 porte-vues (120 vues), couverture transparente personnalisable et pochette de rangement en 3° de couverture
-- 1 porte-bloc à rabat, plastifié
-- 10 feuilles simples à grands carreaux
-- 2 cahiers 24x32 (96 pages) grands carreaux
-- 2 protège-cahiers transparents
-- 2 grands cahiers de TP (couverture ou protège-cahier vert) grands carreaux - 24x32
-- 1 blouse en coton à longues manches
-- 1 cahier 24x32cm (96 pages) grands carreaux
-- 1 petit dictionnaire français-allemand
-- 1 grand cahier de T.P. (protège cahier rouge) grands carreaux 24x32 de 120 pages
-- 1 blouse de coton
-- 1 pochette cartonnée rouge avec élastique 21x29,7
-- 1 petit cahier grands carreaux (protège cahier rouge)
-- 1 cahier petit format (96 pages) 
-- 1 protège cahier à conserver jusqu'en 3ème
-- 1 cahier 21x29,7cm (96 pages) grands carreaux
-- 1 classeur 21 x 29,7 rigide
-- 1 paquet de pochettes plastiques perforées 21 x 29,7
-- 3 intercalaires cartonnés
-- 1 protège-cahier bleu
-- 1 pochette cartonnée A4
+```json
+[
+  {
+    "name": "agenda scolaire",
+    "nombre": "1"
+  },
+  {
+    "name": "stylo plume",
+    "nombre": "1"
+  },
+  {
+    "name": "tube de colle",
+    "nombre": "1"
+  },
+  {
+    "name": "crayon de bois",
+    "nombre": "1"
+  },
+  {
+    "name": "Fluo jaune",
+    "nombre": "1"
+  },
+  {
+    "name": "stylo à bille bleu",
+    "nombre": "1"
+  },
+  {
+    "name": "stylo à bille rouge",
+    "nombre": "1"
+  },
+  {
+    "name": "stylo à bille vert",
+    "nombre": "1"
+  },
+  {
+    "name": "stylo à bille noir",
+    "nombre": "1"
+  },
+  {
+    "name": "gommes",
+    "nombre": "1"
+  },
+  {
+    "name": "ciseaux règle plate graduée 30 cm",
+    "nombre": "1"
+  },
+  {
+    "name": "perforatrice",
+    "nombre": "1"
+  },
+  {
+    "name": "taille-crayons",
+    "nombre": "1"
+  },
+  {
+    "name": "clé USB",
+    "nombre": "1"
+  },
+  {
+    "name": "correcteur roller",
+    "nombre": "1"
+  },
+  {
+    "name": "pinceaux ou fausses herbes",
+    "nombre": "1"
+  },
+  {
+    "name": "feuilles simples perforées",
+    "nombre": "1"
+  },
+  {
+    "name": "feuilles doubles perforées",
+    "nombre": "1"
+  },
+  {
+    "name": "grands carreaux papier millimétré",
+    "nombre": "1"
+  },
+  {
+    "name": "grands carreaux papier calque",
+    "nombre": "1"
+  },
+  {
+    "name": "grands carreaux papier millimétré",
+    "nombre": "1"
+  },
+  {
+    "name": "papier millimétré",
+    "nombre": "1"
+  },
+  {
+    "name": "crayons de couleurs",
+    "nombre": "1"
+  },
+  {
+    "name": "feutres de couleurs",
+    "nombre": "1"
+  },
+  {
+    "name": "porte-vues 120 vues",
+    "nombre": "1"
+  },
+  {
+    "name": "couverture transparente personnalisable",
+    "nombre": "1"
+  },
+  {
+    "name": "porte-bloc rabat plastifié",
+    "nombre": "1"
+  },
+  {
+    "name": "feuilles à simples et grands carreaux",
+    "nombre": "1"
+  },
+  {
+    "name": "porte-vues 30 vues",
+    "nombre": "1"
+  },
+  {
+    "name": "crayon de bois et gomme",
+    "nombre": "1"
+  },
+  {
+    "name": "grands carreaux cahier de TP couverture ou protège-cahier vert",
+    "nombre": "2"
+  },
+  {
+    "name": "blouse en coton à longues manches avec nom + prénom de l'élève",
+    "nombre": "1"
+  },
+  {
+    "name": "grands carreaux cahier de TP protège-cahier rouge",
+    "nombre": "1"
+  },
+  {
+    "name": "blouse de coton obligatoire pour le laboratoire avec nom de l'élève",
+    "nombre": "1"
+  },
+  {
+    "name": "pochette cartonnée avec élastique bleue",
+    "nombre": "1"
+  },
+  {
+    "name": "petit cahier grands carreaux protège-cahier rouge",
+    "nombre": "1"
+  },
+  {
+    "name": "classeur 21 x 29,7 rigide",
+    "nombre": "1"
+  },
+  {
+    "name": "paquet de pochettes plastiques perforées 21 x 29,7",
+    "nombre": "1"
+  },
+  {
+    "name": "intercalaires cartonnés",
+    "nombre": "1"
+  },
+  {
+    "name": "grands carreaux cahier anglais",
+    "nombre": "2"
+  },
+  {
+    "name": "protège-cahier bleu",
+    "nombre": "1"
+  },
+  {
+    "name": "pochette cartonnée A4",
+    "nombre": "1"
+  }
+]
+```

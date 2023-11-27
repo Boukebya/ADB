@@ -32,7 +32,17 @@ def use_gpt4(file_path):
                 "content": [
                     {
                         "type": "text",
-                        "text": "fais une liste de toutes les fournitures scolaire dans le texte suivant sous forme produit:nombre,n'invente aucun mot, si plusieurs couleurs pour le même produit faire une ligne par produit, le nombre doit être un entier qui vaut 1 par défaut, donne moi la liste en sortie:",
+                        "text": """fais une liste de toutes les fournitures
+             scolaire dans le texte suivant sous forme produit:nombre, il faut faire une ligne par couleur pour les produits
+             similaire , le nombre doit être un entier qui vaut 1 par défaut, et correspond aux nombres d'articles sur la liste,
+             donne moi uniquement la liste en sortie en format : (
+             {
+  "name": "", contient le nom du produit avec le format le poids la marque la couleur la taille dans une seul string sans virgule
+  "nombre": "", contient le nombre d'articles de ce produit à acheter, attention dans le cas d'un produit avec plusieurs couleurs,
+  s'il est écrit 4 stylo, bleu vert rouge et bleu, la somme est de 4 donc chaque nombre sera à 1
+}
+)
+            """,
                         #"text": "Extrais moi tout le texte de l'image suivante, sans faire d'erreur et en gardant la mise en page, n'oublie aucun mot et garde absolument tout le contenu:"
                     },
                     {

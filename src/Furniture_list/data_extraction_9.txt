@@ -1,64 +1,57 @@
-- 1 classeur souple 21x29,7
-6 intercalaires 21x29,7 en carton
-des pochettes plastifiées
-une pochette d'œillets
-- 1 grande pochette cartonnée à rabats
-2 cahiers 24x32 grands carreaux de 96 pages
-quatre feutres fluos
-- 3 grands cahiers 21 x 29,7 cm à petits ou grands carreaux, 96 pages
-1 pochette cartonnée ou plastifiée à rabats avec élastiques
-Règle graduée, équerre, rapporteur gradué en degrés 0°-180°, compas avec crayon à visser
-- 1 calculatrice type "collège"
-1 grand classeur souple 21 x 29,7 à gros anneaux
-- des intercalaires
-des pochettes plastiques
-1 pochette cartonnée avec élastique
-Feuilles simples perforées 21 x 29.7 cm grands carreaux blanches et jaunes
-Des surligneurs
-Casque ou écouteurs mini-jack 3,5 mm (compatibles MP3)
-1 cahier de brouillon (petit format)
-- 2 grands cahiers 24 x 32 cm à grands carreaux, 96 pages
-- 1 grand classeur 21 x 29,7 avec Feuilles simples perforées 21 x 29.7 cm grands carreaux, 5 intercalaires et une dizaine de pochettes plastiques
-- 3 feutres fins (type stabylo-stylist); bleu/rouge/vert
-1 paquet de copies doubles
-Une pochette de crayons de couleurs (une douzaine)
-- 1 grand cahier 21 x 29.7 cm à grands carreaux, 96 pages
-1 paquet de copies doubles 21 x 29,7 cm à grands carreaux
-2 pochettes cartonnées avec rabats élastiques 21 x 29.7 cm
-- 1 grand cahier 21 x 29.7 cm à grands carreaux, 96 pages
-1 paquet de copies doubles 21 x 29,7 cm à grands carreaux
-Feuilles simples perforées 21 x 29.7 cm à grands carreaux
-1 pochette cartonnée avec rabats élastiques 21 x 29.7 cm
-- 1 grand cahier 24 x 32 cm à grands carreaux, 96 pages
-1 paquet de copies doubles 21 x 29,7 cm à grands carreaux
-Feuilles simples perforées 21 x 29.7 cm à grands carreaux
-2 pochettes cartonnées avec rabats élastiques 21 x 29.7 cm
-Papier millimétré
-1 classeur rigide 21 x 29,7 cm
-Feuilles 21 x 29,7 cm à petits carreaux, pochettes plastiques
-6 intercalaires + Clé USB
-1 protège documents 21 x 29,7 - 30 pochettes (60 vues) (réutilisable chaque année)
-1 pochette de papier CANSON blanc - 24x32 cm - 180 grammes
-Gouache à l'eau en tube (1 tube de chaque couleur: jaune, bleu, magenta, noir, blanc)
-Lot de trois pinceaux en poils synthétiques n° au choix( deux pointus, un plat)
-1 porte-vues 30 feuilles
-1 feutre noir fin
-1 grand cahier 21 x 29,7 cm de 96 pages à grands carreaux
-Un pantalon de survêtement
-Un short
-Une paire de chaussures de sport
-Un maillot de bain ou slip de bain
-Un bonnet de bain
-Trousse
-4 stylos (bleu, noir, rouge, et vert)
-1 gomme
-1 crayon gris HB
-1 règle graduée 30 cm
-1 taille crayon avec réservoir
-Ciseaux à bouts ronds
-1 bâton de colle
-1 surligneur
-1 boîte de feutres
-1 boîte de crayons de couleur (8 à 12 couleurs)
-1 cahier de texte ou agenda
-1 pochette de copies en permanence dans le cartable
+```json
+[
+  {"name": "classeur souple 21x29,7", "nombre": "1"},
+  {"name": "intercalaires 21x29,7 en carton", "nombre": "6"},
+  {"name": "pochettes plastifiées", "nombre": "6"},
+  {"name": "pochette d'oeillets", "nombre": "1"},
+  {"name": "grande pochette cartonnée à rabats", "nombre": "1"},
+  {"name": "cahiers 24x32 grands carreaux 96 pages", "nombre": "2"},
+  {"name": "feutres fins", "nombre": "4"},
+  {"name": "calculatrice type collège", "nombre": "1"},
+  {"name": "classeur souple 21 x 29,7 à gros anneaux", "nombre": "1"},
+  {"name": "pochette cartonnée élastique", "nombre": "1"},
+  {"name": "feuilles simples perforées 21 x 29.7 cm grands carreaux blancs", "nombre": "1"},
+  {"name": "feuilles simples perforées 21 x 29.7 cm grands carreaux jaunes", "nombre": "1"},
+  {"name": "casque ou écouteurs mini-jack 3,5 mm", "nombre": "1"},
+  {"name": "cahiers 24 x 32 cm grands carreaux 96 pages", "nombre": "2"},
+  {"name": "feuilles simples perforées 21 x 29,7 cm grands carreaux", "nombre": "3"},
+  {"name": "pochettes plastiques", "nombre": "3"},
+  {"name": "pochette de crayons de couleurs", "nombre": "1"},
+  {"name": "papier calque 21 x 29.7 cm à grands carreaux", "nombre": "1"},
+  {"name": "papier millimétré 21 x 29.7 cm à grands carreaux", "nombre": "2"},
+  {"name": "clé USB", "nombre": "1"},
+  {"name": "protège documents 21 x 29,7", "nombre": "1"},
+  {"name": "papier CANSON blanc 24x32 cm 180 grammes", "nombre": "1"},
+  {"name": "gouache à l'eau en tube jaune", "nombre": "1"},
+  {"name": "gouache à l'eau en tube bleu", "nombre": "1"},
+  {"name": "gouache à l'eau en tube magenta", "nombre": "1"},
+  {"name": "gouache à l'eau en tube noir", "nombre": "1"},
+  {"name": "gouache à l'eau en tube blanc", "nombre": "1"},
+  {"name": "lot de trois pinceaux synthétiques", "nombre": "1"},
+  {"name": "porte-voix 30 feuilles", "nombre": "1"},
+  {"name": "pantalon de survêtement", "nombre": "1"},
+  {"name": "short", "nombre": "1"},
+  {"name": "paire de chaussures de sport", "nombre": "1"},
+  {"name": "maillot de bain slip de bain", "nombre": "1"},
+  {"name": "bonnet de bain", "nombre": "1"},
+  {"name": "un cartable résistant", "nombre": "1"},
+  {"name": "stylo bleu", "nombre": "1"},
+  {"name": "stylo noir", "nombre": "1"},
+  {"name": "stylo rouge", "nombre": "1"},
+  {"name": "stylo vert", "nombre": "1"},
+  {"name": "gomme", "nombre": "1"},
+  {"name": "crayon gris HB", "nombre": "1"},
+  {"name": "taille crayon avec réservoir", "nombre": "1"},
+  {"name": "bâton de colle", "nombre": "1"},
+  {"name": "boite de feutres", "nombre": "1"},
+  {"name": "cahier de texte ou agenda", "nombre": "1"},
+  {"name": "ciseaux à bouts ronds", "nombre": "1"},
+  {"name": "surligneur", "nombre": "1"},
+  {"name": "boite de crayons de couleur 8 à 12 couleurs", "nombre": "1"},
+  {"name": "poche de copies en permanence dans le cartable", "nombre": "1"},
+  {"name": "marqueur", "nombre": "1"},
+  {"name": "cutter", "nombre": "1"},
+  {"name": "blanc correcteur sous forme liquide", "nombre": "1"},
+  {"name": "livres souples pour la lecture", "nombre": "2"}
+]
+```
