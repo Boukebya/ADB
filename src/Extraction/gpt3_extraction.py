@@ -19,9 +19,18 @@ def gpt3_extraction(file_path):
         model="gpt-3.5-turbo-1106",
         messages=[
             {"role": "system",
-             "content": "Vous êtes un assistant utile conçu pour extraire des fournitures scolaires du texte."},
-            {"role": "user", "content": """fais une liste de toutes les fournitures scolaire dans le texte suivant sous forme produit:nombre, si plusieurs couleurs pour le produit faire un élement par produit, le nombre doit être un entier qui vaut 1 par défaut, met encre avec couleur si besoin en tant qu'objet à part, donne moi que la liste en sortie:
-   """ + file}
+             "content": "Vous êtes un assistant utile conçu pour extraire des fournitures scolaires du texte sans omission."},
+            {"role": "user", "content": """fais une liste de toutes les fournitures
+             scolaire dans le texte suivant sous forme produit:nombre, il faut faire une ligne par couleur pour les produits
+             similaire , le nombre doit être un entier qui vaut 1 par défaut, et correspond aux nombres d'articles sur la liste,
+             donne moi uniquement la liste en sortie en format : (
+             {
+  "produit": "", contient le nom du produit avec le format le poids la marque la couleur la taille dans une seul string sans virgule
+  "nombre": "", contient le nombre d'articles de ce produit à acheter, attention dans le cas d'un produit avec plusieurs couleurs,
+  s'il est écrit 4 stylo, bleu vert rouge et bleu, la somme est de 4 donc chaque nombre sera à 1
+}
+)
+            """ + file}
         ]
     )
     print(response.choices[0].message.content)

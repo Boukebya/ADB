@@ -1,7 +1,7 @@
 // Appel des fonctions de l'API Flask
-document.getElementById('apiButton1').addEventListener('click', () => call_opencv("website/uploads/file.png"));
-document.getElementById('apiButton2').addEventListener('click', () => call_vertex("website/uploads/file.png"));
-document.getElementById('apiButton3').addEventListener('click', () => call_gpt4("website/uploads/file.png"));
+document.getElementById('apiButton1').addEventListener('click', () => call_opencv("website/uploads/file.jpg"));
+document.getElementById('apiButton2').addEventListener('click', () => call_vertex("website/uploads/file.jpg"));
+document.getElementById('apiButton3').addEventListener('click', () => call_gpt4("website/uploads/file.jpg"));
 // Appel de la fonction pour enregistrer l'image dans le serveur
 document.getElementById('uploadButton').addEventListener('click', uploadFile);
 document.getElementById('compare').addEventListener('click',load_compare);

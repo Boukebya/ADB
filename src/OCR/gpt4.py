@@ -25,13 +25,14 @@ def use_gpt4(file_path):
     }
     payload = {
         "model": "gpt-4-vision-preview",
+        "temperature": 0,  # Valeur faible pour moins d'interprétation
         "messages": [
             {
                 "role": "user",
                 "content": [
                     {
                         "type": "text",
-                        "text": "fais une liste de toutes les fournitures scolaire dans le texte suivant, sous forme [fourniture:nombre:couleur], pour une même fourniture fais attention au couleur ou dimension différente, donne moi que la liste en sortie en format json:"
+                        "text": "fais une liste de toutes les fournitures scolaire dans le texte suivant sous forme produit:nombre,n'invente aucun mot, si plusieurs couleurs pour le même produit faire une ligne par produit, le nombre doit être un entier qui vaut 1 par défaut, donne moi la liste en sortie:",
                         #"text": "Extrais moi tout le texte de l'image suivante, sans faire d'erreur et en gardant la mise en page, n'oublie aucun mot et garde absolument tout le contenu:"
                     },
                     {
@@ -43,7 +44,7 @@ def use_gpt4(file_path):
                 ]
             }
         ],
-        "max_tokens": 800
+        "max_tokens": 2000,
     }
 
     response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)

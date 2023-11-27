@@ -1,0 +1,63 @@
+- Trousse: 1
+- Bic pointe fine: 4
+  - Couleurs: bleu, rouge, vert, noir
+- Stylo-plume: 1
+  - Couleur: encre bleue
+- Effaceur: 1
+- Porte-mine: 1
+- Gomme: 1
+- Crayon HB: 1
+- Taille-crayon: 1
+- Surligneur fluo: 5
+  - Couleurs: jaune, vert, orange, rose, bleu
+- Clé USB: 1
+- Agenda scolaire: 1
+- Ardoise Velléda: 1
+- Feutres Velléda: 4
+- Chiffon: 1
+- Bloc-notes: 1
+- Calculatrice Casio collège 2D FX92: 1
+- Cahier couverture polypro. ligné: 4
+  - Format: 21x29,7cm réglure Seyès
+  - Couleurs: rouge, bleu, violet, orange
+- Cahier grands carreaux: 1
+  - Nombre de pages: 96
+  - Format: 21x29,7cm réglure Seyès
+- Protège-cahier transparent: 1
+  - Format: 21x29,7cm
+- Chemises élastiques grand format en carton avec rabats: 4
+  - Couleurs: rouge, vert, bleu, jaune
+- Paquets de feuilles blanches perforées simples à grands carreaux: 2
+- Trieur de 12 compartiments: 1
+- Dictionnaire: 1
+- Bescherelle de conjugaison: 1
+- Pochettes plastiques perforées pour classeur: 2
+  - Format : 21x29,7cm
+- Cahier couverture polypro. ligné petit format: 1
+  - Nombre de pages: 100
+  - Format: 17x22cm réglure Seyès
+  - Couleur: orange
+- Pochette de papier calque: 1
+- Papier à dessin type Canson: 1
+  - Format: 24x32cm
+  - Couleurs: vives
+- Règle plate rigide: 1
+  - Longueur: 30 cm
+- Compas: 1
+- Équerre: 1
+- Paire de bons ciseaux: 1
+- Sticks de colle de type « UHU »: 5
+- Feutres et crayons de couleur: 1
+- Boîtes de mouchoirs: 2
+- Cahiers grands carreaux: 3
+  - Format: 21x29,7cm réglure Seyès
+  - Couleurs: jaune, vert, jaune
+- Cahier de Travaux Pratiques: 1
+  - Format: 21x29,7cm réglure Seyès
+- Classeurs rigides: 3
+  - Format: 21x29,7cm
+  - Épaisseur: 3 cm
+  - Nombre d'anneaux: 4
+  - Couleurs: bleu, rouge, jaune
+- Jeux de 6 intercalaires: 3
+  - Format: 24x32cm

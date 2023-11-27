@@ -55,3 +55,5 @@ def vertex_ocr(file_path):
     # Enregistrez le texte extrait dans un fichier
     with open("ocr.txt", "w", encoding="utf-8") as f:
         f.write(document.text)
+
+
