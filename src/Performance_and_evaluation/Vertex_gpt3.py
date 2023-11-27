@@ -2,7 +2,7 @@ import time
 
 from src.Extraction.gpt3_extraction import gpt3_extraction
 from src.OCR.gpt4 import use_gpt4
-from src.OCR.opencv_ocr import opencv_ocr
+from Poubelle.opencv_ocr import opencv_ocr
 from src.OCR.vertex_ocr import vertex_ocr
 from src.Performance_and_evaluation.perf_measurement import compare_ocr
 

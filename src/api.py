@@ -3,10 +3,10 @@ import time
 from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
 from flask_cors import CORS
-from src.OCR.gpt4 import use_gpt4
-from src.OCR.opencv_ocr import opencv_ocr
-from src.Performance_and_evaluation.perf_measurement import compare_ocr
-from src.OCR.vertex_ocr import vertex_ocr
+from OCR.gpt4 import use_gpt4
+from Performance_and_evaluation.perf_measurement import compare_ocr
+from OCR.vertex_ocr import vertex_ocr
+from Extraction.gpt3_extraction import gpt3_extraction
 
 app = Flask(__name__)
 CORS(app)
@@ -19,7 +19,7 @@ def test(file_path):
     print("Localisation du script :", os.path.dirname(os.path.realpath(__file__)) + "/api.py")
     print("Chemin du fichier :", file_path)
     # Logique pour traiter le fichier
-    opencv_ocr(file_path)
+    #opencv_ocr(file_path)
     execution_time = time.time() - start_time
     return jsonify({"file_path": file_path, "execution_time": execution_time})
 
@@ -30,8 +30,12 @@ def test_vertex(file_path):
     print("Chemin du fichier :", file_path)
     # Logique pour traiter le fichier
     vertex_ocr(file_path)
+    # get text from ocr.txt
+    with open('ocr.txt', 'r', encoding='utf-8') as file:
+        content_ocr = file.read()
+    gpt3_extraction("ocr.txt")
     execution_time = time.time() - start_time
-    return jsonify({"file_path": file_path, "execution_time": execution_time})
+    return jsonify({"file_path": file_path, "execution_time": execution_time , "content_ocr": content_ocr})
 
 
 @app.route('/use_gpt4/<path:file_path>', methods=['GET'])

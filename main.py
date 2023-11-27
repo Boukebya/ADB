@@ -1,5 +1,5 @@
 import time
-from src.OCR.opencv_ocr import opencv_ocr, opencv_ocr_pdf, opencv_ocr_xlsx
+from Poubelle.opencv_ocr import opencv_ocr, opencv_ocr_pdf, opencv_ocr_xlsx
 
 
 def main_process(detect_file):

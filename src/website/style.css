@@ -12,6 +12,8 @@ body {
 }
 
 .container, .results-container {
+    width: 80%;
+    height: 80%;
     background-color: #333333;
     padding: 30px;
     border-radius: 10px;
@@ -60,7 +62,7 @@ button:hover {
     }
 }
 
-#filePathDisplay, #result {
+#filePathDisplay, #result, #result_extraction {
     background-color: #262626;
     color: #dcdcdc;
     padding: 15px;
@@ -72,9 +74,33 @@ button:hover {
     word-wrap: break-word;
 }
 
-#result {
+#result, #result_extraction {
     border: 1px solid #555555;
     min-height: 100px;
-    max-height: 300px;
+    max-height: 450px;
     overflow-y: auto;
+}
+
+#executionTime {
+    /* Styles for the execution time box */
+    width: 100%;
+    text-align: center;
+    /* Additional styles as needed */
+}
+
+.output-container {
+    /* Styles for the container holding both output boxes */
+    display: flex;
+    width: 100%; /* Make the container fill 100% of its parent */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    padding: 0; /* Adjust or remove padding as needed */
+    margin: 0; /* Adjust or remove margin as needed */
+}
+
+#ocrOutput, #extractionOutput {
+    /* Styles for the OCR and extraction output boxes */
+    flex: 1; /* Each box will take up equal space */
+    box-sizing: border-box; /* Includes padding and border */
+    margin: 0px; /* Remove margins to ensure the boxes fill the container */
+    padding: 5px; /* Adjust padding as needed */
 }

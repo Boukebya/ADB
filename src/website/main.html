@@ -3,27 +3,31 @@
 <head>
     <title>Explorateur de fichier et API</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class="container">
-    <input type="file" id="fileInput">
-    <button id="uploadButton">Upload File</button>
-    <button id="compare">Compare result with true text</button>
-    <button id="apiButton1">OpenCV</button>
-    <button id="apiButton2">Vertex</button>
-    <button id="apiButton3">Gpt4</button>
-    <p id="filePathDisplay"></p> <!-- Élément pour afficher le nom du fichier -->
+    <div class="container">
+        <input type="file" id="fileInput">
+        <button id="uploadButton">Upload File</button>
+        <button id="apiButton2">Vertex</button>
+        <button id="apiButton3">Gpt4</button>
 
-    <script src="script.js"></script>
-</div>
-        <p>Score:</p>
-        <pre id="score"></pre>
-        <p>Execution time:</p>
-        <pre id="time"></pre>
-        <p>Output:</p>
-        <pre id="result"></pre>
+        <div id="executionTime">
+            <p>Execution time:</p>
+            <pre id="time"></pre>
+        </div>
 
+        <div class="output-container">
+            <div id="ocrOutput">
+                <p>Output for OCR:</p>
+                <pre id="result"></pre>
+            </div>
+            <div id="extractionOutput">
+                <p>Output for extraction:</p>
+                <pre id="result_extraction"></pre>
+            </div>
+        </div>
 
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>

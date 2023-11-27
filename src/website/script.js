@@ -1,29 +1,8 @@
 // Appel des fonctions de l'API Flask
-document.getElementById('apiButton1').addEventListener('click', () => call_opencv("website/uploads/file.jpg"));
 document.getElementById('apiButton2').addEventListener('click', () => call_vertex("website/uploads/file.jpg"));
 document.getElementById('apiButton3').addEventListener('click', () => call_gpt4("website/uploads/file.jpg"));
 // Appel de la fonction pour enregistrer l'image dans le serveur
 document.getElementById('uploadButton').addEventListener('click', uploadFile);
-document.getElementById('compare').addEventListener('click',load_compare);
-
-
-// Fonctions pour appeler l'API pour openCV, Vertex et GPT-4
-function call_opencv(path) {
-    fetch(`http://127.0.0.1:5000/use_opencv/${path}`, {
-        method: 'GET'
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        getText(); // Appelle getText() après que la réponse a été traitée avec succès.
-        document.getElementById('time').innerHTML = data.execution_time;
-
-    })
-
-    .catch(error => {
-        console.error(error);
-    });
-}
 
 function call_vertex(path) {
 fetch(`http://127.0.0.1:5000/use_vertex/${path}`, {
@@ -32,8 +11,9 @@ fetch(`http://127.0.0.1:5000/use_vertex/${path}`, {
     .then(response => response.json())
     .then(data => {
         console.log(data);
-        getText(); // Appelle getText() après que la réponse a été traitée avec succès.
         document.getElementById('time').innerHTML = data.execution_time;
+        document.getElementById('result').innerHTML = data.content_ocr;
+        getText();
 
     })
     .catch(error => {
@@ -67,7 +47,7 @@ function getText() {
     .then(data => {
     // Remplace les sauts de ligne par des balises <br> pour l'affichage HTML
     const formattedText = data.text.replace(/\n/g, '<br>');
-    document.getElementById('result').innerHTML = formattedText;
+    document.getElementById('result_extraction').innerHTML = formattedText;
 })
     .catch(error => console.error("Erreur lors de la récupération des données :", error));
 }
@@ -99,23 +79,4 @@ function uploadFile() {
     });
 }
 
-// Fonction pour comparer les résultats
-function load_compare() {
-    fetch('http://127.0.0.1:5000/compare')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Erreur réseau'); // Gère les réponses non-200
-        }
-        return response.json(); // Convertit la réponse en JSON
-    })
-    .then(data => {
-        // Assurez-vous que "score" est bien une clé dans "data"
-        const score = data.score;
-        document.getElementById('score').innerHTML = score;
-    })
-    .catch(error => {
-        console.error('Erreur lors de la récupération des données:', error);
-        // Gérer l'erreur, par exemple en affichant un message à l'utilisateur
-    });
-}
 

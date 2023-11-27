@@ -2,9 +2,12 @@ from google.api_core.client_options import ClientOptions
 from google.cloud import documentai_v1 as documentai
 from google.oauth2 import service_account
 
+from Extraction.gpt3_extraction import gpt3_extraction
+
+
 def vertex_ocr(file_path):
     # Spécifiez le chemin vers votre fichier de clés de compte de service
-    json_credentials_path = "../google.json"
+    json_credentials_path = "google.json"
 
     # Chargez explicitement les informations d'identification à partir du fichier JSON
     credentials = service_account.Credentials.from_service_account_file(json_credentials_path)
