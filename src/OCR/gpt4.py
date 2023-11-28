@@ -1,6 +1,6 @@
 import base64
 import requests
-
+import json
 
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
@@ -23,6 +23,9 @@ def use_gpt4(file_path):
         "Content-Type": "application/json",
         "Authorization": f"Bearer {api_key}"
     }
+    annuaire = json.load(open("Matching/annuaire.json", "r", encoding="utf-8"))
+    annuaire_str = json.dumps(annuaire)
+
     payload = {
         "model": "gpt-4-vision-preview",
         "temperature": 0,  # Valeur faible pour moins d'interprétation
@@ -32,17 +35,9 @@ def use_gpt4(file_path):
                 "content": [
                     {
                         "type": "text",
-                        "text": """fais une liste de toutes les fournitures
-             scolaire dans le texte suivant sous forme produit:nombre, il faut faire une ligne par couleur pour les produits
-             similaire , le nombre doit être un entier qui vaut 1 par défaut, et correspond aux nombres d'articles sur la liste,
-             donne moi uniquement la liste en sortie en format : (
-             {
-  "name": "", contient le nom du produit avec le format le poids la marque la couleur la taille dans une seul string sans virgule
-  "nombre": "", contient le nombre d'articles de ce produit à acheter, attention dans le cas d'un produit avec plusieurs couleurs,
-  s'il est écrit 4 stylo, bleu vert rouge et bleu, la somme est de 4 donc chaque nombre sera à 1
-}
-)
-            """,
+                        "text": f"Je t'ai fourni une liste scolaire, il faut que tu l'analyse et en extrais tous les éléments correspondanr à des fournitures scolaires, extraits chaque éléments et associe chacun des articles extraits avec l'élément de cette annuaire qui a le plus de correspondance: https://drive.google.com/file/d/1UIxqO0-kBwAN5A9mL3w7vzdJs6SRwWc6/view?usp=sharing"
+
+                                ,
                         #"text": "Extrais moi tout le texte de l'image suivante, sans faire d'erreur et en gardant la mise en page, n'oublie aucun mot et garde absolument tout le contenu:"
                     },
                     {
