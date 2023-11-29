@@ -16,16 +16,34 @@
             <pre id="time"></pre>
         </div>
 
-        <div class="output-container">
-            <div id="ocrOutput">
+
+        <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'OCR')" id="defaultOpen">Output for OCR</button>
+      <button class="tablinks" onclick="openTab(event, 'Extraction')">Output for extraction</button>
+      <button class="tablinks" onclick="openTab(event, 'Matching')">Output for matching</button>
+    </div>
+
+    <!-- Contenu des onglets -->
+    <div id="OCR" class="tabcontent">
+      <div id="ocrOutput">
                 <p>Output for OCR:</p>
                 <pre id="result"></pre>
-            </div>
-            <div id="extractionOutput">
+      </div>
+    </div>
+
+    <div id="Extraction" class="tabcontent">
+        <div id="extractionOutput">
                 <p>Output for extraction:</p>
                 <pre id="result_extraction"></pre>
             </div>
-        </div>
+    </div>
+
+    <div id="Matching" class="tabcontent">
+      <div id="matchingOutput">
+                <p>Output for matching:</p>
+                <pre id="result_matching"></pre>
+            </div>
+    </div>
 
         <script src="script.js"></script>
     </div>

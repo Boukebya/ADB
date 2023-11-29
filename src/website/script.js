@@ -4,6 +4,27 @@ document.getElementById('apiButton3').addEventListener('click', () => call_gpt4(
 // Appel de la fonction pour enregistrer l'image dans le serveur
 document.getElementById('uploadButton').addEventListener('click', uploadFile);
 
+
+//afficher la tab OCR par défaut
+document.getElementById("defaultOpen").click();
+
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
+
 function call_vertex(path) {
 fetch(`http://127.0.0.1:5000/use_vertex/${path}`, {
         method: 'GET'
@@ -13,7 +34,8 @@ fetch(`http://127.0.0.1:5000/use_vertex/${path}`, {
         console.log(data);
         document.getElementById('time').innerHTML = data.execution_time;
         document.getElementById('result').innerHTML = data.content_ocr;
-        getText();
+        document.getElementById('result_extraction').innerHTML = data.result_extraction;
+        document.getElementById('result_matching').innerHTML = data.matching;
 
     })
     .catch(error => {

@@ -7,6 +7,7 @@ from OCR.gpt4 import use_gpt4
 from Performance_and_evaluation.perf_measurement import compare_ocr
 from OCR.vertex_ocr import vertex_ocr
 from Extraction.gpt3_extraction import gpt3_extraction
+from src.Matching.basic_comparison import gpt3_matching
 
 app = Flask(__name__)
 CORS(app)
@@ -33,9 +34,18 @@ def test_vertex(file_path):
     # get text from ocr.txt
     with open('ocr.txt', 'r', encoding='utf-8') as file:
         content_ocr = file.read()
+
     gpt3_extraction("ocr.txt")
+    with open('ocr.txt', 'r', encoding='utf-8') as file:
+        content_extraction = file.read()
+
+    gpt3_matching()
+    with open('ocr.txt', 'r', encoding='utf-8') as file:
+        matching = file.read()
+
     execution_time = time.time() - start_time
-    return jsonify({"file_path": file_path, "execution_time": execution_time , "content_ocr": content_ocr})
+    return jsonify({"file_path": file_path, "execution_time": execution_time , "content_ocr": content_ocr,
+                    "result_extraction": content_extraction, "matching": matching})
 
 
 @app.route('/use_gpt4/<path:file_path>', methods=['GET'])
