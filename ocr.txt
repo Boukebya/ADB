@@ -1,0 +1,201 @@
+[
+    {
+        "texte": "none",
+        "type": "compas",
+        "caracteristiques": {
+            "materiau": "metal",
+            "marque": "maped",
+            "coffret": "origin"
+        },
+        "reference": "map121651"
+    },
+    {
+        "texte": "crayon graphite hb bout gomme majuscule",
+        "type": "crayon",
+        "caracteristiques": {
+            "mine": "graphite hb",
+            "modele": "majuscule",
+            "gomme": true
+        },
+        "reference": "79009u12"
+    },
+    {
+        "texte": "gomme plastique",
+        "type": "gomme",
+        "caracteristiques": {
+            "matiere": "plastique"
+        },
+        "reference": "35329"
+    },
+    {
+        "texte": "none",
+        "type": "compas",
+        "caracteristiques": {
+            "materiau": "metal",
+            "marque": "maped",
+            "coffret": "origin"
+        },
+        "reference": "map121651"
+    },
+    {
+        "texte": "stylo bille bic cristal pointe moyenne bleu",
+        "type": "stylo bille",
+        "caracteristiques": {
+            "type": "cristal",
+            "pointe": "moyenne",
+            "couleur": "bleu"
+        },
+        "reference": "10"
+    },
+    {
+        "texte": "stylo bille bic cristal pointe fine vert",
+        "type": "stylo bille",
+        "caracteristiques": {
+            "type": "cristal",
+            "pointe": "fine",
+            "couleur": "vert"
+        },
+        "reference": "12611"
+    },
+    {
+        "texte": "stylo bille bic cristal pointe moyenne rouge",
+        "type": "stylo bille",
+        "caracteristiques": {
+            "type": "cristal",
+            "pointe": "moyenne",
+            "couleur": "rouge"
+        },
+        "reference": "12"
+    },
+    {
+        "texte": "surligneur large bleu",
+        "type": "surligneur",
+        "caracteristiques": {
+            "pointe": "large",
+            "couleur": "bleu"
+        },
+        "reference": "64135"
+    },
+    {
+        "texte": "surligneur large orange",
+        "type": "surligneur",
+        "caracteristiques": {
+            "pointe": "large",
+            "couleur": "orange"
+        },
+        "reference": "64136"
+    },
+    {
+        "texte": "ciseaux bouts ronds anneaux plastique 13 cm droitier",
+        "type": "ciseaux",
+        "caracteristiques": {
+            "bouts_ronds": true,
+            "anneaux": "plastique",
+            "longueur": "13 cm",
+            "droitier": true
+        },
+        "reference": "35325"
+    },
+    {
+        "texte": "tube 30 ml colle universelle transparente liquide",
+        "type": "colle",
+        "caracteristiques": {
+            "universelle": true,
+            "transparente": true,
+            "liquide": true,
+            "contenance": "30 ml"
+        },
+        "reference": "11440"
+    },
+    {
+        "texte": "etui 12 feutres giotto turbo advanced pointe moyenne",
+        "type": "etui 12 feutres giotto turbo advanced",
+        "caracteristique": {
+            "couleur": "assorties",
+            "format": "pointe moyenne",
+            "poids": ""
+        },
+        "reference": "24911"
+    },
+    {
+        "texte": "etui 12 crayons couleurs evolution triangulaire pointe moyenne",
+        "type": "etui 12 crayons couleurs evolution",
+        "caracteristique": {
+            "couleur": "",
+            "format": "triangulaire",
+            "poids": ""
+        },
+        "reference": "51138"
+    },
+    {
+        "texte": "none",
+        "type": "compas",
+        "caracteristiques": {
+            "materiau": "metal",
+            "marque": "maped",
+            "coffret": "origin"
+        },
+        "reference": "map121651"
+    },
+    {
+        "texte": "ardoise effacable sec 1 face uni 1 face quadrillee seyes format 20x28cm couleurs assorties",
+        "type": "ardoise",
+        "caracteristiques": {
+            "effacable_sec": true,
+            "uni": true,
+            "quadrillee_seyes": true,
+            "format": "20x28cm",
+            "couleurs_assorties": true
+        },
+        "reference": "68250"
+    },
+    {
+        "texte": "pochette 12 feutres coloriage couleurs assorties pointe fine",
+        "type": "pochette 12 feutres coloriage",
+        "caracteristique": {
+            "couleur": "assorties",
+            "format": "pointe fine",
+            "poids": ""
+        },
+        "reference": "65294"
+    },
+    {
+        "texte": "chiffonnette microfibre 20x20cm",
+        "type": "chiffonnette",
+        "caracteristiques": {
+            "microfibre": true,
+            "dimensions": "20x20cm"
+        },
+        "reference": "7950"
+    },
+    {
+        "texte": "chemise 3 rabats elastiques polypropylene opaque format 24x32 cm coloris bleu",
+        "type": "chemises",
+        "caracteristiques": {
+            "matiere": "polypropylene opaque",
+            "epaisseur": "",
+            "format": "24x32 cm",
+            "couleur": "bleu"
+        },
+        "reference": "42025"
+    },
+    {
+        "texte": "boite distributrice 100 mouchoirs",
+        "type": "mouchoirs",
+        "caracteristiques": {
+            "quantite": 100
+        },
+        "reference": "78756"
+    },
+    {
+        "texte": "ramette 500 feuilles papier blanc 80g format a4 budget",
+        "type": "papier",
+        "caracteristiques": {
+            "nombre_feuilles": 500,
+            "poids": "80g",
+            "format": "a4",
+            "marque": "budget"
+        },
+        "reference": "58429"
+    }
+]

@@ -1,0 +1,199 @@
+[
+    {
+        "texte": "piqure 32 pages 17x22 cm seyes mm papier 90g couverture polypropylene semi rigide bleu",
+        "type": "piqure 32 pages",
+        "caracteristique": [
+            {
+                "couleur": "bleu",
+                "format": "17x22 cm",
+                "poids": "90g"
+            }
+        ],
+        "reference": "76309"
+    },
+    {
+        "texte": "trousse double plateau rouge",
+        "type": "trousse",
+        "caracteristiques": {
+            "format": "double plateau",
+            "couleur": "rouge"
+        },
+        "reference": "15221"
+    },
+    {
+        "texte": "crayon triangulaire graphite hb groove slim",
+        "type": "crayon",
+        "caracteristiques": {
+            "type": "triangulaire",
+            "mine": "graphite hb",
+            "modele": "groove slim"
+        },
+        "reference": "76494u12"
+    },
+    {
+        "texte": "gomme plastique",
+        "type": "gomme",
+        "caracteristiques": {
+            "matiere": "plastique"
+        },
+        "reference": "35329"
+    },
+    "none score = 0",
+    {
+        "texte": "stylo bille bic cristal pointe moyenne bleu",
+        "type": "stylo bille",
+        "caracteristiques": {
+            "type": "cristal",
+            "pointe": "moyenne",
+            "couleur": "bleu"
+        },
+        "reference": "10"
+    },
+    {
+        "texte": "stylo bille bic cristal pointe fine vert",
+        "type": "stylo bille",
+        "caracteristiques": {
+            "type": "cristal",
+            "pointe": "fine",
+            "couleur": "vert"
+        },
+        "reference": "12611"
+    },
+    {
+        "texte": "stylo bille bic cristal pointe fine rouge",
+        "type": "stylo bille",
+        "caracteristiques": {
+            "type": "cristal",
+            "pointe": "fine",
+            "couleur": "rouge"
+        },
+        "reference": "12610"
+    },
+    {
+        "texte": "surligneur large bleu",
+        "type": "surligneur",
+        "caracteristiques": {
+            "pointe": "large",
+            "couleur": "bleu"
+        },
+        "reference": "64135"
+    },
+    {
+        "texte": "surligneur large orange",
+        "type": "surligneur",
+        "caracteristiques": {
+            "pointe": "large",
+            "couleur": "orange"
+        },
+        "reference": "64136"
+    },
+    {
+        "texte": "ciseaux bouts ronds 13cm",
+        "type": "ciseaux",
+        "caracteristiques": {
+            "bouts_ronds": true,
+            "longueur": "13 cm"
+        },
+        "reference": "32758"
+    },
+    {
+        "texte": "bâton colle 8g cleostick",
+        "type": "colle",
+        "caracteristiques": {
+            "contenance": "8g",
+            "marque": "cleostick"
+        },
+        "reference": "33317"
+    },
+    {
+        "texte": "etui 12 feutres pointe moyenne turbo color assortis",
+        "type": "etui 12 feutres",
+        "caracteristique": {
+            "couleur": "assortis",
+            "format": "pointe moyenne",
+            "poids": ""
+        },
+        "reference": "72539"
+    },
+    {
+        "texte": "pochette 12 crayons couleur triangulaires pointe large assortis",
+        "type": "pochette 12 crayons couleur",
+        "caracteristique": {
+            "couleur": "assortis",
+            "format": "triangulaires",
+            "poids": ""
+        },
+        "reference": "25826"
+    },
+    {
+        "texte": "regle plate plastique 20 cm",
+        "type": "regle",
+        "caracteristiques": {
+            "plate": true,
+            "matiere": "plastique",
+            "longueur": "20 cm"
+        },
+        "reference": "79842"
+    },
+    {
+        "texte": "ardoise effacable sec 1 cote uni 1 cote seyes incassable",
+        "type": "ardoise",
+        "caracteristiques": {
+            "effacable_sec": true,
+            "uni": true,
+            "seyes": true,
+            "incassable": true
+        },
+        "reference": "4495"
+    },
+    {
+        "texte": "pochette 12 feutres pointe fine couleurs assorties",
+        "type": "pochette 12 feutres",
+        "caracteristique": {
+            "couleur": "assorties",
+            "format": "pointe fine",
+            "poids": ""
+        },
+        "reference": "20230"
+    },
+    {
+        "texte": "chiffonnette microfibre 20x20cm",
+        "type": "chiffonnette",
+        "caracteristiques": {
+            "microfibre": true,
+            "dimensions": "20x20cm"
+        },
+        "reference": "7950"
+    },
+    {
+        "texte": "personnalisable 20 pochettes 40 vues format a4 cm incolore",
+        "type": "personnalisable",
+        "caracteristique": [
+            {
+                "couleur": "incolore",
+                "format": "a4 cm",
+                "poids": "40 vues"
+            }
+        ],
+        "reference": "67269"
+    },
+    {
+        "texte": "boite distributrice 100 mouchoirs",
+        "type": "mouchoirs",
+        "caracteristiques": {
+            "quantite": 100
+        },
+        "reference": "78756"
+    },
+    {
+        "texte": "ramette 500 feuilles papier blanc 80g format a4 budget",
+        "type": "papier",
+        "caracteristiques": {
+            "nombre_feuilles": 500,
+            "poids": "80g",
+            "format": "a4",
+            "marque": "budget"
+        },
+        "reference": "58429"
+    }
+]

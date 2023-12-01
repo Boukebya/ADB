@@ -8,10 +8,12 @@ def encode_image(image_path):
 
 
 def use_gpt4(file_path):
+    """
+    Fonction qui prend en paramètre le chemin d'un fichier image et qui retourne le texte contenu dans l'image
+    en utilisant l'API de OpenAI GPT-4, le texte est écrit dans un fichier texte nommé ocr.txt
+    :param file_path: Chemin du fichier image
+    """
     print("Chemin du fichier :", file_path)
-    # Logique pour traiter le fichier
-
-    # Function to encode the image
 
     # Getting the base64 string
     base64_image = encode_image(file_path)

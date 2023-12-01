@@ -1,5 +1,4 @@
 import time
-
 from src.Extraction.gpt3_extraction import gpt3_extraction
 from src.OCR.gpt4 import use_gpt4
 from Poubelle.opencv_ocr import opencv_ocr
@@ -44,5 +43,6 @@ def test_gpt4(file_path,file_verif,file_extract):
 
     return score
 
-data1 = test_gptvertex("../../images/1.jpg","../Furniture_list/data_1.txt","../Furniture_list/data_extraction_1.txt")
+data1 = test_gptvertex("../../data/images/1.jpg", "../../data/Furniture_list/data_1.txt",
+                       "../../data/Furniture_list/data_extraction_1.txt")
 

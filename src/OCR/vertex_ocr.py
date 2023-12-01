@@ -2,12 +2,16 @@ from google.api_core.client_options import ClientOptions
 from google.cloud import documentai_v1 as documentai
 from google.oauth2 import service_account
 
-from Extraction.gpt3_extraction import gpt3_extraction
-
 
 def vertex_ocr(file_path):
+    """
+    Fonction qui prend en paramètre le chemin d'un fichier image et qui retourne le texte contenu dans l'image
+    en utilisant l'API de Google Document AI, le texte est écrit dans un fichier texte nommé ocr.txt
+    :param file_path: Chemin du fichier image
+    """
+
     # Spécifiez le chemin vers votre fichier de clés de compte de service
-    json_credentials_path = "google.json"
+    json_credentials_path = "src/google.json"
 
     # Chargez explicitement les informations d'identification à partir du fichier JSON
     credentials = service_account.Credentials.from_service_account_file(json_credentials_path)
