@@ -8,6 +8,7 @@ from Performance_and_evaluation.perf_measurement import compare_ocr
 from OCR.vertex_ocr import vertex_ocr
 from Extraction.gpt3_extraction import gpt3_extraction
 from Matching.basic_comparison import gpt3_matching
+from Matching.levenschtein_matching import use_levenschtein
 
 app = Flask(__name__)
 CORS(app)
@@ -57,7 +58,8 @@ def vertex_request(file_path):
         print("done extraction")
 
     # Matching using basic comparison
-    gpt3_matching()
+    #gpt3_matching()
+    use_levenschtein()
     with open('ocr.txt', 'r', encoding='utf-8') as file:
         matching = file.read()
     print("done matching")

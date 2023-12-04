@@ -27,10 +27,10 @@ def gpt3_matching():
     annuaire = json.load(open("src/Matching/annuaire2.json", "r", encoding="utf-8"))
     annuaire = annuaire["entities"]
 
-    liste = correspondance_liste(content_ocr, annuaire)
+    liste_correspondance = correspondance_liste(content_ocr, annuaire)
     # put it in ocr.txt
     with open('ocr.txt', 'w', encoding='utf-8') as f:
-        json.dump(liste, f, ensure_ascii=False, indent=4)
+        json.dump(liste_correspondance, f, ensure_ascii=False, indent=4)
 
 
 def correspondance(article, annuaire):
@@ -45,19 +45,28 @@ def correspondance(article, annuaire):
     scores = [0] * len(annuaire)
 
     mots_article = preprocess_string(article["name"])
+    important_word = preprocess_string(article["article"])
     sentence = ""
+    imp_word = ""
 
     for mot in mots_article:
         sentence += mot + " "
+    for mot in important_word:
+        imp_word += mot + " "
     # print("mots article : ", sentence)
 
     # Comparaison de chaque article dans l'annuaire avec chaque mot de l'article que l'on cherche à comparer
     for i, article in enumerate(annuaire):
         texte_entite = article["texte"]
 
+        if imp_word in texte_entite:
+            scores[i] += 3
+        else:
+            scores[i] -= 2
         # score = nombre de mots de l'article qui sont dans l'entité
         for mot in mots_article:
             # score + 1 si le mot est dans l'article de l'annuaire
+
             if mot in texte_entite:
                 scores[i] += 1
 
@@ -65,8 +74,9 @@ def correspondance(article, annuaire):
     max_score = max(scores)
 
     # Si aucun score n'est supérieur à 0, il n'y a pas de correspondance
-    if max_score == 0:
-        return "none score = 0"
+    if max_score < 0:
+        out = {"texte": "none"}
+        return out
 
     # Trouver l'index de l'entité avec le score le plus élevé
     index_max = scores.index(max_score)

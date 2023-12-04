@@ -1,201 +1,334 @@
+```json
 [
-    {
-        "texte": "none",
-        "type": "compas",
-        "caracteristiques": {
-            "materiau": "metal",
-            "marque": "maped",
-            "coffret": "origin"
-        },
-        "reference": "map121651"
-    },
-    {
-        "texte": "crayon graphite hb bout gomme majuscule",
-        "type": "crayon",
-        "caracteristiques": {
-            "mine": "graphite hb",
-            "modele": "majuscule",
-            "gomme": true
-        },
-        "reference": "79009u12"
-    },
-    {
-        "texte": "gomme plastique",
-        "type": "gomme",
-        "caracteristiques": {
-            "matiere": "plastique"
-        },
-        "reference": "35329"
-    },
-    {
-        "texte": "none",
-        "type": "compas",
-        "caracteristiques": {
-            "materiau": "metal",
-            "marque": "maped",
-            "coffret": "origin"
-        },
-        "reference": "map121651"
-    },
-    {
-        "texte": "stylo bille bic cristal pointe moyenne bleu",
-        "type": "stylo bille",
-        "caracteristiques": {
-            "type": "cristal",
-            "pointe": "moyenne",
-            "couleur": "bleu"
-        },
-        "reference": "10"
-    },
-    {
-        "texte": "stylo bille bic cristal pointe fine vert",
-        "type": "stylo bille",
-        "caracteristiques": {
-            "type": "cristal",
-            "pointe": "fine",
-            "couleur": "vert"
-        },
-        "reference": "12611"
-    },
-    {
-        "texte": "stylo bille bic cristal pointe moyenne rouge",
-        "type": "stylo bille",
-        "caracteristiques": {
-            "type": "cristal",
-            "pointe": "moyenne",
-            "couleur": "rouge"
-        },
-        "reference": "12"
-    },
-    {
-        "texte": "surligneur large bleu",
-        "type": "surligneur",
-        "caracteristiques": {
-            "pointe": "large",
-            "couleur": "bleu"
-        },
-        "reference": "64135"
-    },
-    {
-        "texte": "surligneur large orange",
-        "type": "surligneur",
-        "caracteristiques": {
-            "pointe": "large",
-            "couleur": "orange"
-        },
-        "reference": "64136"
-    },
-    {
-        "texte": "ciseaux bouts ronds anneaux plastique 13 cm droitier",
-        "type": "ciseaux",
-        "caracteristiques": {
-            "bouts_ronds": true,
-            "anneaux": "plastique",
-            "longueur": "13 cm",
-            "droitier": true
-        },
-        "reference": "35325"
-    },
-    {
-        "texte": "tube 30 ml colle universelle transparente liquide",
-        "type": "colle",
-        "caracteristiques": {
-            "universelle": true,
-            "transparente": true,
-            "liquide": true,
-            "contenance": "30 ml"
-        },
-        "reference": "11440"
-    },
-    {
-        "texte": "etui 12 feutres giotto turbo advanced pointe moyenne",
-        "type": "etui 12 feutres giotto turbo advanced",
-        "caracteristique": {
-            "couleur": "assorties",
-            "format": "pointe moyenne",
-            "poids": ""
-        },
-        "reference": "24911"
-    },
-    {
-        "texte": "etui 12 crayons couleurs evolution triangulaire pointe moyenne",
-        "type": "etui 12 crayons couleurs evolution",
-        "caracteristique": {
-            "couleur": "",
-            "format": "triangulaire",
-            "poids": ""
-        },
-        "reference": "51138"
-    },
-    {
-        "texte": "none",
-        "type": "compas",
-        "caracteristiques": {
-            "materiau": "metal",
-            "marque": "maped",
-            "coffret": "origin"
-        },
-        "reference": "map121651"
-    },
-    {
-        "texte": "ardoise effacable sec 1 face uni 1 face quadrillee seyes format 20x28cm couleurs assorties",
-        "type": "ardoise",
-        "caracteristiques": {
-            "effacable_sec": true,
-            "uni": true,
-            "quadrillee_seyes": true,
-            "format": "20x28cm",
-            "couleurs_assorties": true
-        },
-        "reference": "68250"
-    },
-    {
-        "texte": "pochette 12 feutres coloriage couleurs assorties pointe fine",
-        "type": "pochette 12 feutres coloriage",
-        "caracteristique": {
-            "couleur": "assorties",
-            "format": "pointe fine",
-            "poids": ""
-        },
-        "reference": "65294"
-    },
-    {
-        "texte": "chiffonnette microfibre 20x20cm",
-        "type": "chiffonnette",
-        "caracteristiques": {
-            "microfibre": true,
-            "dimensions": "20x20cm"
-        },
-        "reference": "7950"
-    },
-    {
-        "texte": "chemise 3 rabats elastiques polypropylene opaque format 24x32 cm coloris bleu",
-        "type": "chemises",
-        "caracteristiques": {
-            "matiere": "polypropylene opaque",
-            "epaisseur": "",
-            "format": "24x32 cm",
-            "couleur": "bleu"
-        },
-        "reference": "42025"
-    },
-    {
-        "texte": "boite distributrice 100 mouchoirs",
-        "type": "mouchoirs",
-        "caracteristiques": {
-            "quantite": 100
-        },
-        "reference": "78756"
-    },
-    {
-        "texte": "ramette 500 feuilles papier blanc 80g format a4 budget",
-        "type": "papier",
-        "caracteristiques": {
-            "nombre_feuilles": 500,
-            "poids": "80g",
-            "format": "a4",
-            "marque": "budget"
-        },
-        "reference": "58429"
-    }
+  {
+    "name": "cahier grand format 96 pages grands carreaux",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "protège-documents 21 x 29,7 plastifié",
+    "article": "protège-documents",
+    "nombre": 1
+  },
+  {
+    "name": "raquette de badminton",
+    "article": "raquette",
+    "nombre": 1
+  },
+  {
+    "name": "raquette de tennis de table",
+    "article": "raquette",
+    "nombre": 1
+  },
+  {
+    "name": "agenda scolaire",
+    "article": "agenda",
+    "nombre": 1
+  },
+  {
+    "name": "stylo plume",
+    "article": "stylo",
+    "nombre": 1
+  },
+  {
+    "name": "tube de colle",
+    "article": "colle",
+    "nombre": 1
+  },
+  {
+    "name": "crayon de bois",
+    "article": "crayon",
+    "nombre": 1
+  },
+  {
+    "name": "Fluo",
+    "article": "surligneur",
+    "nombre": 1
+  },
+  {
+    "name": "stylos à billes bleu",
+    "article": "stylos",
+    "nombre": 1
+  },
+  {
+    "name": "stylos à billes rouge",
+    "article": "stylos",
+    "nombre": 1
+  },
+  {
+    "name": "stylos à billes vert",
+    "article": "stylos",
+    "nombre": 1
+  },
+  {
+    "name": "stylos à billes noir",
+    "article": "stylos",
+    "nombre": 1
+  },
+  {
+    "name": "gommes",
+    "article": "gomme",
+    "nombre": 1
+  },
+  {
+    "name": "ciseaux",
+    "article": "ciseaux",
+    "nombre": 1
+  },
+  {
+    "name": "règle plate graduée 30 CM",
+    "article": "règle",
+    "nombre": 1
+  },
+  {
+    "name": "scotch",
+    "article": "ruban adhésif",
+    "nombre": 1
+  },
+  {
+    "name": "perforatrice",
+    "article": "perforatrice",
+    "nombre": 1
+  },
+  {
+    "name": "taille-crayons",
+    "article": "taille-crayons",
+    "nombre": 1
+  },
+  {
+    "name": "clé USB",
+    "article": "clé USB",
+    "nombre": 1
+  },
+  {
+    "name": "Correcteur roller",
+    "article": "correcteur",
+    "nombre": 1
+  },
+  {
+    "name": "crayons de papier HB",
+    "article": "crayons",
+    "nombre": 1
+  },
+  {
+    "name": "crayons de papier 2B",
+    "article": "crayons",
+    "nombre": 1
+  },
+  {
+    "name": "porte vues 60-80 pages",
+    "article": "porte vues",
+    "nombre": 1
+  },
+  {
+    "name": "pochette de feuilles cartonnées 224g/24x32",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "chemise à élastique 24x32",
+    "article": "chemise",
+    "nombre": 1
+  },
+  {
+    "name": "dictionnaire",
+    "article": "dictionnaire",
+    "nombre": 1
+  },
+  {
+    "name": "feuilles simples perforées grands carreaux grand format",
+    "article": "feuilles",
+    "nombre": 1
+  },
+  {
+    "name": "feuilles doubles perforées grands carreaux grand format",
+    "article": "feuilles",
+    "nombre": 1
+  },
+  {
+    "name": "pochette plastifiée rigide grand format",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "papier calque",
+    "article": "papier",
+    "nombre": 1
+  },
+  {
+    "name": "papier millimétré",
+    "article": "papier",
+    "nombre": 1
+  },
+  {
+    "name": "pochette à rabats élastique",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "cahier d'essai",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "cahiers 24x32 de 96 pages",
+    "article": "cahiers",
+    "nombre": 2
+  },
+  {
+    "name": "équerre",
+    "article": "équerre",
+    "nombre": 1
+  },
+  {
+    "name": "rapporteur",
+    "article": "rapporteur",
+    "nombre": 1
+  },
+  {
+    "name": "compas",
+    "article": "compas",
+    "nombre": 1
+  },
+  {
+    "name": "règle graduée",
+    "article": "règle",
+    "nombre": 1
+  },
+  {
+    "name": "pochette de rangement grand format avec élastiques",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "calculatrice scientifique",
+    "article": "calculatrice",
+    "nombre": 1
+  },
+  {
+    "name": "porte-vues",
+    "article": "porte-vues",
+    "nombre": 1
+  },
+  {
+    "name": "porte-bloc à rabat",
+    "article": "porte-bloc",
+    "nombre": 1
+  },
+  {
+    "name": "feuilles simples à grands carreaux",
+    "article": "feuilles",
+    "nombre": 10
+  },
+  {
+    "name": "feuilles simples à grands carreaux",
+    "article": "feuilles",
+    "nombre": 10
+  },
+  {
+    "name": "feuilles simples à grands carreaux",
+    "article": "feuilles",
+    "nombre": 10
+  },
+  {
+    "name": "feuilles simples à grands carreaux",
+    "article": "feuilles",
+    "nombre": 10
+  },
+  {
+    "name": "porte-vues",
+    "article": "porte-vues",
+    "nombre": 1
+  },
+  {
+    "name": "crayon de bois",
+    "article": "crayon",
+    "nombre": 1
+  },
+  {
+    "name": "surligneur",
+    "article": "surligneur",
+    "nombre": 1
+  },
+  {
+    "name": "feutres fins",
+    "article": "feutres",
+    "nombre": 1
+  },
+  {
+    "name": "protège-cahiers transparents",
+    "article": "protège-cahiers",
+    "nombre": 2
+  },
+  {
+    "name": "blouse en coton à longues manches",
+    "article": "blouse",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 24x32cm grands carreaux",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "petit dictionnaire français-allemand",
+    "article": "dictionnaire",
+    "nombre": 1
+  },
+  {
+    "name": "grand cahier de T.P.",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "blouse de coton",
+    "article": "blouse",
+    "nombre": 1
+  },
+  {
+    "name": "pochette cartonnée rouge avec élastique 21x29,7",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "petit cahier grands carreaux",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 21x29,7cm grands carreaux",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "classeur 21 x 29,7 rigide",
+    "article": "classeur",
+    "nombre": 1
+  },
+  {
+    "name": "paquet de pochettes plastiques perforées 21 x 29,7",
+    "article": "pochettes",
+    "nombre": 1
+  },
+  {
+    "name": "intercalaires cartonnés",
+    "article": "intercalaires",
+    "nombre": 3
+  },
+  {
+    "name": "grands cahiers format 24x32 de 96 pages",
+    "article": "cahiers",
+    "nombre": 2
+  },
+  {
+    "name": "protège-cahier bleu",
+    "article": "protège-cahier",
+    "nombre": 1
+  },
+  {
+    "name": "pochette cartonnée A4",
+    "article": "pochette",
+    "nombre": 1
+  }
 ]
+```

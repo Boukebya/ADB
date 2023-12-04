@@ -23,19 +23,29 @@ def gpt3_extraction(file_path):
              scolaire dans le texte suivant sous forme :
              {
              "name": "nom de l'article avec ses détails",
+             "article": "nom de l'article le plus important sans détails",
              "nombre": 1 
              },
-              name correspond au nom du produit que tu as trouvé, avec ses dimensions et poids si disponible uniquement,
+              name correspond au nom du produit que tu as trouvé au singulier, j'insiste, mets les articles au singulier,
+              par exemple, gommes -> gomme, cahiers -> cahier, stylos -> stylo, etc.
+              avec ses dimensions et poids si disponible uniquement,
               J'insiste sur le uniquement, ne met pas de détail inutile, le but et de retrouver la fourniture scolaire
               dans une base de données d'articles après, garde donc les détails essentiels à cette tâche.
-              Ne mets pas le nombre d'articles à acheter dans name.
+              Ne mets pas le nombre d'articles à acheter dans name. Aussi, si name n'est pas clair, par exemple,
+              fluo, ou scotch, rajoute des synonymes tel que surligneur, ou ruban adhésif ou rouleau pour tous les articles.
+              Vraiment, rajoute des adjectifs quand le mot est trop vague comme scotch ou fluo, c'est nécessaire.
               Les fournitures que tu vas retrouvés vont être comparés à une liste dont les éléments ressemble à cela:
-              "texte": "cahier texte reliure integrale 124 pages format 17x22 cm reglure seyes papier blanc 70g",
-              garde donc les détails similaire.
-              number correspond au nombre d'articles a acheter dans la liste, si ce n'est pas indique met 1 par défaut.
+              "name": "cahier texte reliure integrale 124 pages format 17x22 cm reglure seyes papier blanc 70g",
+              garde donc les détails similaire. Si possible, après cela, rajoute des synonymes du mot le plus important
+                de l'article, par exemple, scotch -> ruban adhésif, porte vues -> protège document, etc.
+              "article" correspond au nom de l'article le plus important, sans détails, crayon de bois -> crayon,
+                cahier de texte -> cahier, etc. Fais simple, cela doit être le nom de l'article le plus simple possible.
+                en 1 ou 2 mots MAXIMUM.
+              nombre correspond au nombre d'articles a acheter dans la liste, si ce n'est pas indique met 1 par défaut.
               Fais bien attention à ne pas surinterpréter le texte.
-              Aussi, fais attention dans le cas ou il y'a le même nom d'articles en couleur différente,
-              créé un article pour chaque couleur. 
+              Aussi, fais attention dans le cas ou il y'a le même nom d'articles en couleur différente, par exemple,
+              cahier 24x32 rouge, bleu, vert, ou stylo bleu, rouge, vert, etc. Dans ce cas-là, il faut que tu
+              créé une entité pour chaque couleur, N'oublie pas de mettre les noms au singulier dans ce cas-là.
               ne donne que le contenu en json, pas de texte en plus, n'oublie pas les [ et ] au début et a la fin du json.
             """ + file}
         ]
