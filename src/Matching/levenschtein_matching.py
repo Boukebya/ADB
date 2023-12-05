@@ -18,14 +18,14 @@ def get_best_match(str, annuaire):
 
     scores = []
     for article in annuaire:
-        scores.append(fuzz.ratio(str["name"], article["texte"]))
+        scores.append(fuzz.partial_ratio(str["name"], article["texte"]))
     max_score = max(scores)
     #print(max_score)
 
 
     # return a random article with max score
     for i, article in enumerate(annuaire):
-        if scores[i] == max_score and max_score > 20:
+        if scores[i] == max_score and max_score > 30:
             print(str["name"]," --> ", article["texte"], " : ", max_score)
             return article
 
@@ -100,6 +100,10 @@ def correspondance_pre(article, annuaire):
         else:
             scores[i] -= 2
 
+        # if tex_te_entite contains "cahier" and not "protege" and sentence contains "protege cahier" -5 in score
+        if ("cahier" in sentence and "protege" not in sentence) and ("protege cahier" in texte_entite):
+                scores[i] -= 10
+
         # score = nombre de mots de l'article qui sont dans l'entité
         for mot in mots_article:
             # score + 1 si le mot est dans l'article de l'annuaire
@@ -107,13 +111,15 @@ def correspondance_pre(article, annuaire):
             if mot in texte_entite:
                 scores[i] += 1
 
+
+
     # Trouver l'entité avec le score le plus élevé
     max_score = max(scores)
     #print(max_score)
 
     # Si aucun score n'est supérieur à 0, il n'y a pas de correspondance
     if max_score <= 0:
-        print(sentence, " --> ", "Aucun score > 0 ")
+        print(sentence, " --> ", "Aucun score > 0 dans le basic matching")
         out = {"texte": "Aucun score > 0 ", "rÃ©fÃ©rence": "none"}
         return out
 

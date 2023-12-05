@@ -1,334 +1,56 @@
-```json
 [
-  {
-    "name": "cahier grand format 96 pages grands carreaux",
-    "article": "cahier",
-    "nombre": 1
-  },
-  {
-    "name": "protège-documents 21 x 29,7 plastifié",
-    "article": "protège-documents",
-    "nombre": 1
-  },
-  {
-    "name": "raquette de badminton",
-    "article": "raquette",
-    "nombre": 1
-  },
-  {
-    "name": "raquette de tennis de table",
-    "article": "raquette",
-    "nombre": 1
-  },
-  {
-    "name": "agenda scolaire",
-    "article": "agenda",
-    "nombre": 1
-  },
-  {
-    "name": "stylo plume",
-    "article": "stylo",
-    "nombre": 1
-  },
-  {
-    "name": "tube de colle",
-    "article": "colle",
-    "nombre": 1
-  },
-  {
-    "name": "crayon de bois",
-    "article": "crayon",
-    "nombre": 1
-  },
-  {
-    "name": "Fluo",
-    "article": "surligneur",
-    "nombre": 1
-  },
-  {
-    "name": "stylos à billes bleu",
-    "article": "stylos",
-    "nombre": 1
-  },
-  {
-    "name": "stylos à billes rouge",
-    "article": "stylos",
-    "nombre": 1
-  },
-  {
-    "name": "stylos à billes vert",
-    "article": "stylos",
-    "nombre": 1
-  },
-  {
-    "name": "stylos à billes noir",
-    "article": "stylos",
-    "nombre": 1
-  },
-  {
-    "name": "gommes",
-    "article": "gomme",
-    "nombre": 1
-  },
-  {
-    "name": "ciseaux",
-    "article": "ciseaux",
-    "nombre": 1
-  },
-  {
-    "name": "règle plate graduée 30 CM",
-    "article": "règle",
-    "nombre": 1
-  },
-  {
-    "name": "scotch",
-    "article": "ruban adhésif",
-    "nombre": 1
-  },
-  {
-    "name": "perforatrice",
-    "article": "perforatrice",
-    "nombre": 1
-  },
-  {
-    "name": "taille-crayons",
-    "article": "taille-crayons",
-    "nombre": 1
-  },
-  {
-    "name": "clé USB",
-    "article": "clé USB",
-    "nombre": 1
-  },
-  {
-    "name": "Correcteur roller",
-    "article": "correcteur",
-    "nombre": 1
-  },
-  {
-    "name": "crayons de papier HB",
-    "article": "crayons",
-    "nombre": 1
-  },
-  {
-    "name": "crayons de papier 2B",
-    "article": "crayons",
-    "nombre": 1
-  },
-  {
-    "name": "porte vues 60-80 pages",
-    "article": "porte vues",
-    "nombre": 1
-  },
-  {
-    "name": "pochette de feuilles cartonnées 224g/24x32",
-    "article": "pochette",
-    "nombre": 1
-  },
-  {
-    "name": "chemise à élastique 24x32",
-    "article": "chemise",
-    "nombre": 1
-  },
-  {
-    "name": "dictionnaire",
-    "article": "dictionnaire",
-    "nombre": 1
-  },
-  {
-    "name": "feuilles simples perforées grands carreaux grand format",
-    "article": "feuilles",
-    "nombre": 1
-  },
-  {
-    "name": "feuilles doubles perforées grands carreaux grand format",
-    "article": "feuilles",
-    "nombre": 1
-  },
-  {
-    "name": "pochette plastifiée rigide grand format",
-    "article": "pochette",
-    "nombre": 1
-  },
-  {
-    "name": "papier calque",
-    "article": "papier",
-    "nombre": 1
-  },
-  {
-    "name": "papier millimétré",
-    "article": "papier",
-    "nombre": 1
-  },
-  {
-    "name": "pochette à rabats élastique",
-    "article": "pochette",
-    "nombre": 1
-  },
-  {
-    "name": "cahier d'essai",
-    "article": "cahier",
-    "nombre": 1
-  },
-  {
-    "name": "cahiers 24x32 de 96 pages",
-    "article": "cahiers",
-    "nombre": 2
-  },
-  {
-    "name": "équerre",
-    "article": "équerre",
-    "nombre": 1
-  },
-  {
-    "name": "rapporteur",
-    "article": "rapporteur",
-    "nombre": 1
-  },
-  {
-    "name": "compas",
-    "article": "compas",
-    "nombre": 1
-  },
-  {
-    "name": "règle graduée",
-    "article": "règle",
-    "nombre": 1
-  },
-  {
-    "name": "pochette de rangement grand format avec élastiques",
-    "article": "pochette",
-    "nombre": 1
-  },
-  {
-    "name": "calculatrice scientifique",
-    "article": "calculatrice",
-    "nombre": 1
-  },
-  {
-    "name": "porte-vues",
-    "article": "porte-vues",
-    "nombre": 1
-  },
-  {
-    "name": "porte-bloc à rabat",
-    "article": "porte-bloc",
-    "nombre": 1
-  },
-  {
-    "name": "feuilles simples à grands carreaux",
-    "article": "feuilles",
-    "nombre": 10
-  },
-  {
-    "name": "feuilles simples à grands carreaux",
-    "article": "feuilles",
-    "nombre": 10
-  },
-  {
-    "name": "feuilles simples à grands carreaux",
-    "article": "feuilles",
-    "nombre": 10
-  },
-  {
-    "name": "feuilles simples à grands carreaux",
-    "article": "feuilles",
-    "nombre": 10
-  },
-  {
-    "name": "porte-vues",
-    "article": "porte-vues",
-    "nombre": 1
-  },
-  {
-    "name": "crayon de bois",
-    "article": "crayon",
-    "nombre": 1
-  },
-  {
-    "name": "surligneur",
-    "article": "surligneur",
-    "nombre": 1
-  },
-  {
-    "name": "feutres fins",
-    "article": "feutres",
-    "nombre": 1
-  },
-  {
-    "name": "protège-cahiers transparents",
-    "article": "protège-cahiers",
-    "nombre": 2
-  },
-  {
-    "name": "blouse en coton à longues manches",
-    "article": "blouse",
-    "nombre": 1
-  },
-  {
-    "name": "cahier 24x32cm grands carreaux",
-    "article": "cahier",
-    "nombre": 1
-  },
-  {
-    "name": "petit dictionnaire français-allemand",
-    "article": "dictionnaire",
-    "nombre": 1
-  },
-  {
-    "name": "grand cahier de T.P.",
-    "article": "cahier",
-    "nombre": 1
-  },
-  {
-    "name": "blouse de coton",
-    "article": "blouse",
-    "nombre": 1
-  },
-  {
-    "name": "pochette cartonnée rouge avec élastique 21x29,7",
-    "article": "pochette",
-    "nombre": 1
-  },
-  {
-    "name": "petit cahier grands carreaux",
-    "article": "cahier",
-    "nombre": 1
-  },
-  {
-    "name": "cahier 21x29,7cm grands carreaux",
-    "article": "cahier",
-    "nombre": 1
-  },
-  {
-    "name": "classeur 21 x 29,7 rigide",
-    "article": "classeur",
-    "nombre": 1
-  },
-  {
-    "name": "paquet de pochettes plastiques perforées 21 x 29,7",
-    "article": "pochettes",
-    "nombre": 1
-  },
-  {
-    "name": "intercalaires cartonnés",
-    "article": "intercalaires",
-    "nombre": 3
-  },
-  {
-    "name": "grands cahiers format 24x32 de 96 pages",
-    "article": "cahiers",
-    "nombre": 2
-  },
-  {
-    "name": "protège-cahier bleu",
-    "article": "protège-cahier",
-    "nombre": 1
-  },
-  {
-    "name": "pochette cartonnée A4",
-    "article": "pochette",
-    "nombre": 1
-  }
+{"name": "trousse", "article": "trousse", "nombre": 1},
+{"name": "bic pointe fine bleu", "article": "bic", "nombre": 1},
+{"name": "bic pointe fine rouge", "article": "bic", "nombre": 1},
+{"name": "bic pointe fine vert", "article": "bic", "nombre": 1},
+{"name": "bic pointe fine noir", "article": "bic", "nombre": 1},
+{"name": "stylo-plume encre bleue", "article": "stylo-plume", "nombre": 1},
+{"name": "effaceur", "article": "effaceur", "nombre": 1},
+{"name": "porte-mine 0.7mm", "article": "porte-mine", "nombre": 1},
+{"name": "gomme", "article": "gomme", "nombre": 1},
+{"name": "crayon HB papier", "article": "crayon", "nombre": 1},
+{"name": "taille-crayon", "article": "taille-crayon", "nombre": 1},
+{"name": "surligneur fluo jaune", "article": "surligneur", "nombre": 1},
+{"name": "surligneur fluo vert", "article": "surligneur", "nombre": 1},
+{"name": "surligneur fluo orange", "article": "surligneur", "nombre": 1},
+{"name": "surligneur fluo rose", "article": "surligneur", "nombre": 1},
+{"name": "surligneur fluo bleu", "article": "surligneur", "nombre": 1},
+{"name": "clé USB 4Go", "article": "clé USB", "nombre": 1},
+{"name": "agenda scolaire", "article": "agenda", "nombre": 1},
+{"name": "ardoise Velléda", "article": "ardoise", "nombre": 1},
+{"name": "feutres Velléda", "article": "feutres", "nombre": 1},
+{"name": "chiffon", "article": "chiffon", "nombre": 1},
+{"name": "bloc-notes bureau 10,5x14,8cm", "article": "bloc-notes", "nombre": 1},
+{"name": "calculatrice Casio collège 2D FX92", "article": "calculatrice", "nombre": 1},
+{"name": "cahier couverture polypro. ligné 100 p. format 21x29,7cm réglure Seyès rouge", "article": "cahier", "nombre": 1},
+{"name": "cahier couverture polypro. ligné 100 p. format 21x29,7cm réglure Seyès bleu", "article": "cahier", "nombre": 1},
+{"name": "cahier couverture polypro. ligné 100 p. format 21x29,7cm réglure Seyès violet", "article": "cahier", "nombre": 1},
+{"name": "cahier 96 p. 21x29,7cm réglure Seyès grands carreaux", "article": "cahier", "nombre": 1},
+{"name": "protège-cahier transparent 21x29,7cm", "article": "protège-cahier", "nombre": 1},
+{"name": "chemise élastique grand format en carton avec rabats rouge", "article": "chemise élastique", "nombre": 1},
+{"name": "chemise élastique grand format en carton avec rabats vert", "article": "chemise élastique", "nombre": 1},
+{"name": "chemise élastique grand format en carton avec rabats bleu", "article": "chemise élastique", "nombre": 1},
+{"name": "chemise élastique grand format en carton avec rabats jaune", "article": "chemise élastique", "nombre": 1},
+{"name": "paquet de feuilles blanches perforées simples à grands carreaux", "article": "feuilles", "nombre": 1},
+{"name": "trieur de 12 compartiments", "article": "trieur", "nombre": 1},
+{"name": "dictionnaire Super MAJOR CM1-6ème Larousse", "article": "dictionnaire", "nombre": 1},
+{"name": "bescherelle de conjugaison", "article": "bescherelle", "nombre": 1},
+{"name": "pochette plastique perforée pour classeur 21x29,7cm", "article": "pochette plastique", "nombre": 1},
+{"name": "pochette de papier calque", "article": "pochette", "nombre": 1},
+{"name": "pochette Papier à dessin type Canson 24x32cm couleurs vives", "article": "pochette", "nombre": 1},
+{"name": "règle plate 30 cm rigide", "article": "règle", "nombre": 1},
+{"name": "compas", "article": "compas", "nombre": 1},
+{"name": "équerre", "article": "équerre", "nombre": 1},
+{"name": "paire de bons ciseaux", "article": "ciseaux", "nombre": 1},
+{"name": "stick de colle de type UHU", "article": "colle", "nombre": 1},
+{"name": "feutres", "article": "feutres", "nombre": 1},
+{"name": "crayons de couleur", "article": "crayons", "nombre": 1},
+{"name": "boîte de mouchoirs", "article": "mouchoirs", "nombre": 2},
+{"name": "cahier couverture polypro. ligné 100 p. format 21x29,7cm réglure Seyès jaune", "article": "cahier", "nombre": 1},
+{"name": "cahier couverture polypro. ligné 100 p. format 21x29,7cm réglure Seyès vert", "article": "cahier", "nombre": 1},
+{"name": "cahier de Travaux Pratiques couverture polypro. transparente 100 p. format 21x29,7cm réglure Seyès", "article": "cahier", "nombre": 1},
+{"name": "classeur rigide 21x29,7cm 3 cm d'épaisseur à 4 anneaux bleu", "article": "classeur", "nombre": 1},
+{"name": "classeur rigide 21x29,7cm 3 cm d'épaisseur à 4 anneaux rouge", "article": "classeur", "nombre": 1},
+{"name": "classeur rigide 21x29,7cm 3 cm d'épaisseur à 4 anneaux jaune", "article": "classeur", "nombre": 1},
+{"name": "intercalaires 24x32cm", "article": "intercalaires", "nombre": 3}
 ]
-```
