@@ -60,7 +60,7 @@ def vertex_request(file_path):
     # Matching using basic comparison
     #gpt3_matching()
     use_levenschtein()
-    with open('ocr.txt', 'r', encoding='utf-8') as file:
+    with open('result.txt', 'r', encoding='utf-8') as file:
         matching = file.read()
     print("done matching")
 

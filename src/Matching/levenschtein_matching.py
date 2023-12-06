@@ -6,27 +6,26 @@ from fuzzywuzzy import process
 import json
 from nltk.corpus import stopwords
 
-def get_best_match(str, annuaire):
 
+def get_best_match(str, annuaire):
     # if annuaire is only one article
-    if type(annuaire) == dict :
+    if type(annuaire) == dict:
         return annuaire
     # if annuaire is nonetype
     if annuaire == None:
-        print(str["name"]," --> ", "article non trouvé dans best match ")
+        print(str["name"], " --> ", "article non trouvé dans best match ")
         return {"texte": "article non trouvé dans best match ", "rÃ©fÃ©rence": "none"}
 
     scores = []
     for article in annuaire:
         scores.append(fuzz.partial_ratio(str["name"], article["texte"]))
     max_score = max(scores)
-    #print(max_score)
-
+    # print(max_score)
 
     # return a random article with max score
     for i, article in enumerate(annuaire):
         if scores[i] == max_score and max_score > 30:
-            print(str["name"]," --> ", article["texte"], " : ", max_score)
+            print(str["name"], " --> ", article["texte"], " : ", max_score)
             return article
 
     return {"texte": "article non trouvé levenschtein", "rÃ©fÃ©rence": "none"}
@@ -61,9 +60,33 @@ def preprocess_string(s):
     tokens = [word.lower() for word in tokens]
     # print(tokens)
     # lemmatization
-    #tokens = [nlp(word)[0].lemma_ for word in tokens]
+    # tokens = [nlp(word)[0].lemma_ for word in tokens]
     # print(tokens)
+
     return tokens
+
+
+def formattage(s):
+    """
+    formatte le texte pour correspondre à l'annuaire
+    """
+    s = s.lower()
+    # grand format
+    s = s.replace("grand format", "24x32")
+    s = s.replace("petit format", "17x22")
+    s = s.replace("petit cahier", "cahier 17x22")
+    s = s.replace("grand cahier", "cahier 24x32")
+    s = s.replace("simple", "21x29")
+    s = s.replace("feuilles doubles", "feuilles doubles copies doubles")
+    if "feuille" in s or "feuilles" in s:
+        s += " ramette sachet"
+    s = s.replace("a4", "21x29,7")
+    s = s.replace("a5", "14,8x21")
+    s = s.replace("a6", "10,5x14,8")
+    s = s.replace("a7", "7,4x10,5")
+    s = s.replace("a8", "5,2x7,4")
+    s = s.replace("a9", "3,7x5,2")
+    return s
 
 
 def correspondance_pre(article, annuaire):
@@ -77,32 +100,34 @@ def correspondance_pre(article, annuaire):
     # Initialisation des scores pour chaque entité de l'annuaire
     scores = [0] * len(annuaire)
 
+    article["name"] = formattage(article["name"])
+    article["article"] = formattage(article["article"])
+
     mots_article = preprocess_string(article["name"])
     important_word = preprocess_string(article["article"])
     sentence = ""
     imp_word = ""
-
 
     for mot in mots_article:
         sentence += mot + " "
     for mot in important_word:
         imp_word += mot + " "
 
-    #print(sentence)
-    #print(imp_word)
+    print(sentence)
+    print(imp_word)
 
     # Comparaison de chaque article dans l'annuaire avec chaque mot de l'article que l'on cherche à comparer
     for i, article in enumerate(annuaire):
         texte_entite = article["texte"]
 
         if imp_word in texte_entite:
-            scores[i] += 3
+            scores[i] += 1
         else:
-            scores[i] -= 2
+            scores[i] -= 4
 
         # if tex_te_entite contains "cahier" and not "protege" and sentence contains "protege cahier" -5 in score
         if ("cahier" in sentence and "protege" not in sentence) and ("protege cahier" in texte_entite):
-                scores[i] -= 10
+            scores[i] -= 10
 
         # score = nombre de mots de l'article qui sont dans l'entité
         for mot in mots_article:
@@ -111,11 +136,9 @@ def correspondance_pre(article, annuaire):
             if mot in texte_entite:
                 scores[i] += 1
 
-
-
     # Trouver l'entité avec le score le plus élevé
     max_score = max(scores)
-    #print(max_score)
+    # print(max_score)
 
     # Si aucun score n'est supérieur à 0, il n'y a pas de correspondance
     if max_score <= 0:
@@ -126,7 +149,6 @@ def correspondance_pre(article, annuaire):
     # Trouver l'index de l'entité avec le score le plus élevé
     index_max = scores.index(max_score)
     resultat = annuaire[index_max]
-
 
     articles_score_max = []
     # si plusieurs articles ont le même score on utilise gpt3 pour les départager
@@ -156,7 +178,7 @@ def correspondance(content_extraction, annuaire):
     for article in content_extraction:
         liste_articles.append(correspondance_pre(article, annuaire))
 
-    i= 0
+    i = 0
     for article in content_extraction:
         listes_pre.append(get_best_match(article, liste_articles[i]))
         i += 1
@@ -176,20 +198,20 @@ def use_levenschtein():
     # read content_ocr as json
     content_extraction = json.loads(content_ocr)
 
-
     with open('src/Matching/annuaire3.json') as json_file:
         annuaire = json.load(json_file)
 
     listes_articles = correspondance(content_extraction, annuaire)
 
-
     # write file "result.txt" with all articles
     with open('result.txt', 'w', encoding='utf-8') as file:
         for article in listes_articles:
             if article != {"texte": "article non trouvé"}:
-                    file.write(article["texte"])
-                    file.write(article["rÃ©fÃ©rence"])
-                    file.write("\n")
-
+                file.write(article["texte"])
+                file.write(article["rÃ©fÃ©rence"])
+                file.write("\n")
+            else:
+                file.write(article["texte"], " --> Article non trouvé")
+                file.write("\n")
 
 #use_levenschtein()
