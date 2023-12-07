@@ -13,6 +13,8 @@ def get_best_match(str, annuaire):
         return annuaire
     # if annuaire is nonetype
     if annuaire == None:
+        with open('test.txt', 'a', encoding='utf-8') as file:
+            file.write(str["name"], " --> ", "annuaire vide" + "\n")
         print(str["name"], " --> ", "article non trouvé dans best match ")
         return {"texte": "article non trouvé dans best match ", "rÃ©fÃ©rence": "none"}
 
@@ -25,8 +27,13 @@ def get_best_match(str, annuaire):
     # return a random article with max score
     for i, article in enumerate(annuaire):
         if scores[i] == max_score and max_score > 30:
+            with open('test.txt', 'a', encoding='utf-8') as file:
+                write = str["name"] + " --> " + article["texte"] + "\n"
+                file.write(write)
+
             print(str["name"], " --> ", article["texte"], " : ", max_score)
             return article
+
 
     return {"texte": "article non trouvé levenschtein", "rÃ©fÃ©rence": "none"}
 
@@ -113,8 +120,8 @@ def correspondance_pre(article, annuaire):
     for mot in important_word:
         imp_word += mot + " "
 
-    print(sentence)
-    print(imp_word)
+    #print(sentence)
+    #print(imp_word)
 
     # Comparaison de chaque article dans l'annuaire avec chaque mot de l'article que l'on cherche à comparer
     for i, article in enumerate(annuaire):
@@ -142,6 +149,8 @@ def correspondance_pre(article, annuaire):
 
     # Si aucun score n'est supérieur à 0, il n'y a pas de correspondance
     if max_score <= 0:
+        with open('test.txt', 'a', encoding='utf-8') as file:
+            file.write(sentence + " --> " + "Aucun score > 0 dans le basic matching" + "\n")
         print(sentence, " --> ", "Aucun score > 0 dans le basic matching")
         out = {"texte": "Aucun score > 0 ", "rÃ©fÃ©rence": "none"}
         return out
@@ -187,6 +196,14 @@ def correspondance(content_extraction, annuaire):
 
 
 def use_levenschtein():
+    # if test.txt exists, delete it, else create it
+    try:
+        with open('test.txt', 'w', encoding='utf-8') as file:
+            file.write("")
+    except:
+        with open('test.txt', 'x', encoding='utf-8') as file:
+            file.write("")
+
     with open('ocr.txt', 'r', encoding='utf-8') as file:
         content_ocr = file.read()
     # if content_ocr first line is ```json, remove it

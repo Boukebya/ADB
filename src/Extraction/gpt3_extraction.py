@@ -15,7 +15,7 @@ def gpt3_extraction(file_path):
 
     response = client.chat.completions.create(
         model="gpt-3.5-turbo-1106",
-        temperature=0.2,
+        temperature=0.7,
         messages=[
             {"role": "system",
              "content": "Vous êtes un assistant utile conçu pour extraire des fournitures scolaires du texte sans omission."},
@@ -31,9 +31,9 @@ def gpt3_extraction(file_path):
               avec ses dimensions et poids si disponible uniquement,
               J'insiste sur le uniquement, ne met pas de détail inutile, le but et de retrouver la fourniture scolaire
               dans une base de données d'articles après, garde donc les détails essentiels à cette tâche.
-              Ne mets pas le nombre d'articles à acheter dans name. Aussi, si name n'est pas clair, par exemple,
+              Ne mets pas le nombre d'articles à acheter dans name. Aussi, rajoute des synonymes, par exemple,
               fluo, ou scotch, rajoute des synonymes tel que surligneur, ou ruban adhésif ou rouleau pour tous les articles.
-              Vraiment, rajoute des adjectifs quand le mot est trop vague comme scotch ou fluo, c'est nécessaire.
+              Vraiment, rajoute des synonymes quand le mot est trop vague comme scotch ou fluo, c'est nécessaire.
               Les fournitures que tu vas retrouvés vont être comparés à une liste dont les éléments ressemble à cela:
               "name": "cahier texte reliure integrale 124 pages format 17x22 cm reglure seyes papier blanc 70g",
               garde donc les détails similaire. Si possible, après cela, rajoute des synonymes du mot le plus important
