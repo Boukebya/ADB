@@ -1,5 +1,8 @@
 def test_matching():
-
+    """
+    Fonction pour tester le matching, elle lit le fichier test.txt et demande à l'utilisateur si chaque ligne semble
+    correcte, puis affiche le score final et le pourcentage de réussite.
+    """
     # open file test.txt, no matter where it is
     with open('../../test.txt', 'r', encoding='utf-8') as file:
         # read a list of lines into data
@@ -22,5 +25,6 @@ def test_matching():
 
     print("Score : ", score, "/", nb_lines)
     print("Percentage : ", score/nb_lines*100, "%")
+
 
 test_matching()

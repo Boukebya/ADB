@@ -7,7 +7,14 @@ import json
 from nltk.corpus import stopwords
 
 
-def get_best_match(str, annuaire):
+def best_match_levenshtein(str, annuaire):
+    """
+    Renvoie l'article de l'annuaire qui correspond le mieux à l'article donné.
+    Renvoie rien si aucun article ne correspond, et renvoie un article aléatoire si plusieurs articles ont le même score.
+    :param str: article à comparer, dict avec clé 'name'
+    :param annuaire: annuaire des articles, liste de dicts avec clés 'texte' et 'type'
+    :return: référence de l'article correspondant avec le plus haut score
+    """
     # if annuaire is only one article
     if type(annuaire) == dict:
         return annuaire
@@ -73,9 +80,12 @@ def preprocess_string(s):
     return tokens
 
 
-def formattage(s):
+def format_to_catalog(s):
     """
-    formatte le texte pour correspondre à l'annuaire
+    formatte le texte pour correspondre à l'annuaire, remplace les mots par des formulations présentes dans l'annuaire,
+    au cas par cas
+    :param s: string à formatter
+    :return: string formatée
     """
     s = s.lower()
     # grand format
@@ -106,81 +116,83 @@ def formattage(s):
     return s
 
 
-def correspondance_pre(article, annuaire):
+def correspondance_score(article, catalog):
     """
-    Compare l'article avec l'annuaire pour trouver une correspondance.
+    Compare l'article avec l'annuaire pour trouver une correspondance, fonctionne avec un système de score.
+    Le système de score est le suivant:
+    -1 si le mot important n'est pas dans l'article de l'annuaire
+    +4 si le mot important est dans l'article de l'annuaire
+    +1 si un mot de l'article est dans l'article de l'annuaire
     :param article: article à comparer, dict avec clé 'name'
-    :param annuaire: annuaire des articles, liste de dicts avec clés 'texte' et 'type'
-    :return: référence de l'article correspondant avec le plus haut score
+    :param catalog: annuaire des articles, liste de dicts avec clés 'texte' et 'type'
+    :return: référence de l'article correspondant avec le plus haut score, ou liste d'articles si plusieurs articles ont
+    le même score
     """
 
     # Initialisation des scores pour chaque entité de l'annuaire
-    scores = [0] * len(annuaire)
+    scores = [0] * len(catalog)
 
-    article["name"] = formattage(article["name"])
-    article["article"] = formattage(article["article"])
-
+    # Prétraitement de l'article
+    article["name"] = format_to_catalog(article["name"])
+    article["article"] = format_to_catalog(article["article"])
     mots_article = preprocess_string(article["name"])
     important_word = preprocess_string(article["article"])
-    sentence = ""
-    imp_word = ""
-
+    sentence_article = ""
+    important_word = ""
     for mot in mots_article:
-        sentence += mot + " "
+        sentence_article += mot + " "
     for mot in important_word:
-        imp_word += mot + " "
+        important_word += mot + " "
 
     #print(sentence)
     #print(imp_word)
 
     # Comparaison de chaque article dans l'annuaire avec chaque mot de l'article que l'on cherche à comparer
-    for i, article in enumerate(annuaire):
-        texte_entite = article["texte"]
+    for i, article_catalog in enumerate(catalog):
+        texte_article_catalog = article_catalog["texte"]
 
-        if imp_word in texte_entite:
+        if important_word in texte_article_catalog:
             scores[i] += 4
         else:
             scores[i] -= 1
 
-        # if tex_te_entite contains "cahier" and not "protege" and sentence contains "protege cahier" -5 in score
-        if ("cahier" in sentence and "protege" not in sentence) and ("protege cahier" in texte_entite):
+        # cas par cas spécifique
+        if ("cahier" in sentence_article and "protege" not in sentence_article) and ("protege cahier" in texte_article_catalog):
             scores[i] -= 10
-
-        if ("feuilles" in sentence and "doubles" not in sentence) and ("doubles" in texte_entite):
+        if ("feuilles" in sentence_article and "doubles" not in sentence_article) and ("doubles" in texte_article_catalog):
             scores[i] -= 10
-        if ("feuilles" in sentence and "doubles" in sentence) and ("doubles" in texte_entite):
+        if ("feuilles" in sentence_article and "doubles" in sentence_article) and ("doubles" in texte_article_catalog):
             scores[i] += 10
 
         # score = nombre de mots de l'article qui sont dans l'entité
         for mot in mots_article:
             # score + 1 si le mot est dans l'article de l'annuaire
 
-            if mot in texte_entite:
+            if mot in texte_article_catalog:
                 scores[i] += 1
 
     # Trouver l'entité avec le score le plus élevé
     max_score = max(scores)
     # print(max_score)
 
+
     # Si aucun score n'est supérieur à 0, il n'y a pas de correspondance
     if max_score <= 0:
         with open('test.txt', 'a', encoding='utf-8') as file:
-            file.write(sentence + " --> " + "Aucun score > 0 dans le basic matching" + "\n")
-        print(sentence, " --> ", "Aucun score > 0 dans le basic matching")
+            file.write(sentence_article + " --> " + "Aucun score > 0 dans le basic matching" + "\n")
+        print(sentence_article, " --> ", "Aucun score > 0 dans le basic matching")
         out = {"texte": "Aucun score > 0 ", "rÃ©fÃ©rence": "none"}
         return out
 
-    # Trouver l'index de l'entité avec le score le plus élevé
-    index_max = scores.index(max_score)
-    resultat = annuaire[index_max]
+
 
     articles_score_max = []
-    # si plusieurs articles ont le même score on utilise gpt3 pour les départager
+    # si plusieurs articles ont le même score
     if scores.count(max_score) >= 1:
         iter = 0
 
         # si plusieurs articles ont le même score, on les met dans la liste
-        for i, article in enumerate(annuaire):
+        for i, article in enumerate(catalog):
             if scores[i] == max_score:
                 articles_score_max.append(article)
                 # print(entite["texte"])
@@ -189,7 +201,7 @@ def correspondance_pre(article, annuaire):
         return articles_score_max
 
 
-def correspondance(content_extraction, annuaire):
+def correspondance_list_article(content_extraction, annuaire):
     """
     Compare une liste json d'extraction avec l'annuaire pour trouver une correspondance pour chaque élément de la liste.
     :param liste: liste à comparer, liste de dicts avec clé 'name'
@@ -200,17 +212,20 @@ def correspondance(content_extraction, annuaire):
     liste_articles = []
 
     for article in content_extraction:
-        liste_articles.append(correspondance_pre(article, annuaire))
+        liste_articles.append(correspondance_score(article, annuaire))
 
     i = 0
     for article in content_extraction:
-        listes_pre.append(get_best_match(article, liste_articles[i]))
+        listes_pre.append(best_match_levenshtein(article, liste_articles[i]))
         i += 1
 
     return listes_pre
 
 
-def use_levenschtein():
+def use_levenshtein():
+    """
+    Fonction pour faire le matching à partir d'un fichier ocr.txt, et écrire le résultat dans un fichier test.txt
+    """
     # if test.txt exists, delete it, else create it
     try:
         with open('test.txt', 'w', encoding='utf-8') as file:
@@ -233,7 +248,7 @@ def use_levenschtein():
     with open('src/Matching/annuaire3.json') as json_file:
         annuaire = json.load(json_file)
 
-    listes_articles = correspondance(content_extraction, annuaire)
+    listes_articles = correspondance_list_article(content_extraction, annuaire)
 
     # write file "result.txt" with all articles
     with open('result.txt', 'w', encoding='utf-8') as file:
