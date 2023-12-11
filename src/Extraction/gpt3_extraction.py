@@ -8,19 +8,20 @@ def gpt3_extraction(file_path):
     :param file_path: path to the text file
     """
 
-    api_key = "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"
+    api_key = "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"
     client = OpenAI(api_key=api_key)
     with open(file_path, "rb") as text_file:
         file = text_file.read().decode('utf-8')
 
     response = client.chat.completions.create(
         model="gpt-3.5-turbo-1106",
-        temperature=0.7,
+        temperature=0.3,
         messages=[
             {"role": "system",
-             "content": "Vous êtes un assistant utile conçu pour extraire des fournitures scolaires du texte sans omission."},
+             "content": "Vous êtes un assistant utile conçu pour extraire des fournitures scolaires du texte"
+                        " sans omission. Tu écris aux singulier les articles."},
             {"role": "user", "content": """fais une liste de toutes les fournitures
-             scolaire dans le texte suivant sous forme :
+             scolaire, pas d'habits ou d'affaires de sport, dans le texte suivant sous forme :
              {
              "name": "nom de l'article avec ses détails",
              "article": "nom de l'article le plus important sans détails",
@@ -28,7 +29,9 @@ def gpt3_extraction(file_path):
              },
               name correspond au nom du produit que tu as trouvé au singulier, j'insiste, mets les articles au singulier,
               par exemple, gommes -> gomme, cahiers -> cahier, stylos -> stylo, etc.
-              avec ses dimensions et poids si disponible uniquement,
+              avec ses dimensions et poids si disponible, et autres informations, 
+              si la dimension pour le cahier n'est pas disponible, mets
+              24x32 cm par défaut. S'il est écrit grand format, mets 24x32 cm, si c'est petit format, mets 17x22 cm.
               J'insiste sur le uniquement, ne met pas de détail inutile, le but et de retrouver la fourniture scolaire
               dans une base de données d'articles après, garde donc les détails essentiels à cette tâche.
               Ne mets pas le nombre d'articles à acheter dans name. Aussi, rajoute des synonymes, par exemple,
@@ -39,8 +42,8 @@ def gpt3_extraction(file_path):
               garde donc les détails similaire. Si possible, après cela, rajoute des synonymes du mot le plus important
                 de l'article, par exemple, scotch -> ruban adhésif, porte vues -> protège document, etc.
               "article" correspond au nom de l'article le plus important, sans détails, crayon de bois -> crayon,
-                cahier de texte -> cahier, etc. Fais simple, cela doit être le nom de l'article le plus simple possible.
-                en 1 ou 2 mots MAXIMUM.
+                cahier de texte -> cahier, pochette à élastique -> pochette à élastique, etc... 
+                Le but est de garder l'information importante
               nombre correspond au nombre d'articles a acheter dans la liste, si ce n'est pas indique met 1 par défaut.
               Fais bien attention à ne pas surinterpréter le texte.
               Aussi, fais attention dans le cas ou il y'a le même nom d'articles en couleur différente, par exemple,

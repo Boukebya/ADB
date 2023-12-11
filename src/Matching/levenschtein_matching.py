@@ -85,14 +85,24 @@ def formattage(s):
     s = s.replace("grand cahier", "cahier 24x32")
     s = s.replace("simple", "21x29")
     s = s.replace("feuilles doubles", "feuilles doubles copies doubles")
-    if "feuille" in s or "feuilles" in s:
-        s += " ramette sachet"
-    s = s.replace("a4", "21x29,7")
-    s = s.replace("a5", "14,8x21")
-    s = s.replace("a6", "10,5x14,8")
-    s = s.replace("a7", "7,4x10,5")
-    s = s.replace("a8", "5,2x7,4")
-    s = s.replace("a9", "3,7x5,2")
+    s = s.replace("pochette plastifiee", "protege document")
+    s = s.replace("pochettes plastifiees", "protege document")
+    # if a4 is pre, add 21x29
+    s = s.replace("pochette cartonnée", "chemise")
+    if "a4" in s:
+        s += " 21x29"
+    if "a5" in s:
+        s += " 17x22"
+    if "a6" in s:
+        s += " 10x15"
+    if "a7" in s:
+        s += " 7x10"
+    if "21x29" in s:
+        s += " a4"
+    if "17x22" in s:
+        s += " a5"
+    if "10x15" in s:
+        s += " a6"
     return s
 
 
@@ -128,13 +138,18 @@ def correspondance_pre(article, annuaire):
         texte_entite = article["texte"]
 
         if imp_word in texte_entite:
-            scores[i] += 1
+            scores[i] += 4
         else:
-            scores[i] -= 4
+            scores[i] -= 1
 
         # if tex_te_entite contains "cahier" and not "protege" and sentence contains "protege cahier" -5 in score
         if ("cahier" in sentence and "protege" not in sentence) and ("protege cahier" in texte_entite):
             scores[i] -= 10
+
+        if ("feuilles" in sentence and "doubles" not in sentence) and ("doubles" in texte_entite):
+            scores[i] -= 10
+        if ("feuilles" in sentence and "doubles" in sentence) and ("doubles" in texte_entite):
+            scores[i] += 10
 
         # score = nombre de mots de l'article qui sont dans l'entité
         for mot in mots_article:

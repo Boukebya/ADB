@@ -1,184 +1,57 @@
-```json
 [
-  {
-    "name": "trousse",
-    "article": "trousse",
-    "nombre": 1
-  },
-  {
-    "name": "bic pointe fine",
-    "article": "bic",
-    "nombre": 4
-  },
-  {
-    "name": "stylo-plume encre bleue",
-    "article": "stylo-plume",
-    "nombre": 1
-  },
-  {
-    "name": "effaceur",
-    "article": "effaceur",
-    "nombre": 1
-  },
-  {
-    "name": "porte-mine",
-    "article": "porte-mine",
-    "nombre": 1
-  },
-  {
-    "name": "gomme",
-    "article": "gomme",
-    "nombre": 1
-  },
-  {
-    "name": "crayon HB",
-    "article": "crayon",
-    "nombre": 1
-  },
-  {
-    "name": "taille-crayon",
-    "article": "taille-crayon",
-    "nombre": 1
-  },
-  {
-    "name": "surligneur fluo",
-    "article": "surligneur",
-    "nombre": 5
-  },
-  {
-    "name": "clé USB",
-    "article": "clé USB",
-    "nombre": 1
-  },
-  {
-    "name": "agenda scolaire",
-    "article": "agenda",
-    "nombre": 1
-  },
-  {
-    "name": "ardoise Velléda",
-    "article": "ardoise",
-    "nombre": 1
-  },
-  {
-    "name": "feutre Velléda",
-    "article": "feutre",
-    "nombre": 4
-  },
-  {
-    "name": "chiffon",
-    "article": "chiffon",
-    "nombre": 1
-  },
-  {
-    "name": "bloc-notes bureau",
-    "article": "bloc-notes",
-    "nombre": 1
-  },
-  {
-    "name": "calculatrice Casio collège 2D FX92",
-    "article": "calculatrice",
-    "nombre": 1
-  },
-  {
-    "name": "cahier",
-    "article": "cahier",
-    "nombre": 5
-  },
-  {
-    "name": "chemise élastique",
-    "article": "chemise",
-    "nombre": 4
-  },
-  {
-    "name": "paquet de feuilles blanches perforées",
-    "article": "feuilles",
-    "nombre": 2
-  },
-  {
-    "name": "trieur de 12 compartiments",
-    "article": "trieur",
-    "nombre": 1
-  },
-  {
-    "name": "dictionnaire Super MAJOR CM1-6ème",
-    "article": "dictionnaire",
-    "nombre": 1
-  },
-  {
-    "name": "Bescherelle de conjugaison",
-    "article": "Bescherelle",
-    "nombre": 1
-  },
-  {
-    "name": "pochette plastique perforée",
-    "article": "pochette",
-    "nombre": 2
-  },
-  {
-    "name": "pochette de papier calque",
-    "article": "pochette",
-    "nombre": 1
-  },
-  {
-    "name": "pochette Papier à dessin type Canson",
-    "article": "pochette",
-    "nombre": 1
-  },
-  {
-    "name": "règle plate",
-    "article": "règle",
-    "nombre": 1
-  },
-  {
-    "name": "compas",
-    "article": "compas",
-    "nombre": 1
-  },
-  {
-    "name": "équerre",
-    "article": "équerre",
-    "nombre": 1
-  },
-  {
-    "name": "paire de ciseaux",
-    "article": "ciseaux",
-    "nombre": 1
-  },
-  {
-    "name": "stick de colle UHU",
-    "article": "colle",
-    "nombre": 5
-  },
-  {
-    "name": "feutre",
-    "article": "feutre",
-    "nombre": 1
-  },
-  {
-    "name": "crayon de couleur",
-    "article": "crayon",
-    "nombre": 1
-  },
-  {
-    "name": "boîte de mouchoirs",
-    "article": "mouchoirs",
-    "nombre": 2
-  },
-  {
-    "name": "grand cahier de Travaux Pratiques",
-    "article": "cahier",
-    "nombre": 1
-  },
-  {
-    "name": "classeur rigide",
-    "article": "classeur",
-    "nombre": 3
-  },
-  {
-    "name": "jeu de 6 intercalaires",
-    "article": "intercalaires",
-    "nombre": 3
-  }
+{"name": "classeur souple 21x29,7", "article": "classeur", "nombre": 1},
+{"name": "intercalaire 21x29,7 en carton", "article": "intercalaire", "nombre": 6},
+{"name": "pochette plastifiée", "article": "pochette", "nombre": 1},
+{"name": "pochette d'œillets", "article": "pochette", "nombre": 1},
+{"name": "pochette cartonnée à rabats", "article": "pochette", "nombre": 1},
+{"name": "cahier 24x32 grands carreaux de 96 pages", "article": "cahier", "nombre": 2},
+{"name": "feutre fluo", "article": "feutre", "nombre": 4},
+{"name": "calculatrice type \"collège\"", "article": "calculatrice", "nombre": 1},
+{"name": "règle graduée", "article": "règle", "nombre": 1},
+{"name": "équerre", "article": "équerre", "nombre": 1},
+{"name": "rapporteur gradué en degrés 0°-180°", "article": "rapporteur", "nombre": 1},
+{"name": "compas avec crayon à visser", "article": "compas", "nombre": 1},
+{"name": "classeur souple 21 x 29,7 à gros anneaux", "article": "classeur", "nombre": 1},
+{"name": "feuilles simples perforées 21 x 29.7 cm grands carreaux blanches et jaunes", "article": "feuille", "nombre": 1},
+{"name": "surligneur", "article": "surligneur", "nombre": 1},
+{"name": "casque ou écouteurs mini-jack 3,5 mm (compatibles MP3)", "article": "casque", "nombre": 1},
+{"name": "cahier de brouillon (petit format)", "article": "cahier", "nombre": 1},
+{"name": "feutres fins (type stabylo-stylist); bleu/rouge/vert", "article": "feutre", "nombre": 3},
+{"name": "paquet de copies doubles 21 x 29,7 cm à grands carreaux", "article": "copie", "nombre": 1},
+{"name": "pochette de crayons de couleurs", "article": "pochette", "nombre": 1},
+{"name": "grand cahier 21 x 29.7 cm à grands carreaux de 96 pages", "article": "cahier", "nombre": 1},
+{"name": "pochette cartonnée avec rabats élastiques 21 x 29.7 cm", "article": "pochette", "nombre": 2},
+{"name": "paquet de copies doubles 21 x 29,7 cm à grands carreaux", "article": "copie", "nombre": 1},
+{"name": "pochette cartonnée avec rabats élastiques 21 x 29.7 cm", "article": "pochette", "nombre": 2},
+{"name": "classeur rigide 21 x 29,7 cm", "article": "classeur", "nombre": 1},
+{"name": "feuilles 21 x 29.7 cm à petits carreaux", "article": "feuille", "nombre": 1},
+{"name": "intercalaires", "article": "intercalaire", "nombre": 6},
+{"name": "clé USB", "article": "clé", "nombre": 1},
+{"name": "protège documents 21 x 29.7 - 30 pochettes (60 vues) (réutilisable chaque année)", "article": "protège document", "nombre": 1},
+{"name": "pochette de papier CANSON blanc - 24x32 cm - 180 grammes", "article": "pochette", "nombre": 1},
+{"name": "gouache à l'eau en tube (1 tube de chaque couleur: jaune, bleu, magenta, noir, blanc)", "article": "gouache", "nombre": 5},
+{"name": "pinceaux en poils synthétiques n° au choix( deux pointus, un plat)", "article": "pinceau", "nombre": 3},
+{"name": "porte-vues 30 feuilles", "article": "porte-vues", "nombre": 1},
+{"name": "feutre noir fin", "article": "feutre", "nombre": 1},
+{"name": "cahier 21 x 29.7 cm de 96 pages à grands carreaux", "article": "cahier", "nombre": 1},
+{"name": "pantalon de survêtement", "article": "pantalon", "nombre": 1},
+{"name": "short", "article": "short", "nombre": 1},
+{"name": "paire de chaussures de sport", "article": "chaussure", "nombre": 1},
+{"name": "maillot de bain", "article": "maillot", "nombre": 1},
+{"name": "slip de bain", "article": "slip", "nombre": 1},
+{"name": "bonnet de bain", "article": "bonnet", "nombre": 1},
+{"name": "trousse", "article": "trousse", "nombre": 1},
+{"name": "cartable rigide", "article": "cartable", "nombre": 1},
+{"name": "stylo", "article": "stylo", "nombre": 4},
+{"name": "gomme", "article": "gomme", "nombre": 1},
+{"name": "crayon gris HB", "article": "crayon", "nombre": 1},
+{"name": "règle graduée 30 cm", "article": "règle", "nombre": 1},
+{"name": "taille crayon avec réservoir", "article": "taille crayon", "nombre": 1},
+{"name": "ciseaux à bouts ronds", "article": "ciseaux", "nombre": 1},
+{"name": "bâton de colle", "article": "colle", "nombre": 1},
+{"name": "surligneur", "article": "surligneur", "nombre": 1},
+{"name": "boîte de feutres", "article": "feutre", "nombre": 1},
+{"name": "boîte de crayons de couleur", "article": "crayon", "nombre": 1},
+{"name": "cahier de texte", "article": "cahier", "nombre": 1},
+{"name": "pochette de copies", "article": "pochette", "nombre": 1}
 ]
-```
