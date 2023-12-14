@@ -5,8 +5,7 @@ from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 import json
 from nltk.corpus import stopwords
-
-from src.Matching.special_case import match_book, match_paper
+from Matching.special_case import match_book, match_paper
 
 
 def best_match_levenshtein(str, annuaire):
@@ -19,13 +18,18 @@ def best_match_levenshtein(str, annuaire):
     """
     # if annuaire is only one article
     if type(annuaire) == dict:
+        texte = annuaire["texte"]
+        with open('test.txt', 'a', encoding='utf-8') as file:
+            write = str["name"] + " --> " + texte + "\n"
+            file.write(write)
         return annuaire
+
     # if annuaire is nonetype
     if annuaire == None:
         with open('test.txt', 'a', encoding='utf-8') as file:
-            file.write(str["name"], " --> ", "annuaire vide" + "\n")
+            file.write(str["name"] + " --> " + "annuaire vide" + "\n")
         print(str["name"], " --> ", "article non trouvé dans best match ")
-        return {"texte": "article non trouvé dans best match ", "rÃ©fÃ©rence": "none"}
+        return {"texte": "article score inferieur à 0 ", "rÃ©fÃ©rence": "none"}
 
     scores = []
     for article in annuaire:
@@ -90,31 +94,15 @@ def format_to_catalog(s):
     :return: string formatée
     """
     s = s.lower()
-    # grand format
-    s = s.replace("grand format", "24x32")
-    s = s.replace("petit format", "17x22")
-    s = s.replace("petit cahier", "cahier 17x22")
     s = s.replace("grand cahier", "cahier 24x32")
-    s = s.replace("simple", "21x29")
     s = s.replace("feuilles doubles", "feuilles doubles copies doubles")
     s = s.replace("pochette plastifiee", "protege document")
     s = s.replace("pochettes plastifiees", "protege document")
+    s = s.replace("porte vues", "protege document")
     # if a4 is pre, add 21x29
     s = s.replace("pochette cartonnée", "chemise")
     if "a4" in s:
         s += " 21x29"
-    if "a5" in s:
-        s += " 17x22"
-    if "a6" in s:
-        s += " 10x15"
-    if "a7" in s:
-        s += " 7x10"
-    if "21x29" in s:
-        s += " a4"
-    if "17x22" in s:
-        s += " a5"
-    if "10x15" in s:
-        s += " a6"
     return s
 
 
@@ -144,19 +132,26 @@ def correspondance_score(article, catalog):
 
     for mot in mots_article:
         sentence_article += mot + " "
+
     for mot in important_word:
         sentence_important_word += mot + " "
 
     #print(sentence)
     #print(imp_word)
 
+    # si l'article est un cahier, on utilise le matching spécial
+
     if "cahier" in sentence_article:
         result = match_book(sentence_article)
-        
+        print("find using book matching")
         return result
-    elif "feuilles" or "ramette" in sentence_article:
-        result = match_paper(sentence_article)
-        return result
+    if "feuille" in sentence_article or "papier" in sentence_article or "ramette" in sentence_article or "ramettes" in sentence_article or "feuilles" in sentence_article:
+        words = ["crayon", "crayons", "stylo", "stylos", "calque", "milimetree", "carton","milimetre"]
+        if all(word not in sentence_article for word in words):
+            # Votre logique ici
+            print("find using paper matching ", sentence_article)
+            result = match_paper(sentence_article)
+            return result
 
     # Comparaison de chaque article dans l'annuaire avec chaque mot de l'article que l'on cherche à comparer
     for i, article_catalog in enumerate(catalog):
@@ -183,8 +178,6 @@ def correspondance_score(article, catalog):
             scores[i] += 10
         if "papier calque" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "43007":
             scores[i] += 10
-        if "surligneur" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "64132":
-            scores[i] += 10
         if "regle" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "78324":
             scores[i] += 10
         if "taille crayon" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "7520":
@@ -203,6 +196,10 @@ def correspondance_score(article, catalog):
         if ("feuilles" in sentence_article and "protege cahier" in texte_article_catalog) or \
                 ("protege" in sentence_article and "cahier" in texte_article_catalog):
             scores[i] -= 10
+        if ("crayon" in sentence_article and "couleur" in sentence_article) and "crayon" in texte_article_catalog and "couleur" in texte_article_catalog:
+            scores[i] += 10
+        if ("feutre" in sentence_article and "couleur" in sentence_article) and "feutre" in texte_article_catalog and "couleur" not in texte_article_catalog:
+            scores[i] += 10
 
         # score = nombre de mots de l'article qui sont dans l'entité
         for mot in mots_article:
@@ -295,10 +292,10 @@ def use_levenshtein():
         for article in listes_articles:
             if article != {"texte": "article non trouvé"}:
                 file.write(article["texte"])
-                file.write(article["rÃ©fÃ©rence"])
+                file.write(str(article["rÃ©fÃ©rence"]))
                 file.write("\n")
             else:
                 file.write(article["texte"], " --> Article non trouvé")
                 file.write("\n")
 
-use_levenshtein()
+#use_levenshtein()

@@ -1,9 +1,11 @@
 {
     "google_cloud": {
-      "api_key": "CLE_API_GOOGLE_CLOUD"
+      "project_id": "teak-truck-404413",
+      "location" : "eu",
+      "processor" : "6ac5684a8d5752ee"
     },
     "openai": {
-      "api_key": "CLE_API_OPENAI"
+      "api_key": "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"
     }
   }
   

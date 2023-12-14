@@ -99,7 +99,7 @@ def match_paper(product):
     :param product: product to match
     :return: the corresponding in catalog
     """
-    df_paper = pd.read_json("data_paper.json")
+    df_paper = pd.read_json("src/Matching/data_paper.json")
 
     extract = extract_paper_info(product, dict_colors)
 
@@ -130,15 +130,24 @@ def match_paper(product):
         corresponding_products = df_paper.loc[reduce(lambda x, y: x & y, conditions)]
     else:
         # Aucune information disponible, peut-être afficher un message ou traiter d'une autre manière
-        corresponding_products = None
+        return None
 
     # if multiple products match, we take the first one
     if corresponding_products is not None:
         # convert pandas to list
         list = corresponding_products.values.tolist()
         # get a random element from the list
-        corresponding_products = random.choice(list)
-        return corresponding_products
+        lenght = len(list)
+        if lenght > 0:
+            corresponding_products = random.choice(list)
+        else:
+            return None
+
+
+        texte = corresponding_products[0]
+        ref = corresponding_products[-1]
+
+        return {"texte": texte, "rÃ©fÃ©rence": ref}
 
 
 def match_book(product):
@@ -148,7 +157,7 @@ def match_book(product):
     :return: the corresponding in catalog
     """
 
-    df = pd.read_json('data.json')
+    df = pd.read_json("src/Matching/data.json")
     extract = extract_cahier_info(product, dict_colors)
 
     conditions = []
@@ -170,22 +179,26 @@ def match_book(product):
 
     if conditions:
         corresponding_products = df.loc[reduce(lambda x, y: x & y, conditions)]
-    else:
-        # Aucune information disponible, peut-être afficher un message ou traiter d'une autre manière
-        corresponding_products = None
+
+
 
     # if multiple products match, we take the first one
     if corresponding_products is not None:
-        #convert pandas to list
+        # convert pandas to list
         list = corresponding_products.values.tolist()
         # get a random element from the list
-        corresponding_products = random.choice(list)
-        return corresponding_products
+        lenght = len(list)
+        if lenght > 0:
+            corresponding_products = random.choice(list)
+        else:
+            return None
 
 
-product = "cahier a4 96 pages 90g grands carreaux couverture polypro "
-# product = "copie simple perforées format  à grands carreaux"
-corresponding_products = match_book(product)
+        texte = corresponding_products[0]
+        ref = corresponding_products[-1]
 
-# print desc
-print(corresponding_products[0])
+        return {"texte": texte, "rÃ©fÃ©rence": ref}
+
+
+prod = "Cahier 17x22cm 96 pages grands carreaux couverture polypro 5/5e - Coloris aléatoire"
+print(match_book(prod))
