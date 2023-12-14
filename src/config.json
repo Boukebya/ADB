@@ -1,0 +1,9 @@
+{
+    "google_cloud": {
+      "api_key": "CLE_API_GOOGLE_CLOUD"
+    },
+    "openai": {
+      "api_key": "CLE_API_OPENAI"
+    }
+  }
+  
