@@ -1,0 +1,5 @@
+paire chaussures sport  --> Aucun score > 0 dans le basic matching
+pull reserve sport  --> Aucun score > 0 dans le basic matching
+short  --> Aucun score > 0 dans le basic matching
+raquette badminton  --> Aucun score > 0 dans le basic matching
+raquette tennis table  --> Aucun score > 0 dans le basic matching

@@ -6,6 +6,8 @@ from fuzzywuzzy import process
 import json
 from nltk.corpus import stopwords
 
+from src.Matching.special_case import match_book, match_paper
+
 
 def best_match_levenshtein(str, annuaire):
     """
@@ -139,6 +141,7 @@ def correspondance_score(article, catalog):
     important_word = preprocess_string(article["article"])
     sentence_article = ""
     sentence_important_word = ""
+
     for mot in mots_article:
         sentence_article += mot + " "
     for mot in important_word:
@@ -146,6 +149,14 @@ def correspondance_score(article, catalog):
 
     #print(sentence)
     #print(imp_word)
+
+    if "cahier" in sentence_article:
+        result = match_book(sentence_article)
+        
+        return result
+    elif "feuilles" or "ramette" in sentence_article:
+        result = match_paper(sentence_article)
+        return result
 
     # Comparaison de chaque article dans l'annuaire avec chaque mot de l'article que l'on cherche à comparer
     for i, article_catalog in enumerate(catalog):
@@ -187,34 +198,6 @@ def correspondance_score(article, catalog):
         if "gomme" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "35329":
             scores[i] += 10
 
-        # Mappage des termes à leurs références et scores
-        termes_et_scores = {
-            "cahier": {"reference": None, "score": -10, "condition": "protege" not in sentence_article},
-            "feuilles": {"reference": None, "score": -10, "condition": "doubles" not in sentence_article},
-            "feuilles doubles": {"reference": None, "score": 10, "condition": True},
-            "agenda": {"reference": "30456", "score": 10},
-            "colle": {"reference": "79576U05", "score": 10},
-            "crayon de bois": {"reference": "78567U12", "score": 10},
-            "stylo plume": {"reference": "27511", "score": 10},
-            "crayons de couleurs": {"reference": "20294", "score": 10},
-            "cle usb": {"reference": "72822", "score": 10},
-            "correcteur": {"reference": "34848", "score": 10},
-            "papier calque": {"reference": "43007", "score": 10},
-            "surligneur": {"reference": "64132", "score": 10},
-            "regle": {"reference": "78324", "score": 10},
-            "taille crayon": {"reference": "7520", "score": 10},
-            "equerre": {"reference": "79844", "score": 10},
-            "rapporteur": {"reference": "79847", "score": 10},
-            "compas": {"reference": "60825", "score": 10},
-            "gomme": {"reference": "35329", "score": 10},
-        }
-
-        # Vérification et mise à jour des scores
-        for terme, details in termes_et_scores.items():
-            if terme in sentence_article and (
-                    details["reference"] is None or details["reference"] == article_catalog["rÃ©fÃ©rence"]):
-                if "condition" not in details or details["condition"]:
-                    scores[i] += details["score"]
 
         # Les conditions spéciales pour "feuilles" et "protege cahier"
         if ("feuilles" in sentence_article and "protege cahier" in texte_article_catalog) or \
