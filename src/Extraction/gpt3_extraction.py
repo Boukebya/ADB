@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 
-def gpt3_extraction(file_path):
+def gpt3_extraction(file_path, classe):
     """
     Use GPT-3 to extract the list of school supplies from the OCR text file.
     Extraction is then done in the file ocr.txt.
@@ -13,15 +13,13 @@ def gpt3_extraction(file_path):
     with open(file_path, "rb") as text_file:
         file = text_file.read().decode('utf-8')
 
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo-1106",
-        temperature=0.3,
-        messages=[
-            {"role": "system",
-             "content": "Vous êtes un assistant utile conçu pour extraire des fournitures scolaires du texte"
-                        " sans omission. Tu écris aux singulier les articles."},
-            {"role": "user", "content": """fais une liste de toutes les fournitures
-             scolaire, pas d'habits ou d'affaires de sport, dans le texte suivant sous forme :
+    msg = """fais une liste de toutes les fournitures scolaire"""
+
+    if classe != "":
+        msg += """pour la classe """
+        msg += classe
+
+    msg += """, pas d'habits ou d'affaires de sport, dans le texte suivant sous forme :
              {
              "name": "nom de l'article avec ses détails",
              "article": "nom de l'article le plus important sans détails",
@@ -50,7 +48,16 @@ def gpt3_extraction(file_path):
               cahier 24x32 rouge, bleu, vert, ou stylo bleu, rouge, vert, etc. Dans ce cas-là, il faut que tu
               créé une entité pour chaque couleur, N'oublie pas de mettre les noms au singulier dans ce cas-là.
               ne donne que le contenu en json, pas de texte en plus, n'oublie pas les [ et ] au début et a la fin du json.
-            """ + file}
+            """
+
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo-1106",
+        temperature=0.3,
+        messages=[
+            {"role": "system",
+             "content": "Vous êtes un assistant utile conçu pour extraire des fournitures scolaires du texte"
+                        " sans omission. Tu écris aux singulier les articles."},
+            {"role": "user", "content": msg + file}
         ]
     )
     print(response.choices[0].message.content)

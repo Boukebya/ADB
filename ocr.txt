@@ -1,57 +1,362 @@
 [
-{"name": "classeur souple 21x29,7", "article": "classeur", "nombre": 1},
-{"name": "intercalaire 21x29,7 en carton", "article": "intercalaire", "nombre": 6},
-{"name": "pochette plastifiée", "article": "pochette", "nombre": 1},
-{"name": "pochette d'œillets", "article": "pochette", "nombre": 1},
-{"name": "pochette cartonnée à rabats", "article": "pochette", "nombre": 1},
-{"name": "cahier 24x32 grands carreaux de 96 pages", "article": "cahier", "nombre": 2},
-{"name": "feutre fluo", "article": "feutre", "nombre": 4},
-{"name": "calculatrice type \"collège\"", "article": "calculatrice", "nombre": 1},
-{"name": "règle graduée", "article": "règle", "nombre": 1},
-{"name": "équerre", "article": "équerre", "nombre": 1},
-{"name": "rapporteur gradué en degrés 0°-180°", "article": "rapporteur", "nombre": 1},
-{"name": "compas avec crayon à visser", "article": "compas", "nombre": 1},
-{"name": "classeur souple 21 x 29,7 à gros anneaux", "article": "classeur", "nombre": 1},
-{"name": "feuilles simples perforées 21 x 29.7 cm grands carreaux blanches et jaunes", "article": "feuille", "nombre": 1},
-{"name": "surligneur", "article": "surligneur", "nombre": 1},
-{"name": "casque ou écouteurs mini-jack 3,5 mm (compatibles MP3)", "article": "casque", "nombre": 1},
-{"name": "cahier de brouillon (petit format)", "article": "cahier", "nombre": 1},
-{"name": "feutres fins (type stabylo-stylist); bleu/rouge/vert", "article": "feutre", "nombre": 3},
-{"name": "paquet de copies doubles 21 x 29,7 cm à grands carreaux", "article": "copie", "nombre": 1},
-{"name": "pochette de crayons de couleurs", "article": "pochette", "nombre": 1},
-{"name": "grand cahier 21 x 29.7 cm à grands carreaux de 96 pages", "article": "cahier", "nombre": 1},
-{"name": "pochette cartonnée avec rabats élastiques 21 x 29.7 cm", "article": "pochette", "nombre": 2},
-{"name": "paquet de copies doubles 21 x 29,7 cm à grands carreaux", "article": "copie", "nombre": 1},
-{"name": "pochette cartonnée avec rabats élastiques 21 x 29.7 cm", "article": "pochette", "nombre": 2},
-{"name": "classeur rigide 21 x 29,7 cm", "article": "classeur", "nombre": 1},
-{"name": "feuilles 21 x 29.7 cm à petits carreaux", "article": "feuille", "nombre": 1},
-{"name": "intercalaires", "article": "intercalaire", "nombre": 6},
-{"name": "clé USB", "article": "clé", "nombre": 1},
-{"name": "protège documents 21 x 29.7 - 30 pochettes (60 vues) (réutilisable chaque année)", "article": "protège document", "nombre": 1},
-{"name": "pochette de papier CANSON blanc - 24x32 cm - 180 grammes", "article": "pochette", "nombre": 1},
-{"name": "gouache à l'eau en tube (1 tube de chaque couleur: jaune, bleu, magenta, noir, blanc)", "article": "gouache", "nombre": 5},
-{"name": "pinceaux en poils synthétiques n° au choix( deux pointus, un plat)", "article": "pinceau", "nombre": 3},
-{"name": "porte-vues 30 feuilles", "article": "porte-vues", "nombre": 1},
-{"name": "feutre noir fin", "article": "feutre", "nombre": 1},
-{"name": "cahier 21 x 29.7 cm de 96 pages à grands carreaux", "article": "cahier", "nombre": 1},
-{"name": "pantalon de survêtement", "article": "pantalon", "nombre": 1},
-{"name": "short", "article": "short", "nombre": 1},
-{"name": "paire de chaussures de sport", "article": "chaussure", "nombre": 1},
-{"name": "maillot de bain", "article": "maillot", "nombre": 1},
-{"name": "slip de bain", "article": "slip", "nombre": 1},
-{"name": "bonnet de bain", "article": "bonnet", "nombre": 1},
-{"name": "trousse", "article": "trousse", "nombre": 1},
-{"name": "cartable rigide", "article": "cartable", "nombre": 1},
-{"name": "stylo", "article": "stylo", "nombre": 4},
-{"name": "gomme", "article": "gomme", "nombre": 1},
-{"name": "crayon gris HB", "article": "crayon", "nombre": 1},
-{"name": "règle graduée 30 cm", "article": "règle", "nombre": 1},
-{"name": "taille crayon avec réservoir", "article": "taille crayon", "nombre": 1},
-{"name": "ciseaux à bouts ronds", "article": "ciseaux", "nombre": 1},
-{"name": "bâton de colle", "article": "colle", "nombre": 1},
-{"name": "surligneur", "article": "surligneur", "nombre": 1},
-{"name": "boîte de feutres", "article": "feutre", "nombre": 1},
-{"name": "boîte de crayons de couleur", "article": "crayon", "nombre": 1},
-{"name": "cahier de texte", "article": "cahier", "nombre": 1},
-{"name": "pochette de copies", "article": "pochette", "nombre": 1}
+  {
+    "name": "cahier 96 pages grands carreaux",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "sac de sport",
+    "article": "sac",
+    "nombre": 1
+  },
+  {
+    "name": "paire de chaussures de sport",
+    "article": "chaussure",
+    "nombre": 1
+  },
+  {
+    "name": "pull réservé au sport",
+    "article": "pull",
+    "nombre": 1
+  },
+  {
+    "name": "short",
+    "article": "short",
+    "nombre": 1
+  },
+  {
+    "name": "protège-documents 30 pochettes",
+    "article": "protège-documents",
+    "nombre": 1
+  },
+  {
+    "name": "raquette de badminton",
+    "article": "raquette",
+    "nombre": 1
+  },
+  {
+    "name": "raquette de tennis de table",
+    "article": "raquette",
+    "nombre": 1
+  },
+  {
+    "name": "agenda scolaire",
+    "article": "agenda",
+    "nombre": 1
+  },
+  {
+    "name": "stylo plume",
+    "article": "stylo",
+    "nombre": 1
+  },
+  {
+    "name": "tube de colle",
+    "article": "colle",
+    "nombre": 1
+  },
+  {
+    "name": "crayon de bois",
+    "article": "crayon",
+    "nombre": 1
+  },
+  {
+    "name": "surligneur",
+    "article": "surligneur",
+    "nombre": 1
+  },
+  {
+    "name": "stylo à bille bleu",
+    "article": "stylo",
+    "nombre": 1
+  },
+  {
+    "name": "stylo à bille rouge",
+    "article": "stylo",
+    "nombre": 1
+  },
+  {
+    "name": "stylo à bille vert",
+    "article": "stylo",
+    "nombre": 1
+  },
+  {
+    "name": "stylo à bille noir",
+    "article": "stylo",
+    "nombre": 1
+  },
+  {
+    "name": "gomme",
+    "article": "gomme",
+    "nombre": 1
+  },
+  {
+    "name": "ciseaux",
+    "article": "ciseaux",
+    "nombre": 1
+  },
+  {
+    "name": "règle plate graduée 30 cm",
+    "article": "règle",
+    "nombre": 1
+  },
+  {
+    "name": "ruban adhésif",
+    "article": "ruban adhésif",
+    "nombre": 1
+  },
+  {
+    "name": "perforatrice",
+    "article": "perforatrice",
+    "nombre": 1
+  },
+  {
+    "name": "taille-crayon",
+    "article": "taille-crayon",
+    "nombre": 1
+  },
+  {
+    "name": "clé USB",
+    "article": "clé",
+    "nombre": 1
+  },
+  {
+    "name": "correcteur roller",
+    "article": "correcteur",
+    "nombre": 1
+  },
+  {
+    "name": "crayon de papier HB",
+    "article": "crayon",
+    "nombre": 2
+  },
+  {
+    "name": "crayon de papier 2B",
+    "article": "crayon",
+    "nombre": 2
+  },
+  {
+    "name": "porte-vues 60-80 pages",
+    "article": "porte-vues",
+    "nombre": 1
+  },
+  {
+    "name": "pochette de feuilles cartonnées 24x32 cm",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "chemise à élastique 24x32",
+    "article": "chemise",
+    "nombre": 1
+  },
+  {
+    "name": "feuilles simples perforées grands carreaux grand format",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "feuilles doubles perforées grands carreaux grand format",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "feuilles simples perforées grands carreaux petit format",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 96 pages grands carreaux",
+    "article": "cahier",
+    "nombre": 2
+  },
+  {
+    "name": "dictionnaire",
+    "article": "dictionnaire",
+    "nombre": 1
+  },
+  {
+    "name": "pochette à rabats élastique",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "pochette plastifiée rigide grand format",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "papier calque",
+    "article": "papier",
+    "nombre": 1
+  },
+  {
+    "name": "papier millimétré",
+    "article": "papier",
+    "nombre": 1
+  },
+  {
+    "name": "crayons de couleur",
+    "article": "crayon",
+    "nombre": 1
+  },
+  {
+    "name": "feutres de couleur",
+    "article": "feutre",
+    "nombre": 1
+  },
+  {
+    "name": "porte-vues 120 vues",
+    "article": "porte-vues",
+    "nombre": 1
+  },
+  {
+    "name": "porte-bloc à rabat",
+    "article": "porte-bloc",
+    "nombre": 1
+  },
+  {
+    "name": "feuilles simples à grands carreaux",
+    "article": "feuille",
+    "nombre": 10
+  },
+  {
+    "name": "cahier de TP 48 pages grands carreaux 24x32",
+    "article": "cahier",
+    "nombre": 2
+  },
+  {
+    "name": "blouse en coton",
+    "article": "blouse",
+    "nombre": 1
+  },
+  {
+    "name": "blouse de coton",
+    "article": "blouse",
+    "nombre": 1
+  },
+  {
+    "name": "blouse de coton",
+    "article": "blouse",
+    "nombre": 1
+  },
+  {
+    "name": "blouse de coton",
+    "article": "blouse",
+    "nombre": 1
+  },
+  {
+    "name": "pochette cartonnée rouge avec élastique 21x29,7",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "petit cahier grands carreaux",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "cahier d'essai petits carreaux",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "ouvrage de littérature de jeunesse",
+    "article": "ouvrage",
+    "nombre": 3
+  },
+  {
+    "name": "ouvrage du patrimoine",
+    "article": "ouvrage",
+    "nombre": 3
+  },
+  {
+    "name": "cahier 200 pages petits carreaux 24x32",
+    "article": "cahier",
+    "nombre": 2
+  },
+  {
+    "name": "équerre",
+    "article": "équerre",
+    "nombre": 1
+  },
+  {
+    "name": "rapporteur",
+    "article": "rapporteur",
+    "nombre": 1
+  },
+  {
+    "name": "compas",
+    "article": "compas",
+    "nombre": 1
+  },
+  {
+    "name": "règle graduée",
+    "article": "règle",
+    "nombre": 1
+  },
+  {
+    "name": "pochette de rangement grand format avec élastiques",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "calculatrice scientifique",
+    "article": "calculatrice",
+    "nombre": 1
+  },
+  {
+    "name": "feutres fins",
+    "article": "feutre",
+    "nombre": 2
+  },
+  {
+    "name": "protège-cahiers transparents",
+    "article": "protège-cahiers",
+    "nombre": 2
+  },
+  {
+    "name": "cahier 96 pages grands carreaux",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "petit dictionnaire français-allemand",
+    "article": "dictionnaire",
+    "nombre": 1
+  },
+  {
+    "name": "cahier petit format 96 pages",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "classeur rigide",
+    "article": "classeur",
+    "nombre": 1
+  },
+  {
+    "name": "paquet de pochettes plastiques perforées",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "intercalaires cartonnés",
+    "article": "intercalaire",
+    "nombre": 3
+  },
+  {
+    "name": "cahier 96 pages grands carreaux",
+    "article": "cahier",
+    "nombre": 2
+  },
+  {
+    "name": "protège-cahier bleu",
+    "article": "protège-cahier",
+    "nombre": 1
+  },
+  {
+    "name": "pochette cartonnée A4",
+    "article": "pochette",
+    "nombre": 1
+  }
 ]

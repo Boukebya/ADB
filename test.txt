@@ -1,55 +1,72 @@
-intercalaires  --> Aucun score > 0 dans le basic matching
-pantalon survetement  --> Aucun score > 0 dans le basic matching
-short  --> Aucun score > 0 dans le basic matching
+cahier 96 pages grands carreaux  --> Aucun score > 0 dans le basic matching
 paire chaussures sport  --> Aucun score > 0 dans le basic matching
-maillot bain  --> Aucun score > 0 dans le basic matching
-slip bain  --> Aucun score > 0 dans le basic matching
-bonnet bain  --> Aucun score > 0 dans le basic matching
-cartable rigide  --> Aucun score > 0 dans le basic matching
-classeur souple 21x29,7 --> classeur transparent bleu polyvision personnalisable dos 2cm 4 anneaux 21x29 7 
-intercalaire 21x29,7 en carton --> jeu 6 intercalaires a touches neutres 17x22 cm carte lustree 225 g couleurs assorties 
-pochette plastifiée --> pochette 12 maxi feutres pointe large couleurs assorties 
-pochette d'œillets --> pochette 4 rollers effacables frixion ball assortis 
-pochette cartonnée à rabats --> pochette 4 marqueurs tableau blanc velleda 1711 effacable a sec pointe ogive assorti 
-cahier 24x32 grands carreaux de 96 pages --> cahier travaux pratiques piqure 96 pages 48 pages seyes 90g 48 pages dessin 24x32 cm couvert 
-feutre fluo --> stylo feutre nylon flair noir 
-calculatrice type "collège" --> calculatrice poche 10 chiffres business 
-règle graduée --> regle plate plastique 20 cm 
-équerre --> equerre geometrique 16 cm 
-rapporteur gradué en degrés 0°-180° --> rapporteur cristal gradue 12 cm 180 
-compas avec crayon à visser --> compas scolaire a bague universelle crayon maped study 
-classeur souple 21 x 29,7 à gros anneaux --> classeur transparent bleu polyvision personnalisable dos 2cm 4 anneaux 21x29 7 
-feuilles 21x29s perforées 21 x 29.7 cm grands carreaux blanches et jaunes --> sachet 50 feuilles doubles copies doubles 200 pages perforees format 21x29 7 cm quadrille 5x5 70g blanc 
-surligneur --> surligneur large grip mfirst jaune fluo
-casque ou écouteurs mini-jack 3,5 mm (compatibles mp3) --> casque micro stereo usb 
-cahier de brouillon (17x22) --> cahier brouillon 48 pages 17x22 cm 
-feutres fins (type stabylo-stylist); bleu/rouge/vert --> feutre visa 880 bleu 
-paquet de copies doubles 21 x 29,7 cm à grands carreaux --> sachet 50 feuilles doubles copies doubles 200 pages perforees format 21x29 7 cm quadrille 5x5 70g blanc 
-pochette de crayons de couleurs --> pochette 12 crayons couleur ferby triangulaires 12 cm couleurs assorties 
-cahier 24x32 21 x 29.7 cm à grands carreaux de 96 pages --> cahier travaux pratiques piqure 96 pages 48 pages seyes 90g 48 pages dessin 21x29 7 cm couve 
-pochette cartonnée avec rabats élastiques 21 x 29.7 cm --> pochette 12 feuilles papier calque uni 90 g 21x29 7 cm excellence 
-paquet de copies doubles 21 x 29,7 cm à grands carreaux --> sachet 50 feuilles doubles copies doubles 200 pages perforees format 21x29 7 cm quadrille 5x5 70g blanc 
-pochette cartonnée avec rabats élastiques 21 x 29.7 cm --> pochette 12 feuilles papier calque uni 90 g 21x29 7 cm excellence 
-classeur rigide 21 x 29,7 cm --> classeur a levier format 21 x 29 7 cm dos extra large 80 mm framboise 
-feuilles 21 x 29.7 cm à petits carreaux --> sachet 50 feuilles doubles copies doubles 200 pages perforees format 21x29 7 cm quadrille 5x5 70g blanc 
-clé usb --> cle usb rainbow 4 go 
-protège documents 21 x 29.7 - 30 pochettes (60 vues) (réutilisable chaque année) --> protege documents personnalisable 80 pochettes 160 vues format a4 21x29 7 cm 
-pochette de papier canson blanc - 24x32 cm - 180 grammes --> pochette 12 feuilles papier dessin blanc 180 g format 24x32 cm excellence 
-gouache à l'eau en tube (1 tube de chaque couleur: jaune, bleu, magenta, noir, blanc) --> boite 10 tubes 10 ml gouache p couleurs assorties 
-pinceaux en poils synthétiques n° au choix( deux pointus, un plat) --> pinceau poney 2 
-porte-vues 30 feuilles --> protege documents personnalisable 100 pochettes 200 vues format a4 21x29 7 cm 5 couleurs assort porte vues 
-feutre noir fin --> stylo feutre pointe fine baguee noir 
-cahier 21 x 29.7 cm de 96 pages à grands carreaux --> cahier travaux pratiques piqure 96 pages 48 pages seyes 90g 48 pages dessin 21x29 7 cm couve 
-trousse --> trousse double plateau rouge 
-stylo --> stylo bille bic cristal pointe fine bleu 
+pull reserve sport  --> Aucun score > 0 dans le basic matching
+short  --> Aucun score > 0 dans le basic matching
+raquette badminton  --> Aucun score > 0 dans le basic matching
+raquette tennis table  --> Aucun score > 0 dans le basic matching
+pochette feuilles cartonnees 24x32 cm  --> Aucun score > 0 dans le basic matching
+feuilles 21x29s perforees grands carreaux 24x32 a4  --> Aucun score > 0 dans le basic matching
+feuilles 21x29s perforees grands carreaux 17x22 a4 a5  --> Aucun score > 0 dans le basic matching
+cahier 96 pages grands carreaux  --> Aucun score > 0 dans le basic matching
+feuilles 21x29s a grands carreaux a4  --> Aucun score > 0 dans le basic matching
+cahier tp 48 pages grands carreaux 24x32  --> Aucun score > 0 dans le basic matching
+cahier 17x22 grands carreaux a5  --> Aucun score > 0 dans le basic matching
+cahier essai petits carreaux  --> Aucun score > 0 dans le basic matching
+ouvrage litterature jeunesse  --> Aucun score > 0 dans le basic matching
+ouvrage patrimoine  --> Aucun score > 0 dans le basic matching
+cahier 200 pages petits carreaux 24x32  --> Aucun score > 0 dans le basic matching
+protege cahiers transparents  --> Aucun score > 0 dans le basic matching
+cahier 96 pages grands carreaux  --> Aucun score > 0 dans le basic matching
+cahier 17x22 96 pages a5  --> Aucun score > 0 dans le basic matching
+cahier 96 pages grands carreaux  --> Aucun score > 0 dans le basic matching
+sac de sport --> sac 10 pochettes coin polypropylene 14 100eme incolore 
+protège-documents 30 pochettes --> protege documents personnalisable 20 pochettes 40 vues format a4 21x29 7 cm incolore porte vues
+agenda scolaire --> agenda septembre a aout 1 page jour 11 5 x 17 cm motif maisons 
+stylo plume --> stylo plume school writer 
+tube de colle --> b colle scotch 8g colle blanche 
+crayon de bois --> crayon graphite hexagonal bois naturel vernis hb 
+surligneur --> surligneur large jaune fluo
+stylo à bille bleu --> stylo bille bic cristal pointe fine bleu 
+stylo à bille rouge --> stylo bille bic cristal pointe fine rouge 
+stylo à bille vert --> stylo bille papermate inkjoy 100 vert 
+stylo à bille noir --> stylo bille bic cristal pointe fine noir 
 gomme --> gomme plastique 
-crayon gris hb --> crayon graphite hb bout majuscule 
-règle graduée 30 cm --> regle plate 30cm incassable 
-taille crayon avec réservoir --> taille crayon eco 2 usages plastique reserve 
-ciseaux à bouts ronds --> ciseaux bouts ronds anneaux plastique 13 cm droitier 
-bâton de colle --> lot 5 b tons colle scotch 8g colle blanche 
-surligneur --> surligneur large grip mfirst jaune fluo
-boîte de feutres --> stylo feutre pointe fine baguee bleu 
-boîte de crayons de couleur --> gomme crayon 
-cahier de texte --> cahier texte 17x22 cm seyes reliure integrale 124 pages blanc 90g 
-pochette de copies --> intercalaires 12 positions polypropylene pochette perforees a4 
+ciseaux --> ciseaux bouts ronds anneaux plastique 13 cm droitier 
+règle plate graduée 30 cm --> regle plate cristal 30 cm 
+ruban adhésif --> rouleau adhesif ruban adhesif transparent 19 mm x 33 
+perforatrice --> perforateur perforatrice 1 trou 
+taille-crayon --> taille crayons metal 2 usages 
+clé usb --> cle usb rainbow 8 go 
+correcteur roller --> correcteur frontal jetable 5mm x 8m 
+crayon de papier hb --> crayon graphite hb bout majuscule 
+crayon de papier 2b --> crayon graphite majuscule 2b 
+porte-vues 60-80 pages --> protege documents personnalisable 100 pochettes 200 vues format a4 21x29 7 cm 5 couleurs assort porte vues 
+chemise à élastique 24x32 --> pochettes chemise personnalisable 3 rabats a elastiques format 24x32 cm assortis 
+feuilles doubles copies doubles perforées grands carreaux 24x32 --> tui 50 feuilles doubles copies doubles perforees 200 pages format 21x29 7 cm seyes 90g blanc 
+dictionnaire --> dictionnaire larousse debutants cp 
+pochette à rabats élastique --> pochette 12 crayons couleur gros module 
+pochette plastifiée rigide 24x32 --> pochette 12 feuilles a dessin 224g format 24x32 cm excellence 
+papier calque --> pochette 12 feuilles papier calque uni 90 g 21x29 7 cm excellence 
+papier millimétré --> pochette 12 feuilles papier millimetre 90g format 21x29 7 cm excellence 
+crayons de couleur --> taille crayon eco 2 usages plastique reserve 
+feutres de couleur --> feutre effacable a sec pointe fine 1 5 mm bleu 
+porte-vues 120 vues --> protege documents personnalisable 100 pochettes 200 vues format a4 21x29 7 cm 5 couleurs assort porte vues 
+porte-bloc à rabat --> plaque porte bloc plastique pince format a4 
+blouse en coton --> blouse taille 0 36 38 tour poitrine 82 a 87 cm 
+blouse de coton --> blouse taille 0 36 38 tour poitrine 82 a 87 cm 
+blouse de coton --> blouse taille 0 36 38 tour poitrine 82 a 87 cm 
+blouse de coton --> blouse taille 0 36 38 tour poitrine 82 a 87 cm 
+chemise rouge avec élastique 21x29,7 a4 --> pochette 12 feuilles papier calque uni 90 g 21x29 7 cm excellence 
+équerre --> querre plastique graduee 60 16 cm 
+rapporteur --> rapporteur cristal gradue 12 cm 180 
+compas --> compas scolaire maped stop system 
+règle graduée --> regle plate cristal 30 cm 
+pochette de rangement 24x32 avec élastiques --> pochette 12 feuilles papier dessin 24x32 cm 160 g teintes pastels assorties noir 
+calculatrice scientifique --> calculatrice poche 10 chiffres business 
+feutres fins --> stylo feutre pointe fine baguee bleu 
+petit dictionnaire français-allemand --> dictionnaire poche francais allemand hachette langenscheidt 
+classeur rigide --> classeur polypropylene semi rigide 4 anneaux ronds format a4 bleu clair 
+paquet de pochettes plastiques perforées --> intercalaires intercalaire 12 positions polypropylene pochette perforees a4 
+intercalaires cartonnés --> jeu 6 intercalaires intercalaire a touches neutres 17x22 cm carte lustree 225 g couleurs assorties 
+protège-cahier bleu --> protege documents couverture souple polypropylene 20 vues bleu porte vues
+chemise a4 21x29 a4 --> intercalaires intercalaire 12 positions polypropylene pochette perforees a4 

@@ -41,6 +41,8 @@ def vertex_request(file_path):
     :return: json with file_path, execution_time, content_ocr, result_extraction and matching
     """
 
+    classe = ""
+    print("timer start")
     start_time = time.time()
 
     # OCR using Vertex
@@ -52,7 +54,7 @@ def vertex_request(file_path):
         print("done OCR")
 
     # Extraction using GPT3
-    gpt3_extraction("ocr.txt")
+    gpt3_extraction("ocr.txt", classe)
     with open('ocr.txt', 'r', encoding='utf-8') as file:
         content_extraction = file.read()
         print("done extraction")

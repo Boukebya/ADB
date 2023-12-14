@@ -1,7 +1,7 @@
 from google.api_core.client_options import ClientOptions
 from google.cloud import documentai_v1 as documentai
 from google.oauth2 import service_account
-
+from PIL import Image
 
 def vertex_ocr(file_path):
     """
@@ -9,6 +9,7 @@ def vertex_ocr(file_path):
     en utilisant l'API de Google Document AI, le texte est écrit dans un fichier texte nommé ocr.txt
     :param file_path: Chemin du fichier image
     """
+
 
     # Spécifiez le chemin vers votre fichier de clés de compte de service
     json_credentials_path = "src/google.json"
@@ -27,6 +28,14 @@ def vertex_ocr(file_path):
 
     # Chemin d'accès complet pour le processeur de documents
     name = client.processor_path(project_id, location, processor_id)
+
+    # if file_path is an array, concatenate images
+    if type(file_path) == list:
+        with open("concatenated_image.jpg", "wb") as f:
+            for image in file_path:
+                with open(image, "rb") as img:
+                    f.write(img.read())
+        file_path = "concatenated_image.jpg"
 
     with open(file_path, "rb") as image:
         image_content = image.read()
@@ -64,3 +73,21 @@ def vertex_ocr(file_path):
         f.write(document.text)
 
 
+def concat_images(image_path1, image_path2, output_path):
+    # Ouvrir les images
+    image1 = Image.open(image_path1)
+    image2 = Image.open(image_path2)
+
+    # Calculer les dimensions pour la nouvelle image
+    width = image1.width + image2.width
+    height = max(image1.height, image2.height)
+
+    # Créer une nouvelle image avec les dimensions appropriées
+    new_image = Image.new('RGB', (width, height))
+
+    # Coller les images dans la nouvelle image
+    new_image.paste(image1, (0, 0))
+    new_image.paste(image2, (image1.width, 0))
+
+    # Enregistrer la nouvelle image
+    new_image.save(output_path)

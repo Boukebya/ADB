@@ -138,11 +138,11 @@ def correspondance_score(article, catalog):
     mots_article = preprocess_string(article["name"])
     important_word = preprocess_string(article["article"])
     sentence_article = ""
-    important_word = ""
+    sentence_important_word = ""
     for mot in mots_article:
         sentence_article += mot + " "
     for mot in important_word:
-        important_word += mot + " "
+        sentence_important_word += mot + " "
 
     #print(sentence)
     #print(imp_word)
@@ -151,18 +151,75 @@ def correspondance_score(article, catalog):
     for i, article_catalog in enumerate(catalog):
         texte_article_catalog = article_catalog["texte"]
 
-        if important_word in texte_article_catalog:
+        if sentence_important_word in texte_article_catalog:
             scores[i] += 4
         else:
             scores[i] -= 1
 
-        # cas par cas spécifique
-        if ("cahier" in sentence_article and "protege" not in sentence_article) and ("protege cahier" in texte_article_catalog):
-            scores[i] -= 10
-        if ("feuilles" in sentence_article and "doubles" not in sentence_article) and ("doubles" in texte_article_catalog):
-            scores[i] -= 10
-        if ("feuilles" in sentence_article and "doubles" in sentence_article) and ("doubles" in texte_article_catalog):
+        if "agenda" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "30456":
             scores[i] += 10
+        if "colle" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "79576U05":
+            scores[i] += 10
+        if "crayon de bois" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "78567U12":
+            scores[i] += 10
+        if "stylo plume" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "27511":
+            scores[i] += 10
+        if "crayons de couleurs" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "20294":
+            scores[i] += 10
+        if "cle usb" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "72822":
+            scores[i] += 10
+        if "correcteur" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "34848":
+            scores[i] += 10
+        if "papier calque" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "43007":
+            scores[i] += 10
+        if "surligneur" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "64132":
+            scores[i] += 10
+        if "regle" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "78324":
+            scores[i] += 10
+        if "taille crayon" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "7520":
+            scores[i] += 10
+        if "equerre" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "79844":
+            scores[i] += 10
+        if "rapporteur" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "79847":
+            scores[i] += 10
+        if "compas" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "60825":
+            scores[i] += 10
+        if "gomme" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "35329":
+            scores[i] += 10
+
+        # Mappage des termes à leurs références et scores
+        termes_et_scores = {
+            "cahier": {"reference": None, "score": -10, "condition": "protege" not in sentence_article},
+            "feuilles": {"reference": None, "score": -10, "condition": "doubles" not in sentence_article},
+            "feuilles doubles": {"reference": None, "score": 10, "condition": True},
+            "agenda": {"reference": "30456", "score": 10},
+            "colle": {"reference": "79576U05", "score": 10},
+            "crayon de bois": {"reference": "78567U12", "score": 10},
+            "stylo plume": {"reference": "27511", "score": 10},
+            "crayons de couleurs": {"reference": "20294", "score": 10},
+            "cle usb": {"reference": "72822", "score": 10},
+            "correcteur": {"reference": "34848", "score": 10},
+            "papier calque": {"reference": "43007", "score": 10},
+            "surligneur": {"reference": "64132", "score": 10},
+            "regle": {"reference": "78324", "score": 10},
+            "taille crayon": {"reference": "7520", "score": 10},
+            "equerre": {"reference": "79844", "score": 10},
+            "rapporteur": {"reference": "79847", "score": 10},
+            "compas": {"reference": "60825", "score": 10},
+            "gomme": {"reference": "35329", "score": 10},
+        }
+
+        # Vérification et mise à jour des scores
+        for terme, details in termes_et_scores.items():
+            if terme in sentence_article and (
+                    details["reference"] is None or details["reference"] == article_catalog["rÃ©fÃ©rence"]):
+                if "condition" not in details or details["condition"]:
+                    scores[i] += details["score"]
+
+        # Les conditions spéciales pour "feuilles" et "protege cahier"
+        if ("feuilles" in sentence_article and "protege cahier" in texte_article_catalog) or \
+                ("protege" in sentence_article and "cahier" in texte_article_catalog):
+            scores[i] -= 10
 
         # score = nombre de mots de l'article qui sont dans l'entité
         for mot in mots_article:
@@ -261,4 +318,4 @@ def use_levenshtein():
                 file.write(article["texte"], " --> Article non trouvé")
                 file.write("\n")
 
-#use_levenschtein()
+use_levenshtein()
