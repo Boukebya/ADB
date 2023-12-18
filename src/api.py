@@ -1,3 +1,4 @@
+import json
 import os
 import time
 from flask import Flask, request, jsonify
@@ -9,6 +10,7 @@ from OCR.vertex_ocr import vertex_ocr
 from Extraction.gpt3_extraction import gpt3_extraction
 from Matching.basic_comparison import gpt3_matching
 from Matching.levenschtein_matching import use_levenshtein
+
 
 app = Flask(__name__)
 CORS(app)
@@ -42,6 +44,7 @@ def vertex_request(file_path):
     """
 
     classe = ""
+
     print("timer start")
     start_time = time.time()
 

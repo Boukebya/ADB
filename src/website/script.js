@@ -1,6 +1,6 @@
 // Appel des fonctions de l'API Flask
-document.getElementById('apiButton2').addEventListener('click', () => call_vertex("src/website/uploads/file.jpg", ""));
-document.getElementById('apiButton3').addEventListener('click', () => call_gpt4("src/website/uploads/file.jpg", ""));
+document.getElementById('apiButton2').addEventListener('click', () => call_vertex("src/website/uploads/file.jpg"));
+document.getElementById('apiButton3').addEventListener('click', () => call_gpt4("src/website/uploads/file.jpg"));
 // Appel de la fonction pour enregistrer l'image dans le serveur
 document.getElementById('uploadButton').addEventListener('click', uploadFile);
 
@@ -57,10 +57,10 @@ function uploadFile() {
 
 
 // Fonction pour appeler l'API pour utiliser Vertex
-function call_vertex(path, classe) {
+function call_vertex(path) {
 fetch(`http://127.0.0.1:5000/use_vertex/${path}`, {
-        method: 'GET'
-    })
+    method: 'GET'
+})
     .then(response => response.json())
     .then(data => {
         console.log(data);

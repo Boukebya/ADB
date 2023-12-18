@@ -1,76 +1,21 @@
-paire chaussures sport  --> Aucun score > 0 dans le basic matching
-pull reserve sport  --> Aucun score > 0 dans le basic matching
-short  --> Aucun score > 0 dans le basic matching
-raquette badminton  --> Aucun score > 0 dans le basic matching
-raquette tennis table  --> Aucun score > 0 dans le basic matching
-ouvrage litterature jeunesse  --> Aucun score > 0 dans le basic matching
-ouvrage patrimoine  --> Aucun score > 0 dans le basic matching
-cahier 96 pages grand carreaux --> piqûre 96 page couvertur polypropylène a4 seye 90 gramme couvertur : violet
-sac de sport --> sac 10 pochettes coin polypropylene 14 100eme incolore 
-paire de chaussures de sport --> Aucun score > 0 
-pull réservé au sport --> Aucun score > 0 
-short --> Aucun score > 0 
-protège-documents 21 x 29,7 plastifié --> protege documents personnalisable 20 pochettes 40 vues format a4 21x29 7 cm incolore porte vues
-raquette de badminton --> Aucun score > 0 
-raquette de tennis de table --> Aucun score > 0 
-agenda scolaire --> agenda septembre a aout 1 page jour 11 5 x 17 cm motif maisons 
-stylo plume --> stylo plume school writer 
-tube de colle --> b colle scotch 8g colle blanche 
-crayon de bois --> crayon graphite hexagonal bois naturel vernis hb 
-fluo --> surligneur large grip mfirst jaune fluo
-stylo à billes bleu --> stylo bille bic cristal pointe fine bleu 
-stylo à billes rouge --> stylo bille bic cristal pointe fine rouge 
-stylo à billes vert --> stylo bille papermate inkjoy 100 vert 
-stylo à billes noir --> stylo bille bic cristal pointe fine noir 
-gomme --> gomme plastique 
-ciseaux --> ciseaux bouts ronds anneaux plastique 13 cm droitier 
-règle plate graduée 30 cm --> regle plate cristal 30 cm 
-scotch --> rouleau scotch ruban adhesif crystal transparent 19 mm x 7 5 devidoir 
-perforatrice --> perforateur perforatrice 1 trou 
-taille-crayons --> taille crayons metal 2 usages 
-clé usb --> cle usb rainbow 8 go 
-correcteur roller --> correcteur frontal jetable 5mm x 8m 
-crayon de papier hb --> crayon graphite hb bout majuscule 
-crayon de papier 2b --> crayon graphite majuscule 2b 
-porte vues 60-80 pages --> pochette 12 feuilles papier dessin canson blanc 180 g format 21x29 7 cm 
-pochette de feuilles cartonnées 224g / 24x32 --> pochette 12 feuilles a dessin 224g format 24x32 cm excellence 
-chemise à élastique 24x32 --> pochettes chemise personnalisable 3 rabats a elastiques format 24x32 cm assortis 
-feuilles simples perforées grands carreaux grand format --> annuaire vide
-feuilles doubles copies doubles perforées grands carreaux grand format --> sachet 50 copie double ( 200 page perforer ) format 17x22 cm séyès 70 gramme blanc
-feuilles simples perforées grands carreaux 17x22 --> annuaire vide
-cahier 96 pages grands carreaux --> piqûre 96 page , couvertur polypropylène , format 24x32 cm , 5x5 , coloris jaune
-dictionnaire --> dictionnaire larousse debutants cp 
-pochette à rabats élastique --> pochette 12 crayons couleur gros module 
-pochette plastifiée rigide grand format --> pochette 12 feuilles a dessin 224g format 24x32 cm excellence 
-papier calque --> pochette 12 feuilles papier calque uni 90 g 21x29 7 cm excellence 
-papier millimétré --> paquet 10 feuille calquer 70 gramme 24x32 transparer
-crayons de couleurs --> tui 12 crayons couleurs volution triangulaire pointe moyenne 
-feutres de couleurs --> feutre visa 880 bleu 
-porte-vues 120 vues --> pochette 12 feuilles papier dessin canson blanc 180 g format 21x29 7 cm 
-porte-bloc à rabat --> plaque porte bloc plastique pince format a4 
-feuilles simples à grands carreaux --> sachet 50 feuillet mobile ( 100 page ) format 21x29,7 cm séyès 90 gramme blanc
-cahier de tp grands carreaux 24x32 --> annuaire vide
-blouse en coton à longues manches --> blouse taille 0 36 38 tour poitrine 82 a 87 cm 
-blouse de coton --> blouse taille 0 36 38 tour poitrine 82 a 87 cm 
-chemise rouge avec élastique 21x29,7 --> pochette 12 feuilles papier millimetre 90g format 21x29 7 cm excellence 
-cahier 17x22 grands carreaux --> cahier piquer 140 page 4 index , couvertur polypropylène , format 17x22 cm , seyè
-cahier d'essai 17x22 grands carreaux --> cahier apprentissage piqûre 32 page , format 17 x 22 cm , réglure maternel double ligne 2 millimètre
-ouvrage de littérature de jeunesse --> Aucun score > 0 
-ouvrage du patrimoine --> Aucun score > 0 
-cahier 200 pages petits carreaux --> annuaire vide
-équerre --> equerre plastique graduee 60 16 cm 
-rapporteur --> rapporteur cristal gradue 12 cm 180 
-compas --> compas scolaire maped stop system 
-règle graduée --> regle plate cristal 30 cm 
-pochette de rangement grand format avec élastiques --> pochette 10 feuilles papier dessin canson format 29 7x42 cm 180g excellence 
-calculatrice scientifique --> calculatrice poche 10 chiffres business 
-feutres fins --> stylo feutre pointe fine baguee bleu 
-protège-cahiers transparents --> protège-cahier rabat , 21 x 29,7 cm , vert
-cahier 24x32cm grands carreaux --> piqûre 140 page , couvertur polypropylène , format 24x32 cm , seye 90 gramme couvertur : vert
-petit dictionnaire français-allemand --> dictionnaire poche francais allemand hachette langenscheidt 
-cahier 17x22 96 pages --> piqûre 96 page couvertur polypropylène 17x22 cm seye 90 gramme couvertur : gris perl
-classeur 21 x 29,7 rigide --> classeur personnalisable polypropylene blanc dos 2cm 21x29 7 
-paquet de pochettes plastiques perforées 21 x 29,7 --> pochette 12 feuilles papier dessin canson blanc 180 g format 21x29 7 cm 
-grands cahiers format 24x32 de 96 pages --> piqûre 96 page , couvertur polypropylène , format 24x32 cm , seyè , coloris orange
-protège-cahier bleu --> protège-cahier opaque rabat 17x22 bleu
-chemise a4 21x29 --> pochette 12 feuilles papier calque uni 90 g 21x29 7 cm excellence 
+cartable rigide  --> Aucun score > 0 dans le basic matching
+cartable rigide --> Aucun score > 0 
+crayon papier hb --> crayon graphite hb bout majuscule 
+gomme blanche --> gomme plastique 
+taille-crayon à réservoir --> taille crayons metal 2 usages 
+stylo bleu --> stylo bille bic cristal pointe fine bleu 
+stylo vert --> stylo feutre pointe fine baguee vert 
+stylo rouge --> stylo bille bic cristal pointe fine rouge 
+surligneur bleu --> surligneur large grip mfirst bleu fluo
+surligneur orange --> surligneur large grip mfirst orange fluo
+paire de ciseaux à bouts ronds --> ciseaux bouts ronds 13cm 
+tube de colle en bâton --> b colle scotch 8g colle blanche 
+douzaine de feutres à pointe moyenne --> feutre tableau blanc pointe moyenne ogive bleu 
+douzaine de crayons de couleurs larges --> boite 16 crayons a cire 9 cm couleurs assorties 
+règle plate 20 cm --> regle plate cristal 30 cm 
+ardoise effaçable à sec --> ardoise effacable a sec 1 face uni 1 face quadrillee seyes format 20x28cm couleurs assorties 
+gros feutre ardoise --> stylo feutre pointe fine baguee bleu 
+chiffon --> chiffonnette chiffon microfibre 20x20cm 
+pochette à élastiques et rabats --> paquet 5 pochettes chemises 3 rabats a elastiques top file carte lustree 4 10e 390g coloris pastel assortis 
+boite de mouchoirs --> boite distributrice 100 mouchoirs 
+ramette de papier blanc --> ramette 500 feuille papier blanc 80 gramme format a4 business

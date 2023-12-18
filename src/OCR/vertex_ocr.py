@@ -1,7 +1,19 @@
+import json
+
 from google.api_core.client_options import ClientOptions
 from google.cloud import documentai_v1 as documentai
 from google.oauth2 import service_account
 from PIL import Image
+
+with open('src/config.json', 'r') as config_file:
+    config = json.load(config_file)
+
+google_var = config['google_cloud']
+
+google_project_id = google_var['project_id']
+google_location = google_var['location']
+google_processor = google_var['processor']
+
 
 def vertex_ocr(file_path):
     """
@@ -17,17 +29,13 @@ def vertex_ocr(file_path):
     # Chargez explicitement les informations d'identification à partir du fichier JSON
     credentials = service_account.Credentials.from_service_account_file(json_credentials_path)
 
-    # Informations de votre projet et de l'API Document AI
-    project_id = "teak-truck-404413"
-    location = "eu"  # Format is "us" or "eu"
-    processor_id = "6ac5684a8d5752ee"
 
     # Initialise les options client avec l'endpoint et les informations d'identification
-    opts = ClientOptions(api_endpoint=f"{location}-documentai.googleapis.com")
+    opts = ClientOptions(api_endpoint=f"{google_location}-documentai.googleapis.com")
     client = documentai.DocumentProcessorServiceClient(client_options=opts, credentials=credentials)
 
     # Chemin d'accès complet pour le processeur de documents
-    name = client.processor_path(project_id, location, processor_id)
+    name = client.processor_path(google_project_id, google_location, google_processor)
 
     # if file_path is an array, concatenate images
     if type(file_path) == list:

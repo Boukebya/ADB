@@ -1,5 +1,14 @@
+import json
+
 from openai import OpenAI
 
+with open('src/config.json', 'r') as config_file:
+    config = json.load(config_file)
+
+google_var = config['google_cloud']
+
+openai_var = config['openai']
+open_ai_key = openai_var['api_key']
 
 def gpt3_extraction(file_path, classe):
     """
@@ -8,8 +17,7 @@ def gpt3_extraction(file_path, classe):
     :param file_path: path to the text file
     """
 
-    api_key = "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"
-    client = OpenAI(api_key=api_key)
+    client = OpenAI(api_key=open_ai_key)
     with open(file_path, "rb") as text_file:
         file = text_file.read().decode('utf-8')
 
