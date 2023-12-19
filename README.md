@@ -43,7 +43,19 @@ You can find more details and the links to directly do this tasks in the followi
 - Set up the Document AI API : https://cloud.google.com/document-ai/docs/setup
 - Use Enterprise Document OCR to process documents : https://cloud.google.com/document-ai/docs/process-documents-ocr
 
+Configuration
 
+- Once you have completed the prerequisites, you need to configure your project to use Document AI. This involves providing the project ID, location, processor name, and service account credentials path.
+
+- Provide the project ID: The project ID is the unique identifier for your Google Cloud Platform project. You can find the project ID in the "Project ID" field of the "APIs & Services" page in the Google Cloud Console.
+
+- Provide the location: The location is the region where your document processor is running. You can find the location in the "Location" field of the "Processors" page in the Google Cloud Console.
+
+- Provide the processor name: The processor name is the unique identifier for your document processor. You can find the processor name in the "Processor ID" field of the Processors page in the Google Cloud Console.
+
+- Provide the service account credentials path: The service account credentials path is the path to the JSON file that contains the service account credentials. You can download the service account credentials file from the "Clés d'API" page in the Google Cloud Console.
+
+You'll have to fill this informations in both the config.json and google.json, the first one will have to be filled manually and the latter one is the JSON file downloaded from the Google Cloud Console.
 
 ## Create OpenAI account
 
