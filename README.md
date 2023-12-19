@@ -24,6 +24,27 @@ click to expand
 
 ## Create vertex account
 
+Prerequisites
+
+Before you can use Document AI, you need to make sure that you have a Google Cloud Platform project, the Document AI API enabled, a document processor created, and service account credentials downloaded.
+
+Instructions
+
+- Create a Google Cloud Platform project. To do this, go to the Google Cloud Console and click on the "Créer un projet" button.
+
+- Enable the Document AI API. To do this, go to the "APIs & Services" page of the Google Cloud Console and search for Document AI. Click on the "Enable" button.
+
+- Create a document processor. To do this, go to the "Processeurs de documents" page of the Google Cloud Console and click on the "Créer un processeur button".
+
+- Download the service account credentials. To do this, go to the "Clés d'API" page of the Google Cloud Console and click on the "Créer une clé" button. Select "Clé JSON" and click on "Créer".
+
+You can find more details and the links to directly do this tasks in the following tutorials :
+
+- Set up the Document AI API : https://cloud.google.com/document-ai/docs/setup
+- Use Enterprise Document OCR to process documents : https://cloud.google.com/document-ai/docs/process-documents-ocr
+
+
+
 ## Create OpenAI account
 
 - Create an account on OpenAI website
