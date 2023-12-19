@@ -1,8 +1,6 @@
 import re
-import fuzzywuzzy
 import nltk
 from fuzzywuzzy import fuzz
-from fuzzywuzzy import process
 import json
 from nltk.corpus import stopwords
 from Matching.special_case import match_book, match_paper
@@ -112,6 +110,7 @@ def correspondance_score(article, catalog):
     Le système de score est le suivant:
     -1 si le mot important n'est pas dans l'article de l'annuaire
     +4 si le mot important est dans l'article de l'annuaire
+    +10 pour les ref spécifiques
     +1 si un mot de l'article est dans l'article de l'annuaire
     :param article: article à comparer, dict avec clé 'name'
     :param catalog: annuaire des articles, liste de dicts avec clés 'texte' et 'type'
@@ -125,6 +124,8 @@ def correspondance_score(article, catalog):
     # Prétraitement de l'article
     article["name"] = format_to_catalog(article["name"])
     article["article"] = format_to_catalog(article["article"])
+    nombre = article["nombre"]
+
     mots_article = preprocess_string(article["name"])
     important_word = preprocess_string(article["article"])
     sentence_article = ""
@@ -144,6 +145,8 @@ def correspondance_score(article, catalog):
     if "cahier" in sentence_article:
         result = match_book(sentence_article)
         print("find using book matching")
+        # add nombre to result
+        result["nombre"] = nombre
         return result
     if "feuille" in sentence_article or "papier" in sentence_article or "ramette" in sentence_article or "ramettes" in sentence_article or "feuilles" in sentence_article:
         words = ["crayon", "crayons", "stylo", "stylos", "calque", "milimetree", "carton","milimetre"]
@@ -151,6 +154,8 @@ def correspondance_score(article, catalog):
             # Votre logique ici
             print("find using paper matching ", sentence_article)
             result = match_paper(sentence_article)
+            # add nombre to result
+            result["nombre"] = nombre
             return result
 
     # Comparaison de chaque article dans l'annuaire avec chaque mot de l'article que l'on cherche à comparer
@@ -232,6 +237,7 @@ def correspondance_score(article, catalog):
         for i, article in enumerate(catalog):
             if scores[i] == max_score:
                 articles_score_max.append(article)
+
                 # print(entite["texte"])
                 iter += 1
 
@@ -273,7 +279,7 @@ def use_levenshtein():
 
     with open('ocr.txt', 'r', encoding='utf-8') as file:
         content_ocr = file.read()
-    # if content_ocr first line is ```json, remove it
+    # if content_ocr first line is ```json, remove it, happens with GPT-3
     if content_ocr[0] == "`":
         content_ocr = content_ocr.split("\n")
         content_ocr = content_ocr[1:-1]

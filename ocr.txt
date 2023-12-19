@@ -1,102 +1,107 @@
 [
-{
-"name": "cartable rigide",
-"article": "cartable",
-"nombre": 1
-},
-{
-"name": "crayon papier HB",
-"article": "crayon",
-"nombre": 2
-},
-{
-"name": "gomme blanche",
-"article": "gomme",
-"nombre": 1
-},
-{
-"name": "taille-crayon à réservoir",
-"article": "taille-crayon",
-"nombre": 1
-},
-{
-"name": "stylo bleu",
-"article": "stylo",
-"nombre": 1
-},
-{
-"name": "stylo vert",
-"article": "stylo",
-"nombre": 1
-},
-{
-"name": "stylo rouge",
-"article": "stylo",
-"nombre": 1
-},
-{
-"name": "surligneur bleu",
-"article": "surligneur",
-"nombre": 1
-},
-{
-"name": "surligneur orange",
-"article": "surligneur",
-"nombre": 1
-},
-{
-"name": "paire de ciseaux à bouts ronds",
-"article": "paire de ciseaux",
-"nombre": 1
-},
-{
-"name": "tube de colle en bâton",
-"article": "tube de colle",
-"nombre": 2
-},
-{
-"name": "douzaine de feutres à pointe moyenne",
-"article": "feutre",
-"nombre": 1
-},
-{
-"name": "douzaine de crayons de couleurs larges",
-"article": "crayon de couleur",
-"nombre": 1
-},
-{
-"name": "règle plate 20 cm",
-"article": "règle",
-"nombre": 1
-},
-{
-"name": "ardoise effaçable à sec",
-"article": "ardoise",
-"nombre": 1
-},
-{
-"name": "gros feutre ardoise",
-"article": "feutre",
-"nombre": 2
-},
-{
-"name": "chiffon",
-"article": "chiffon",
-"nombre": 1
-},
-{
-"name": "pochette à élastiques et rabats",
-"article": "pochette à élastiques",
-"nombre": 1
-},
-{
-"name": "boite de mouchoirs",
-"article": "boite de mouchoirs",
-"nombre": 1
-},
-{
-"name": "ramette de papier blanc",
-"article": "ramette de papier",
-"nombre": 1
-}
+  {
+    "name": "cartable rigide",
+    "article": "cartable",
+    "nombre": 1
+  },
+  {
+    "name": "grand cahier 24x32 cm",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "crayon à papier HB",
+    "article": "crayon",
+    "nombre": 2
+  },
+  {
+    "name": "gomme blanche",
+    "article": "gomme",
+    "nombre": 1
+  },
+  {
+    "name": "taille-crayon à réservoir",
+    "article": "taille-crayon",
+    "nombre": 1
+  },
+  {
+    "name": "stylo bleu",
+    "article": "stylo",
+    "nombre": 1
+  },
+  {
+    "name": "stylo vert",
+    "article": "stylo",
+    "nombre": 1
+  },
+  {
+    "name": "stylo rouge",
+    "article": "stylo",
+    "nombre": 1
+  },
+  {
+    "name": "surligneur bleu",
+    "article": "surligneur",
+    "nombre": 1
+  },
+  {
+    "name": "surligneur orange",
+    "article": "surligneur",
+    "nombre": 1
+  },
+  {
+    "name": "paire de ciseaux à bouts ronds",
+    "article": "paire de ciseaux",
+    "nombre": 1
+  },
+  {
+    "name": "tube de colle en bâton",
+    "article": "tube de colle",
+    "nombre": 2
+  },
+  {
+    "name": "douzaine de feutres à pointe moyenne",
+    "article": "feutre",
+    "nombre": 1
+  },
+  {
+    "name": "douzaine de crayons de couleurs larges",
+    "article": "crayon de couleur",
+    "nombre": 1
+  },
+  {
+    "name": "règle plate 20 cm",
+    "article": "règle",
+    "nombre": 1
+  },
+  {
+    "name": "ardoise effaçable à sec",
+    "article": "ardoise",
+    "nombre": 1
+  },
+  {
+    "name": "gros feutre ardoise",
+    "article": "feutre",
+    "nombre": 2
+  },
+  {
+    "name": "chiffon",
+    "article": "chiffon",
+    "nombre": 1
+  },
+  {
+    "name": "pochette à élastiques et rabats",
+    "article": "pochette à élastiques",
+    "nombre": 1
+  },
+  {
+    "name": "boite de mouchoirs",
+    "article": "boite de mouchoirs",
+    "nombre": 1
+  },
+  {
+    "name": "ramette de papier blanc",
+    "article": "ramette de papier",
+    "nombre": 1
+  }
 ]

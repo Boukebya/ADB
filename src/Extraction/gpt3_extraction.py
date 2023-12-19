@@ -1,5 +1,4 @@
 import json
-
 from openai import OpenAI
 
 with open('src/config.json', 'r') as config_file:
@@ -9,6 +8,7 @@ google_var = config['google_cloud']
 
 openai_var = config['openai']
 open_ai_key = openai_var['api_key']
+
 
 def gpt3_extraction(file_path, classe):
     """
@@ -73,39 +73,3 @@ def gpt3_extraction(file_path, classe):
 
     with open('ocr.txt', 'w', encoding='utf-8') as f:
         f.write(response.choices[0].message.content)
-
-
-def gpt3_comparaison(fourniture, liste):
-    """
-    Use GPT-3 to find the most similar school supply in the list.
-    :param fourniture: school supply to find
-    :param liste: list of school supplies to compare
-    """
-
-    text_input = "J'ai cette fourniture scolaire :"
-    text_input += fourniture
-    text_input += ", il faut que tu l'associes à la fourniture scolaire qui a le plus de chance de correspondre dans le texte qui va suivre," \
-            " si tu ne trouves pas de correspondance entre l'article et les éléments de la liste," \
-            "par exemple, sac de sport ne correspond pas avec sachet 100 pochettes renvoie none," \
-            " j'attends en retour un des articles suivants uniquement, sans texte en plus:\n"
-
-    for element in liste:
-        text_input += element["texte"]
-        text_input += "\n"
-
-    api_key = "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"
-    client = OpenAI(api_key=api_key)
-
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo-1106",
-        temperature=0.1,
-        messages=[
-            {"role": "system",
-             "content": "Vous êtes un assistant utile conçu pour associer des fournitures scolaires du texte"
-                        " sans omission, fournis uniquement en sortie l'article qui correspond le plus"
-                        " à la fourniture scolaire donnée."},
-            {"role": "user", "content": text_input}
-        ]
-    )
-    #print(response.usage)
-    return response.choices[0].message.content

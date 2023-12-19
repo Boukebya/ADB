@@ -1,9 +1,7 @@
 import json
-
 from google.api_core.client_options import ClientOptions
 from google.cloud import documentai_v1 as documentai
 from google.oauth2 import service_account
-from PIL import Image
 
 with open('src/config.json', 'r') as config_file:
     config = json.load(config_file)
@@ -79,23 +77,3 @@ def vertex_ocr(file_path):
     # Enregistrez le texte extrait dans un fichier
     with open("ocr.txt", "w", encoding="utf-8") as f:
         f.write(document.text)
-
-
-def concat_images(image_path1, image_path2, output_path):
-    # Ouvrir les images
-    image1 = Image.open(image_path1)
-    image2 = Image.open(image_path2)
-
-    # Calculer les dimensions pour la nouvelle image
-    width = image1.width + image2.width
-    height = max(image1.height, image2.height)
-
-    # Créer une nouvelle image avec les dimensions appropriées
-    new_image = Image.new('RGB', (width, height))
-
-    # Coller les images dans la nouvelle image
-    new_image.paste(image1, (0, 0))
-    new_image.paste(image2, (image1.width, 0))
-
-    # Enregistrer la nouvelle image
-    new_image.save(output_path)

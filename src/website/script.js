@@ -1,6 +1,5 @@
 // Appel des fonctions de l'API Flask
 document.getElementById('apiButton2').addEventListener('click', () => call_vertex("src/website/uploads/file.jpg"));
-document.getElementById('apiButton3').addEventListener('click', () => call_gpt4("src/website/uploads/file.jpg"));
 // Appel de la fonction pour enregistrer l'image dans le serveur
 document.getElementById('uploadButton').addEventListener('click', uploadFile);
 
@@ -74,38 +73,4 @@ fetch(`http://127.0.0.1:5000/use_vertex/${path}`, {
         console.error(error);
         console.log("Erreur lors de l'appel de l'API (script.js)");
     });
-}
-
-
-// Fonction pour appeler l'API pour utiliser GPT-4
-function call_gpt4(path) {
-fetch(`http://127.0.0.1:5000/use_gpt4/${path}`, {
-        method: 'GET'
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        getText(); // Appelle getText() après que la réponse a été traitée avec succès.
-        document.getElementById('time').innerHTML = data.execution_time;
-    })
-    .catch(error => {
-        console.error(error);
-    });
-}
-
-
-// Fonction pour récupérer le texte de l'OCR
-function getText() {
-    console.log("Fonction getText exécutée");
-    fetch('http://127.0.0.1:5000/get-text')
-    .then(response => {
-        console.log("Réponse reçue");
-        return response.json(); // Convertit la réponse en JSON
-    })
-    .then(data => {
-    // Remplace les sauts de ligne par des balises <br> pour l'affichage HTML
-    const formattedText = data.text.replace(/\n/g, '<br>');
-    document.getElementById('result_extraction').innerHTML = formattedText;
-})
-    .catch(error => console.error("Erreur lors de la récupération des données :", error));
 }

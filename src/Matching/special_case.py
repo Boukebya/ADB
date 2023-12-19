@@ -199,6 +199,3 @@ def match_book(product):
 
         return {"texte": texte, "rÃ©fÃ©rence": ref}
 
-
-prod = "Cahier 17x22cm 96 pages grands carreaux couverture polypro 5/5e - Coloris aléatoire"
-print(match_book(prod))
