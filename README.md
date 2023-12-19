@@ -22,11 +22,11 @@ click to expand
 
 # <a id="installation" />Installation
 
-## Create vertex account
+## Setup Google Cloud account
 
 Prerequisites
 
-Before you can use Document AI, you need to make sure that you have a Google Cloud Platform project, the Document AI API enabled, a document processor created, and service account credentials downloaded.
+Before you can use Document AI; one of the many tools of Vertex AI, you need to make sure that you have a Google Cloud Platform project, the Document AI API enabled, a document processor created, and service account credentials downloaded.
 
 Instructions
 
