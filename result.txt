@@ -1,4 +1,4 @@
-{"texte": "piqûre 96 page , couvertur polypropylène , format 24x32 cm , seyè , coloris violet", "rÃ©fÃ©rence": "79855", "nombre": "1"}
+{"texte": "cahier devoir , piqûre 96 page 21x29,7 cm , seyè 90 gramme", "rÃ©fÃ©rence": "27954", "nombre": "1"}
 {"texte": "sac 10 pochettes coin polypropylene 14 100eme incolore ", "type": "Pochettes coin", "caractÃ©ristiques": {"matiÃ¨re": "PolypropylÃ¨ne", "Ã©paisseur": "14/100Ã¨me", "couleur": "Incolore"}, "rÃ©fÃ©rence": "22960", "nombre": "1"}
 {"texte": "Aucun score > 0 ", "rÃ©fÃ©rence": "none"}
 {"texte": "Aucun score > 0 ", "rÃ©fÃ©rence": "none"}
@@ -9,7 +9,7 @@
 {"texte": "agenda septembre a aout 1 page jour 11 5 x 17 cm motif maisons ", "type": "Agenda", "caractÃ©ristique": [{"couleur": "", "format": "11,5x17 cm", "poids": ""}], "rÃ©fÃ©rence": "30456", "nombre": "1"}
 {"texte": "stylo plume school writer ", "type": "Stylo plume", "caractÃ©ristiques": {"usage": "Scolaire", "marque": "School Writer"}, "rÃ©fÃ©rence": "27511", "nombre": "1"}
 {"texte": "b colle scotch 8g colle blanche ", "type": "Colle", "caractÃ©ristiques": {"contenance": "8g", "couleur": "blanche", "marque": "Scotch"}, "rÃ©fÃ©rence": "79576U05", "nombre": "1"}
-{"texte": "crayon graphite hexagonal bois naturel vernis hb ", "type": "Crayon", "caractÃ©ristiques": {"mine": "Graphite HB", "forme": "Hexagonal", "matÃ©riau": "Bois naturel vernis"}, "rÃ©fÃ©rence": "84062U12", "nombre": "2"}
+{"texte": "crayon graphite hexagonal bois naturel vernis hb ", "type": "Crayon", "caractÃ©ristiques": {"mine": "Graphite HB", "forme": "Hexagonal", "matÃ©riau": "Bois naturel vernis"}, "rÃ©fÃ©rence": "84062U12", "nombre": "1"}
 {"texte": "surligneur large grip mfirst jaune fluo", "type": "Surligneur", "caractÃ©ristiques": {"marque": "MFirst", "pointe": "Large", "couleur": "Jaune"}, "rÃ©fÃ©rence": "62996", "nombre": "1"}
 {"texte": "stylo bille bic cristal pointe fine bleu ", "type": "Stylo bille", "caractÃ©ristiques": {"type": "Cristal", "pointe": "Fine", "couleur": "Bleu"}, "rÃ©fÃ©rence": "12608", "nombre": "1"}
 {"texte": "stylo bille bic cristal pointe fine rouge ", "type": "Stylo bille", "caractÃ©ristiques": {"type": "Cristal", "pointe": "Fine", "couleur": "Rouge"}, "rÃ©fÃ©rence": "12610", "nombre": "1"}
@@ -18,38 +18,35 @@
 {"texte": "gomme plastique ", "type": "Gomme", "caractÃ©ristiques": {"matiÃ¨re": "Plastique"}, "rÃ©fÃ©rence": "35329", "nombre": "1"}
 {"texte": "ciseaux bouts ronds anneaux plastique 13 cm droitier ", "type": "Ciseaux", "caractÃ©ristiques": {"bouts_ronds": true, "anneaux": "Plastique", "longueur": "13 cm", "droitier": true}, "rÃ©fÃ©rence": "35325", "nombre": "1"}
 {"texte": "regle plate cristal 30 cm ", "type": "RÃ¨gle", "caractÃ©ristiques": {"plate": true, "cristal": true, "longueur": "30 cm"}, "rÃ©fÃ©rence": "78324", "nombre": "1"}
-{"texte": "rouleau scotch ruban adhesif crystal transparent 19 mm x 7 5 devidoir ", "type": "Rouleau adhÃ©sif", "caractÃ©ristiques": {"transparent": true, "dimensions": "19 mm x 7,5 m", "marque": "Scotch Crystal", "dÃ©vidoir": true}, "rÃ©fÃ©rence": "18268", "nombre": "1"}
+{"texte": "rouleau adhesif ruban adhesif transparent 19 mm x 33 ", "type": "Rouleau adhÃ©sif", "caractÃ©ristiques": {"transparent": true, "dimensions": "19 mm x 33 m"}, "rÃ©fÃ©rence": "61331", "nombre": "1"}
 {"texte": "perforateur perforatrice 1 trou ", "type": "Perforateur", "caractÃ©ristiques": {"trous": 1}, "rÃ©fÃ©rence": "16575", "nombre": "1"}
 {"texte": "taille crayons metal 2 usages ", "type": "Taille-crayons", "caractÃ©ristiques": {"matiÃ¨re": "MÃ©tal", "usages": 2}, "rÃ©fÃ©rence": "7520", "nombre": "1"}
 {"texte": "cle usb rainbow 8 go ", "type": "ClÃ© USB", "caractÃ©ristiques": {"capacitÃ©": "8 Go", "modÃ¨le": "Rainbow"}, "rÃ©fÃ©rence": "72822", "nombre": "1"}
 {"texte": "correcteur frontal jetable 5mm x 8m ", "type": "Correcteur", "caractÃ©ristiques": {"format": "Frontal jetable", "dimensions": "5mm x 8m"}, "rÃ©fÃ©rence": "34848", "nombre": "1"}
-{"texte": "crayon graphite hb bout majuscule ", "type": "Crayon", "caractÃ©ristiques": {"mine": "Graphite HB", "modÃ¨le": "Majuscule", "gomme": true}, "rÃ©fÃ©rence": "79009U12", "nombre": "2"}
-{"texte": "crayon graphite majuscule 2b ", "type": "Crayon", "caractÃ©ristiques": {"mine": "Graphite 2B", "modÃ¨le": "Majuscule"}, "rÃ©fÃ©rence": "78571U12", "nombre": "2"}
-{"texte": "pochette boite 12 feutres visa 880 pointe fine couleurs assorties ", "type": "Pochette de 12 feutres Visa 880", "caractÃ©ristique": {"couleur": "assorties", "format": "pointe fine", "poids": ""}, "rÃ©fÃ©rence": "19855", "nombre": "1"}
-{"texte": "pochette 12 feuilles a dessin 224g format 24x32 cm excellence ", "type": "Pochette de 12 feuilles Ã  dessin", "caractÃ©ristique": {"couleur": "", "format": "24x32 cm", "poids": "224g"}, "rÃ©fÃ©rence": "43004", "nombre": "1"}
-{"texte": "pochettes chemise personnalisable 3 rabats a elastiques format 24x32 cm assortis ", "type": "Chemises", "caractÃ©ristiques": {"personnalisable": true, "format": "24x32 cm", "couleurs": "assortis"}, "rÃ©fÃ©rence": "51042", "nombre": "1"}
-{"texte": "article score inferieur à 0 ", "rÃ©fÃ©rence": "none"}
-{"texte": "sachet 50 copie double ( 200 page perforer ) format 17x22 cm séyès 70 gramme blanc", "rÃ©fÃ©rence": 47809, "nombre": "1"}
-{"texte": "piqûre 96 page couvertur polypropylène 17x22 cm seye 90 gramme couvertur : orange", "rÃ©fÃ©rence": "72199", "nombre": "2"}
+{"texte": "crayon graphite hb bout majuscule ", "type": "Crayon", "caractÃ©ristiques": {"mine": "Graphite HB", "modÃ¨le": "Majuscule", "gomme": true}, "rÃ©fÃ©rence": "79009U12", "nombre": "1"}
+{"texte": "crayon graphite majuscule 2b ", "type": "Crayon", "caractÃ©ristiques": {"mine": "Graphite 2B", "modÃ¨le": "Majuscule"}, "rÃ©fÃ©rence": "78571U12", "nombre": "1"}
+{"texte": "protege documents personnalisable 80 pochettes 160 vues format a4 21x29 7 cm ", "type": "ProtÃ¨ge-documents", "caractÃ©ristiques": {"personnalisable": true, "pochettes": 80, "vues": 160, "format": "A4", "dimensions": "21x29,7 cm"}, "rÃ©fÃ©rence": "78463", "nombre": "1"}
+{"texte": "pochette 12 feuilles papier dessin canson blanc 180 g format 24x32 cm excellence ", "type": "Pochette de 12 feuilles de papier dessin", "caractÃ©ristique": {"couleur": "blanc", "format": "24x32 cm", "poids": "180 g"}, "rÃ©fÃ©rence": "43002", "nombre": "1"}
+{"texte": "étui 500 page 250 feuillet mobile format a4 séyès 90 gramme", "rÃ©fÃ©rence": 79660, "nombre": "1"}
+{"texte": "sachet 50 copie double ( 200 page perforer ) format 21x29,7 cm quadriller 5x5 70 gramme blanc", "rÃ©fÃ©rence": 11500, "nombre": "1"}
+{"texte": "cahier devoir normaliser 5 x 5 , piqûre 96 page , format 21 x 29,7 cm", "rÃ©fÃ©rence": "47788", "nombre": "2"}
 {"texte": "dictionnaire larousse debutants cp ", "type": "Dictionnaire", "caractÃ©ristiques": {"niveau": "CP/CE"}, "rÃ©fÃ©rence": "12797", "nombre": "1"}
 {"texte": "pochette 12 crayons couleur gros module ", "type": "Pochette de 12 crayons de couleur", "caractÃ©ristique": {"couleur": "", "format": "gros module", "poids": ""}, "rÃ©fÃ©rence": "20291", "nombre": "1"}
 {"texte": "pochette 12 feuilles a dessin 224g format 24x32 cm excellence ", "type": "Pochette de 12 feuilles Ã  dessin", "caractÃ©ristique": {"couleur": "", "format": "24x32 cm", "poids": "224g"}, "rÃ©fÃ©rence": "43004", "nombre": "1"}
 {"texte": "pochette 12 feuilles papier calque uni 90 g 21x29 7 cm excellence ", "type": "Pochette de 12 feuilles papier calque uni", "caractÃ©ristique": {"couleur": "", "format": "21x29,7 cm", "poids": "90 g"}, "rÃ©fÃ©rence": "43007", "nombre": "1"}
-{"texte": "pochette 12 feuille papier calque uni , 90 gramme 21x29,7 cm excellence", "rÃ©fÃ©rence": 43007, "nombre": "1"}
+{"texte": "pochette 12 feuille papier millimétrer , 90 gramme format 21x29,7 cm excellence", "rÃ©fÃ©rence": 43005, "nombre": "1"}
 {"texte": "tui 12 crayons couleurs volution triangulaire pointe moyenne ", "type": "Ã‰tui de 12 crayons de couleurs Ã‰volution", "caractÃ©ristique": {"couleur": "", "format": "triangulaire", "poids": ""}, "rÃ©fÃ©rence": "51138", "nombre": "1"}
-{"texte": "pochette 12 feuilles papier dessin canson blanc 180 g format 21x29 7 cm ", "type": "Pochette de 12 feuilles de papier dessin", "caractÃ©ristique": {"couleur": "blanc", "format": "21x29,7 cm", "poids": "180 g"}, "rÃ©fÃ©rence": "43001", "nombre": "1"}
-{"texte": "pochette 12 crayons couleur gros module ", "type": "Pochette de 12 crayons de couleur", "caractÃ©ristique": {"couleur": "", "format": "gros module", "poids": ""}, "rÃ©fÃ©rence": "20291", "nombre": "1"}
-{"texte": "etui 100 feuillet mobile ( 200 page ) format a4 séyès 90 gramme colori assortir", "rÃ©fÃ©rence": 27946, "nombre": "10"}
-{"texte": "pochette 4 feutres effacables a sec pointe fine ogive 1 mm ", "type": "Feutres effaÃ§ables Ã  sec", "caractÃ©ristiques": {"pointe": "Fine", "ogive": true, "trait": "1 mm", "quantitÃ©": 4}, "rÃ©fÃ©rence": "15005", "nombre": "1"}
+{"texte": "protege documents personnalisable 100 pochettes 200 vues format a4 21x29 7 cm 5 couleurs assort porte vues ", "type": "ProtÃ¨ge-documents", "caractÃ©ristiques": {"personnalisable": true, "pochettes": 100, "vues": 200, "format": "A4", "dimensions": "21x29,7 cm", "couleurs": "assorties"}, "rÃ©fÃ©rence": "78466", "nombre": "1"}
+{"texte": "plaque porte bloc plastique pince format a4 ", "type": "Accessoire de bureau", "caractÃ©ristiques": {"matiÃ¨re": "plastique", "pince": true, "format": "A4+"}, "rÃ©fÃ©rence": "38568", "nombre": "1"}
+{"texte": "bloc bureau 100 feuille 60 gramme format a5 quadriller 5x5", "rÃ©fÃ©rence": 63206, "nombre": "10"}
 {"texte": "blouse taille 0 36 38 tour poitrine 82 a 87 cm ", "type": "Blouse", "caractÃ©ristiques": {"taille": 0, "tour_de_poitrine": "36/38", "dimensions": "82 Ã  87 cm"}, "rÃ©fÃ©rence": "00BL0", "nombre": "1"}
-{"texte": "article score inferieur à 0 ", "rÃ©fÃ©rence": "none"}
 {"texte": "blouse taille 0 36 38 tour poitrine 82 a 87 cm ", "type": "Blouse", "caractÃ©ristiques": {"taille": 0, "tour_de_poitrine": "36/38", "dimensions": "82 Ã  87 cm"}, "rÃ©fÃ©rence": "00BL0", "nombre": "1"}
-{"texte": "pochette douze crayons ardoise enrobes bois ", "type": "Crayons d'ardoise", "caractÃ©ristiques": {"douze": true, "enrobÃ©s_bois": true}, "rÃ©fÃ©rence": "12562", "nombre": "1"}
-{"texte": "cahier reliure intégral 180 page , format 24x32 cm , seyè , papier 70 gramme", "rÃ©fÃ©rence": "10532", "nombre": "1"}
-{"texte": "cahier reliure intégral couvertur polypropylène , 180 page format a4 séyès", "rÃ©fÃ©rence": "14487", "nombre": "1"}
+{"texte": "pochette 12 crayons couleur ferby triangulaires 12 cm couleurs assorties ", "type": "Pochette de 12 crayons de couleur", "caractÃ©ristique": {"couleur": "assorties", "format": "triangulaires 12 cm", "poids": ""}, "rÃ©fÃ©rence": "51162", "nombre": "1"}
+{"texte": "cahier reliure intégral couvertur polypropylène , 100 page format 17x22 cm séyès , colori assort", "rÃ©fÃ©rence": "14474", "nombre": "1"}
+{"texte": "piqûre 96 page couvertur polypropylène format 21x29,7 cm seyè coloris rose", "rÃ©fÃ©rence": "14460", "nombre": "1"}
 {"texte": "Aucun score > 0 ", "rÃ©fÃ©rence": "none"}
 {"texte": "Aucun score > 0 ", "rÃ©fÃ©rence": "none"}
-{"texte": "article score inferieur à 0 ", "rÃ©fÃ©rence": "none"}
+{"texte": "cahier brochure 192 page format 21x29,7 cm réglure séyès papier 70 gramme", "rÃ©fÃ©rence": "47793", "nombre": "2"}
 {"texte": "equerre plastique graduee 60 16 cm ", "type": "Ã‰querre", "caractÃ©ristiques": {"plastique": true, "graduÃ©e": true, "angle": "60Â°", "longueur": "16 cm"}, "rÃ©fÃ©rence": "79844", "nombre": "1"}
 {"texte": "rapporteur cristal gradue 12 cm 180 ", "type": "Rapporteur", "caractÃ©ristiques": {"cristal": true, "graduÃ©": true, "angle": "180Â°", "longueur": "12 cm"}, "rÃ©fÃ©rence": "79847", "nombre": "1"}
 {"texte": "compas scolaire maped stop system ", "type": "Compas", "caractÃ©ristiques": {"bague": "Maped Stop System"}, "rÃ©fÃ©rence": "60825", "nombre": "1"}
@@ -57,13 +54,15 @@
 {"texte": "pochette 10 feuilles papier dessin canson format 29 7x42 cm 180g excellence ", "type": "Pochette de 10 feuilles de papier dessin", "caractÃ©ristique": {"couleur": "", "format": "29,7x42 cm", "poids": "180g"}, "rÃ©fÃ©rence": "43003", "nombre": "1"}
 {"texte": "calculatrice poche 10 chiffres business ", "type": "Calculatrice", "caractÃ©ristiques": {"chiffres": 10, "modÃ¨le": "M Business"}, "rÃ©fÃ©rence": "21843", "nombre": "1"}
 {"texte": "stylo feutre pointe fine baguee bleu ", "type": "Stylo feutre", "caractÃ©ristiques": {"pointe": "Fine", "baguÃ©e": true, "couleur": "Bleu"}, "rÃ©fÃ©rence": "67670", "nombre": "2"}
-{"texte": "protège-cahier épaisseur 21/100ème 21x29,7 cm pvc violet", "rÃ©fÃ©rence": "12481U10", "nombre": "2"}
-{"texte": "piqûre 96 page couvertur polypropylène 2 rabat format 17x22 cm seye colori vert", "rÃ©fÃ©rence": "16208", "nombre": "1"}
-{"texte": "dictionnaire poche francais allemand hachette langenscheidt ", "type": "Dictionnaire", "caractÃ©ristiques": {"langues": ["franÃ§ais", "allemand"], "Ã©diteurs": ["Hachette", "Langenscheidt"]}, "rÃ©fÃ©rence": "4715", "nombre": "1"}
-{"texte": "piqûre 96 page couvertur polypropylène a4 seye 90 gramme couvertur : vert", "rÃ©fÃ©rence": "68259", "nombre": "1"}
-{"texte": "classeur polypropylene semi rigide 4 anneaux ronds format a4 bleu clair ", "type": "Classeur en polypropylÃ¨ne semi-rigide", "caractÃ©ristique": [{"couleur": "bleu clair", "format": "A4+", "poids": "4 anneaux ronds"}], "rÃ©fÃ©rence": "68907", "nombre": "1"}
-{"texte": "intercalaires intercalaire 12 positions polypropylene pochette perforees a4 ", "type": "Intercalaires", "caractÃ©ristiques": {"format": "A4+", "matiÃ¨re": "polypropylÃ¨ne", "positions": 12}, "rÃ©fÃ©rence": "54341", "nombre": "1"}
-{"texte": "jeu 6 intercalaires intercalaire a touches neutres 17x22 cm carte lustree 225 g couleurs assorties ", "type": "Intercalaires", "caractÃ©ristiques": {"format": "17x22 cm", "matiÃ¨re": "carte lustrÃ©e", "poids": "225 g", "couleurs": "assorties"}, "rÃ©fÃ©rence": "35271", "nombre": "3"}
-{"texte": "cahier piquer 96 page 3 index , couvertur polypropylène , format 17x22 cm , seyè", "rÃ©fÃ©rence": "9857", "nombre": "2"}
-{"texte": "protège-cahier épaisseur 21/100ème 21x29,7 cm pvc bleu clair", "rÃ©fÃ©rence": "12475U10", "nombre": "1"}
+{"texte": "piqûre 96 page couvertur polypropylène 17x22 cm seye 90 gramme couvertur : vert", "rÃ©fÃ©rence": "68255", "nombre": "2"}
+{"texte": "piqûre 96 page , couvertur polypropylène , format 24x32 cm , seyè , coloris violet", "rÃ©fÃ©rence": "79855", "nombre": "2"}
+{"texte": "piqûre 48 page couvertur polypropylène 2 rabat format 24x32 cm seye bleu", "rÃ©fÃ©rence": "16211", "nombre": "1"}
 {"texte": "pochette 12 feuilles papier calque uni 90 g 21x29 7 cm excellence ", "type": "Pochette de 12 feuilles papier calque uni", "caractÃ©ristique": {"couleur": "", "format": "21x29,7 cm", "poids": "90 g"}, "rÃ©fÃ©rence": "43007", "nombre": "1"}
+{"texte": "classeur polypropylene semi rigide 4 anneaux ronds format a4 bleu clair ", "type": "Classeur en polypropylÃ¨ne semi-rigide", "caractÃ©ristique": [{"couleur": "bleu clair", "format": "A4+", "poids": "4 anneaux ronds"}], "rÃ©fÃ©rence": "68907", "nombre": "1"}
+{"texte": "intercalaires intercalaire 12 positions polypropylene pochette perforees a4 ", "type": "Intercalaires", "caractÃ©ristiques": {"format": "A4+", "matiÃ¨re": "polypropylÃ¨ne", "positions": 12}, "rÃ©fÃ©rence": "54341", "nombre": "3"}
+{"texte": "jeu 6 intercalaires intercalaire a touches neutres 17x22 cm carte lustree 225 g couleurs assorties ", "type": "Intercalaires", "caractÃ©ristiques": {"format": "17x22 cm", "matiÃ¨re": "carte lustrÃ©e", "poids": "225 g", "couleurs": "assorties"}, "rÃ©fÃ©rence": "35271", "nombre": "3"}
+{"texte": "piqûre 96 page couvertur polypropylène format 21x29,7 cm seyè coloris rose", "rÃ©fÃ©rence": "14460", "nombre": "1"}
+{"texte": "dictionnaire poche francais allemand hachette langenscheidt ", "type": "Dictionnaire", "caractÃ©ristiques": {"langues": ["franÃ§ais", "allemand"], "Ã©diteurs": ["Hachette", "Langenscheidt"]}, "rÃ©fÃ©rence": "4715", "nombre": "1"}
+{"texte": "cahier devoir normaliser 5 x 5 , piqûre 96 page , format 21 x 29,7 cm", "rÃ©fÃ©rence": "47788", "nombre": "1"}
+{"texte": "cahier maternel 1 page ligner / 1 page blanc 90 gramme piqûre 32 page 17x22 cm double ligne 5 millimètre int", "rÃ©fÃ©rence": "10643", "nombre": "1"}
+{"texte": "cahier piquer 96 page 4 index , couvertur polypropylène , format a4 , seyè", "rÃ©fÃ©rence": "9860", "nombre": "1"}

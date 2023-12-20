@@ -67,7 +67,7 @@ Manage the funds of your account in the billing section of your account, a minim
 
 ## Init project
 
-Clone project and install dependencies
+Clone project and install dependencies (python version 3.10)
 ```bash
 git clone https://github.com/Boukebya/ADB.git
 cd adb
