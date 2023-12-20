@@ -20,13 +20,7 @@ def vertex_ocr(file_path):
     :param file_path: Chemin du fichier image
     """
 
-
-    # Spécifiez le chemin vers votre fichier de clés de compte de service
-    json_credentials_path = "src/google.json"
-
-    # Chargez explicitement les informations d'identification à partir du fichier JSON
-    credentials = service_account.Credentials.from_service_account_file(json_credentials_path)
-
+    credentials = service_account.Credentials.from_service_account_file('src/google_credentials.json')
 
     # Initialise les options client avec l'endpoint et les informations d'identification
     opts = ClientOptions(api_endpoint=f"{google_location}-documentai.googleapis.com")

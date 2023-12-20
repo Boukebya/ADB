@@ -65,7 +65,7 @@ You'll have to fill this informations in both the config.json and google.json, t
 
 Manage the funds of your account in the billing section of your account, a minimal amount of 5$ is required to use the API.
 
-## init project
+## Init project
 
 Clone project and install dependencies
 ```bash
