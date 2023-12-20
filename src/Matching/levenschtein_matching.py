@@ -20,7 +20,6 @@ def best_match_levenshtein(str, annuaire):
         # if annuaire["nombre exist
         if "nombre" in annuaire:
             nb = annuaire["nombre"]
-        print(nb)
 
         with open('test.txt', 'a', encoding='utf-8') as file:
             write = str["name"] + " --> " + texte + " " + "\n"
@@ -151,8 +150,9 @@ def correspondance_score(article, catalog):
     if "cahier" in sentence_article:
         result = match_book(sentence_article)
         print("find using book matching")
-        # add nombre to result
-        result["nombre"] = nombre
+        if result != None:
+            # add nombre to result
+            result["nombre"] = nombre
         return result
     if "feuille" in sentence_article or "papier" in sentence_article or "ramette" in sentence_article or "ramettes" in sentence_article or "feuilles" in sentence_article:
         words = ["crayon", "crayons", "stylo", "stylos", "calque", "milimetree", "carton","milimetre"]
@@ -160,8 +160,9 @@ def correspondance_score(article, catalog):
             # Votre logique ici
             print("find using paper matching ", sentence_article)
             result = match_paper(sentence_article)
-            # add nombre to result
-            result["nombre"] = nombre
+            if result != None:
+                # add nombre to result
+                result["nombre"] = nombre
             return result
 
     # Comparaison de chaque article dans l'annuaire avec chaque mot de l'article que l'on cherche à comparer
