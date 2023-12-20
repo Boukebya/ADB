@@ -1,22 +1,20 @@
-piqûre 96 page couvertur polypropylène 2 rabat , format 24x32 cm , quadrillé 5x5 , incolore2529
-taille crayons metal 2 usages 7520
-crayon graphite hb bout majuscule 79009U12
-gomme plastique 35329
-taille crayons metal 2 usages 7520
-stylo bille bic cristal pointe fine bleu 12608
-stylo feutre pointe fine baguee vert 67673
-stylo bille bic cristal pointe fine rouge 12610
-surligneur large grip mfirst bleu fluo62999
-surligneur large grip mfirst orange fluo63000
-ciseaux bouts ronds anneaux plastique 13 cm droitier 35325
-b colle scotch 8g colle blanche 79576U05
-trousse double plateau rouge 15221
-feutre tableau blanc pointe moyenne ogive bleu 22674
-pochette 12 crayons couleur triangulaires pointe large assortis 25826
-pochette 12 crayons couleur triangulaires pointe large assortis 25826
-carton a dessin fermeture elastique 26x33 cm 54568
-regle plate cristal 30 cm 78324
-ardoise effacable a sec 1 cote uni 1 cote seyes incassable 4495
-pochette 12 feuilles a dessin a grain 180 g format 21x29 7 cm assortis 15977
-boite distributrice 100 mouchoirs 78756
-ramette 500 feuille papier blanc 80 gramme format a4 budget58429
+{"texte": "cahier a reliure integrale 100 pages 24x32 cm seyes ", "type": "Cahier Ã  reliure intÃ©grale", "caractÃ©ristique": [{"couleur": "", "format": "24x32 cm", "poids": ""}], "rÃ©fÃ©rence": "10582", "nombre": "1"}
+{"texte": "crayon graphite hb bout majuscule ", "type": "Crayon", "caractÃ©ristiques": {"mine": "Graphite HB", "modÃ¨le": "Majuscule", "gomme": true}, "rÃ©fÃ©rence": "79009U12", "nombre": "2"}
+{"texte": "gomme plastique ", "type": "Gomme", "caractÃ©ristiques": {"matiÃ¨re": "Plastique"}, "rÃ©fÃ©rence": "35329", "nombre": "1"}
+{"texte": "taille crayons metal 2 usages ", "type": "Taille-crayons", "caractÃ©ristiques": {"matiÃ¨re": "MÃ©tal", "usages": 2}, "rÃ©fÃ©rence": "7520", "nombre": "1"}
+{"texte": "stylo bille bic cristal pointe fine bleu ", "type": "Stylo bille", "caractÃ©ristiques": {"type": "Cristal", "pointe": "Fine", "couleur": "Bleu"}, "rÃ©fÃ©rence": "12608", "nombre": "1"}
+{"texte": "stylo feutre pointe fine baguee vert ", "type": "Stylo feutre", "caractÃ©ristiques": {"pointe": "Fine", "baguÃ©e": true, "couleur": "Vert"}, "rÃ©fÃ©rence": "67673", "nombre": "2"}
+{"texte": "stylo bille bic cristal pointe fine rouge ", "type": "Stylo bille", "caractÃ©ristiques": {"type": "Cristal", "pointe": "Fine", "couleur": "Rouge"}, "rÃ©fÃ©rence": "12610", "nombre": "1"}
+{"texte": "surligneur large grip mfirst bleu fluo", "type": "Surligneur", "caractÃ©ristiques": {"marque": "MFirst", "pointe": "Large", "couleur": "Bleu"}, "rÃ©fÃ©rence": "62999", "nombre": "1"}
+{"texte": "surligneur large grip mfirst orange fluo", "type": "Surligneur", "caractÃ©ristiques": {"marque": "MFirst", "pointe": "Large", "couleur": "Orange"}, "rÃ©fÃ©rence": "63000", "nombre": "1"}
+{"texte": "ciseaux bouts ronds 13cm ", "type": "Ciseaux", "caractÃ©ristiques": {"bouts_ronds": true, "longueur": "13 cm"}, "rÃ©fÃ©rence": "32758", "nombre": "1"}
+{"texte": "b colle scotch 8g colle blanche ", "type": "Colle", "caractÃ©ristiques": {"contenance": "8g", "couleur": "blanche", "marque": "Scotch"}, "rÃ©fÃ©rence": "79576U05", "nombre": "2"}
+{"texte": "feutre tableau blanc pointe moyenne ogive bleu ", "type": "Feutre tableau blanc", "caractÃ©ristiques": {"pointe": "Moyenne", "ogive": true, "couleur": "Bleu"}, "rÃ©fÃ©rence": "22674", "nombre": "2"}
+{"texte": "boite 16 crayons a cire 9 cm couleurs assorties ", "type": "BoÃ®te de 16 crayons Ã  la cire", "caractÃ©ristique": {"couleur": "assorties", "format": "9 cm", "poids": ""}, "rÃ©fÃ©rence": "42830", "nombre": "1"}
+{"texte": "regle plate cristal 30 cm ", "type": "RÃ¨gle", "caractÃ©ristiques": {"plate": true, "cristal": true, "longueur": "30 cm"}, "rÃ©fÃ©rence": "78324", "nombre": "1"}
+{"texte": "ardoise effacable a sec 1 face uni 1 face quadrillee seyes format 20x28cm couleurs assorties ", "type": "Ardoise", "caractÃ©ristiques": {"effaÃ§able_sec": true, "uni": true, "quadrillÃ©e_seyes": true, "format": "20x28cm", "couleurs_assorties": true}, "rÃ©fÃ©rence": "68250", "nombre": "1"}
+{"texte": "stylo feutre pointe fine baguee bleu ", "type": "Stylo feutre", "caractÃ©ristiques": {"pointe": "Fine", "baguÃ©e": true, "couleur": "Bleu"}, "rÃ©fÃ©rence": "67670", "nombre": "2"}
+{"texte": "chiffonnette chiffon microfibre 20x20cm ", "type": "Chiffonnette", "caractÃ©ristiques": {"microfibre": true, "dimensions": "20x20cm"}, "rÃ©fÃ©rence": "7950", "nombre": "1"}
+{"texte": "protege documents personnalisable 20 pochettes 40 vues format a4 21x29 7 cm incolore porte vues", "type": "ProtÃ¨ge-documents personnalisable", "caractÃ©ristique": [{"couleur": "incolore", "format": "A4 21x29,7 cm", "poids": "40 vues"}], "rÃ©fÃ©rence": "67269", "nombre": "1"}
+{"texte": "boite distributrice 100 mouchoirs ", "type": "Mouchoirs", "caractÃ©ristiques": {"quantitÃ©": 100}, "rÃ©fÃ©rence": "78756", "nombre": "1"}
+{"texte": "ramette 500 feuille papier blanc 80 gramme format a4 business", "rÃ©fÃ©rence": 58431, "nombre": "1"}

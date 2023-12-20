@@ -17,8 +17,13 @@ def best_match_levenshtein(str, annuaire):
     # if annuaire is only one article
     if type(annuaire) == dict:
         texte = annuaire["texte"]
+        # if annuaire["nombre exist
+        if "nombre" in annuaire:
+            nb = annuaire["nombre"]
+        print(nb)
+
         with open('test.txt', 'a', encoding='utf-8') as file:
-            write = str["name"] + " --> " + texte + "\n"
+            write = str["name"] + " --> " + texte + " " + "\n"
             file.write(write)
         return annuaire
 
@@ -125,6 +130,7 @@ def correspondance_score(article, catalog):
     article["name"] = format_to_catalog(article["name"])
     article["article"] = format_to_catalog(article["article"])
     nombre = article["nombre"]
+    nombre = str(nombre)
 
     mots_article = preprocess_string(article["name"])
     important_word = preprocess_string(article["article"])
@@ -241,6 +247,9 @@ def correspondance_score(article, catalog):
                 # print(entite["texte"])
                 iter += 1
 
+        for article in articles_score_max:
+            article["nombre"] = nombre
+
         return articles_score_max
 
 
@@ -297,9 +306,10 @@ def use_levenshtein():
     with open('result.txt', 'w', encoding='utf-8') as file:
         for article in listes_articles:
             if article != {"texte": "article non trouvé"}:
-                file.write(article["texte"])
-                file.write(str(article["rÃ©fÃ©rence"]))
+                # write article as a json
+                json.dump(article, file, ensure_ascii=False)
                 file.write("\n")
+
             else:
                 file.write(article["texte"], " --> Article non trouvé")
                 file.write("\n")
