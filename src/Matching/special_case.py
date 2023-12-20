@@ -15,7 +15,9 @@ dict_colors = ["blanc",
                "rose",
                "violet",
                "rouge",
-               "gris"]
+               "gris",
+               "incolore",
+               "transparent"]
 
 
 
@@ -26,11 +28,19 @@ def extract_cahier_info(description, color_list):
     :param color_list: list of colors
     :return: a dictionary containing the information
     """
-    dimensions_match = re.search(r'(\d+(\,\d+)?)\s*[xX]\s*(\d+(\,\d+)?)\s*(cm|centimètres|\w+)', description, re.IGNORECASE)
+    dimensions_match = re.search(r'(\d+(\,\d+)?)\s*[xX*]\s*(\d+(\,\d+)?)\s*(cm|centimètres|\w+)', description, re.IGNORECASE)
     dimensions = f"{dimensions_match.group(1).replace(',', '.')} x {dimensions_match.group(3).replace(',', '.')} cm" if dimensions_match else None
 
-    pages_match = re.search(r'(\d+)\s*(p\.|p|pages?)', description, re.IGNORECASE)
+    pages_match = re.search(r'(\d+)\s*(p\.?|pages?)(?!\S)', description, re.IGNORECASE)
     number_of_pages = int(pages_match.group(1)) if pages_match else None
+    if(number_of_pages is not None and number_of_pages > 192):
+        number_of_pages = 192
+
+    feuilles_match = re.search(r'(\d+)\s*(feuilles?)(?!\S)', description, re.IGNORECASE)
+    number_of_feuilles = int(feuilles_match.group(1)) if feuilles_match else None
+
+    if(number_of_pages is None and number_of_feuilles is not None):
+        number_of_pages = number_of_feuilles * 2
 
     weight_match = re.search(r'(\d+(\.\d+)?)\s*(?!\s*grands?)\s*(g|grammes?)', description)
     weight = float(weight_match.group(1)) if weight_match else None
@@ -40,14 +50,30 @@ def extract_cahier_info(description, color_list):
     for word in description.split():
         if word.lower() in color_list:
             color = word.lower()
+
             break
 
     cover = False
-    if("protege" in description):
+    if("protèg" in description):
         cover = True
 
-    return {'desc': description, 'd': dimensions, 'w': weight, 'p': number_of_pages, 'c': color, 'cover': cover}
+    tp = False
+    if("pratique" in description):
+        tp = True
 
+    draft = False
+    if("brouillon" in description):
+        draft = True
+
+    poem = False
+    if("poési" in description):
+        poem = True
+
+    draw = False
+    if("dessin" in description):
+        draw = True
+
+    return {'desc': description, 'd': dimensions, 'w': weight, 'p': number_of_pages, 'c': color, 'cover': cover, 'tp': tp, 'draft': draft, 'poem': poem, 'draw':draw}
 
 def extract_paper_info(description, color_list):
     """
@@ -56,7 +82,7 @@ def extract_paper_info(description, color_list):
     :param color_list: list of colors
     :return: a dictionary containing the information
     """
-    dimensions_match = re.search(r'(\d+(\,\d+)?)\s*[xX]\s*(\d+(\,\d+)?)\s*(cm|centimètres|\w+)', description, re.IGNORECASE)
+    dimensions_match = re.search(r'(\d+(\,\d+)?)\s*[xX*]\s*(\d+(\,\d+)?)\s*(cm|centimètres|\w+)', description, re.IGNORECASE)
     dimensions = f"{dimensions_match.group(1).replace(',', '.')} x {dimensions_match.group(3).replace(',', '.')} cm" if dimensions_match else None
 
     if('a4' in description or "21 x 29.7 cm" == dimensions):
@@ -64,6 +90,13 @@ def extract_paper_info(description, color_list):
 
     pages_match = re.search(r'(\d+)\s*(p\.|p|pages?)', description, re.IGNORECASE)
     number_of_pages = int(pages_match.group(1)) if pages_match else None
+
+    feuilles_match = re.search(r'(\d+)\s*(feuilles?)(?!\S)', description, re.IGNORECASE)
+    number_of_feuilles = int(feuilles_match.group(1)) if feuilles_match else None
+
+    if(number_of_pages is None and number_of_feuilles is not None):
+        number_of_pages = number_of_feuilles * 2
+
 
     weight_match = re.search(r'(\d+(\.\d+)?)\s*(?!\s*grands?)\s*(g|grammes?)', description)
     weight = float(weight_match.group(1)) if weight_match else None
@@ -90,7 +123,15 @@ def extract_paper_info(description, color_list):
     if("dessin" in description):
         draw = True
 
-    return {'desc': description, 'd': dimensions, 'w': weight, 'p': number_of_pages, 'c': color, 'double': double, 'perf': perf, 'draw': draw}
+    milli = False
+    if("millimetr"in description or "millimétr" in description):
+        milli = True
+
+    calque = False
+    if("calqu" in description):
+        calque = True
+
+    return {'desc': description, 'd': dimensions, 'w': weight, 'p': number_of_pages, 'c': color, 'double': double, 'perf': perf, 'draw': draw, 'milli': milli, 'calque': calque}
 
 
 def match_paper(product):
@@ -117,20 +158,19 @@ def match_paper(product):
     if extract["c"] is not None:
         conditions.append(df_paper["c"] == extract["c"])
 
-    if extract["double"] is not None:
-        conditions.append(df_paper["double"] == extract["double"])
-
-    if extract["perf"] is not None:
+    if extract["double"] == True:
         conditions.append(df_paper["perf"] == extract["perf"])
 
-    if extract["draw"] is not None:
-        conditions.append(df_paper["draw"] == extract["draw"])
+    conditions.append(df_paper["double"] == extract["double"])
+    conditions.append(df_paper["draw"] == extract["draw"])
+    conditions.append(df_paper["milli"] == extract["milli"])
+    conditions.append(df_paper["calque"] == extract["calque"])
 
     if conditions:
         corresponding_products = df_paper.loc[reduce(lambda x, y: x & y, conditions)]
     else:
         # Aucune information disponible, peut-être afficher un message ou traiter d'une autre manière
-        return None
+        corresponding_products = None
 
     # if multiple products match, we take the first one
     if corresponding_products is not None:
@@ -174,13 +214,17 @@ def match_book(product):
     if extract["c"] is not None:
         conditions.append(df["c"] == extract["c"])
 
-    if extract["cover"] is not None:
-        conditions.append(df["cover"] == extract["cover"])
+    conditions.append(df["cover"] == extract["cover"])
+    conditions.append(df["tp"] == extract["tp"])
+    conditions.append(df["draft"] == extract["draft"])
+    conditions.append(df["poem"] == extract["poem"])
+    conditions.append(df["draw"] == extract["draw"])
 
     if conditions:
         corresponding_products = df.loc[reduce(lambda x, y: x & y, conditions)]
-
-
+    else:
+        # Aucune information disponible, peut-être afficher un message ou traiter d'une autre manière
+        corresponding_products = None
 
     # if multiple products match, we take the first one
     if corresponding_products is not None:
