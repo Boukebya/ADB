@@ -32,7 +32,7 @@ def best_match_levenshtein(str, annuaire):
         with open('test.txt', 'a', encoding='utf-8') as file:
             file.write(str["name"] + " --> " + "annuaire vide" + "\n")
         print(str["name"], " --> ", "article non trouvé dans best match ")
-        return {"texte": "article score inferieur à 0 ", "rÃ©fÃ©rence": "none"}
+        return {"texte": "article score inferieur à 0 ", "référence": "none"}
 
     scores = []
     for article in annuaire:
@@ -51,7 +51,7 @@ def best_match_levenshtein(str, annuaire):
             return article
 
 
-    return {"texte": "article non trouvé levenschtein", "rÃ©fÃ©rence": "none"}
+    return {"texte": "article non trouvé levenschtein", "référence": "none"}
 
 
 def preprocess_string(s):
@@ -175,33 +175,33 @@ def correspondance_score(article, catalog):
         else:
             scores[i] -= 1
 
-        if "agenda" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "30456":
+        if "agenda" in sentence_article and article_catalog["référence"] == "30456":
             scores[i] += 10
-        if "colle" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "79576U05":
+        if "colle" in sentence_article and article_catalog["référence"] == "79576U05":
             scores[i] += 10
-        if "crayon de bois" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "78567U12":
+        if "crayon de bois" in sentence_article and article_catalog["référence"] == "78567U12":
             scores[i] += 10
-        if "stylo plume" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "27511":
+        if "stylo plume" in sentence_article and article_catalog["référence"] == "27511":
             scores[i] += 10
-        if "crayons de couleurs" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "20294":
+        if "crayons de couleurs" in sentence_article and article_catalog["référence"] == "20294":
             scores[i] += 10
-        if "cle usb" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "72822":
+        if "cle usb" in sentence_article and article_catalog["référence"] == "72822":
             scores[i] += 10
-        if "correcteur" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "34848":
+        if "correcteur" in sentence_article and article_catalog["référence"] == "34848":
             scores[i] += 10
-        if "papier calque" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "43007":
+        if "papier calque" in sentence_article and article_catalog["référence"] == "43007":
             scores[i] += 10
-        if "regle" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "78324":
+        if "regle" in sentence_article and article_catalog["référence"] == "78324":
             scores[i] += 10
-        if "taille crayon" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "7520":
+        if "taille crayon" in sentence_article and article_catalog["référence"] == "7520":
             scores[i] += 10
-        if "equerre" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "79844":
+        if "equerre" in sentence_article and article_catalog["référence"] == "79844":
             scores[i] += 10
-        if "rapporteur" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "79847":
+        if "rapporteur" in sentence_article and article_catalog["référence"] == "79847":
             scores[i] += 10
-        if "compas" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "60825":
+        if "compas" in sentence_article and article_catalog["référence"] == "60825":
             scores[i] += 10
-        if "gomme" in sentence_article and article_catalog["rÃ©fÃ©rence"] == "35329":
+        if "gomme" in sentence_article and article_catalog["référence"] == "35329":
             scores[i] += 10
 
 
@@ -231,7 +231,7 @@ def correspondance_score(article, catalog):
         with open('test.txt', 'a', encoding='utf-8') as file:
             file.write(sentence_article + " --> " + "Aucun score > 0 dans le basic matching" + "\n")
         print(sentence_article, " --> ", "Aucun score > 0 dans le basic matching")
-        out = {"texte": "Aucun score > 0 ", "rÃ©fÃ©rence": "none"}
+        out = {"texte": "Aucun score > 0 ", "référence": "none"}
         return out
 
 
