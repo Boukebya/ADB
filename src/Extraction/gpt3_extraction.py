@@ -24,8 +24,9 @@ def gpt3_extraction(file_path, classe):
     msg = """fais une liste de toutes les fournitures scolaire"""
 
     if classe != "":
-        msg += """pour la classe """
+        msg += """ pour la classe de """
         msg += classe
+        print(msg)
 
     msg += """, pas d'habits ou d'affaires de sport, dans le texte suivant sous forme :
              {

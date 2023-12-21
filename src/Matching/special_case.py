@@ -187,7 +187,7 @@ def match_paper(product):
         texte = corresponding_products[0]
         ref = corresponding_products[-1]
 
-        return {"texte": texte, "référence": ref}
+        return {"texte": texte, "reference": ref}
 
 
 def match_book(product):
@@ -241,5 +241,5 @@ def match_book(product):
         texte = corresponding_products[0]
         ref = corresponding_products[-1]
 
-        return {"texte": texte, "référence": ref}
+        return {"texte": texte, "reference": ref}
 

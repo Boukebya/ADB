@@ -29,13 +29,6 @@ def vertex_ocr(file_path):
     # Chemin d'accès complet pour le processeur de documents
     name = client.processor_path(google_project_id, google_location, google_processor)
 
-    # if file_path is an array, concatenate images
-    if type(file_path) == list:
-        with open("concatenated_image.jpg", "wb") as f:
-            for image in file_path:
-                with open(image, "rb") as img:
-                    f.write(img.read())
-        file_path = "concatenated_image.jpg"
 
     with open(file_path, "rb") as image:
         image_content = image.read()
@@ -45,6 +38,8 @@ def vertex_ocr(file_path):
         mime_type = "image/jpeg"
     elif file_path.endswith('.png'):
         mime_type = "image/png"
+    elif file_path.endswith('.HEIC'):
+        mime_type = "image/heic"
     # Ajoutez d'autres formats d'image si nécessaire
     else:
         raise ValueError("Format de fichier non pris en charge")

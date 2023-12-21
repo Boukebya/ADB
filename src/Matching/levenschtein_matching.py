@@ -13,7 +13,7 @@ def best_match_levenshtein(str, annuaire):
     Renvoie rien si aucun article ne correspond, et renvoie un article aléatoire si plusieurs articles ont le même score.
     :param str: article à comparer, dict avec clé 'name'
     :param annuaire: annuaire des articles, liste de dicts avec clés 'texte' et 'type'
-    :return: référence de l'article correspondant avec le plus haut score
+    :return: reference de l'article correspondant avec le plus haut score
     """
     # if annuaire is only one article
     if type(annuaire) == dict:
@@ -32,7 +32,7 @@ def best_match_levenshtein(str, annuaire):
         with open('test.txt', 'a', encoding='utf-8') as file:
             file.write(str["name"] + " --> " + "annuaire vide" + "\n")
         print(str["name"], " --> ", "article non trouvé dans best match ")
-        return {"texte": "article score inferieur à 0 ", "référence": "none"}
+        return {"texte": "article score inferieur à 0 ", "reference": "none"}
 
     scores = []
     for article in annuaire:
@@ -51,7 +51,7 @@ def best_match_levenshtein(str, annuaire):
             return article
 
 
-    return {"texte": "article non trouvé levenschtein", "référence": "none"}
+    return {"texte": "article non trouvé levenschtein", "reference": "none"}
 
 
 def preprocess_string(s):
@@ -119,7 +119,7 @@ def correspondance_score(article, catalog):
     +1 si un mot de l'article est dans l'article de l'annuaire
     :param article: article à comparer, dict avec clé 'name'
     :param catalog: annuaire des articles, liste de dicts avec clés 'texte' et 'type'
-    :return: référence de l'article correspondant avec le plus haut score, ou liste d'articles si plusieurs articles ont
+    :return: reference de l'article correspondant avec le plus haut score, ou liste d'articles si plusieurs articles ont
     le même score
     """
 
@@ -175,33 +175,33 @@ def correspondance_score(article, catalog):
         else:
             scores[i] -= 1
 
-        if "agenda" in sentence_article and article_catalog["référence"] == "30456":
+        if "agenda" in sentence_article and article_catalog["reference"] == "30456":
             scores[i] += 10
-        if "colle" in sentence_article and article_catalog["référence"] == "79576U05":
+        if "colle" in sentence_article and article_catalog["reference"] == "79576U05":
             scores[i] += 10
-        if "crayon de bois" in sentence_article and article_catalog["référence"] == "78567U12":
+        if "crayon de bois" in sentence_article and article_catalog["reference"] == "78567U12":
             scores[i] += 10
-        if "stylo plume" in sentence_article and article_catalog["référence"] == "27511":
+        if "stylo plume" in sentence_article and article_catalog["reference"] == "27511":
             scores[i] += 10
-        if "crayons de couleurs" in sentence_article and article_catalog["référence"] == "20294":
+        if "crayons de couleurs" in sentence_article and article_catalog["reference"] == "20294":
             scores[i] += 10
-        if "cle usb" in sentence_article and article_catalog["référence"] == "72822":
+        if "cle usb" in sentence_article and article_catalog["reference"] == "72822":
             scores[i] += 10
-        if "correcteur" in sentence_article and article_catalog["référence"] == "34848":
+        if "correcteur" in sentence_article and article_catalog["reference"] == "34848":
             scores[i] += 10
-        if "papier calque" in sentence_article and article_catalog["référence"] == "43007":
+        if "papier calque" in sentence_article and article_catalog["reference"] == "43007":
             scores[i] += 10
-        if "regle" in sentence_article and article_catalog["référence"] == "78324":
+        if "regle" in sentence_article and article_catalog["reference"] == "78324":
             scores[i] += 10
-        if "taille crayon" in sentence_article and article_catalog["référence"] == "7520":
+        if "taille crayon" in sentence_article and article_catalog["reference"] == "7520":
             scores[i] += 10
-        if "equerre" in sentence_article and article_catalog["référence"] == "79844":
+        if "equerre" in sentence_article and article_catalog["reference"] == "79844":
             scores[i] += 10
-        if "rapporteur" in sentence_article and article_catalog["référence"] == "79847":
+        if "rapporteur" in sentence_article and article_catalog["reference"] == "79847":
             scores[i] += 10
-        if "compas" in sentence_article and article_catalog["référence"] == "60825":
+        if "compas" in sentence_article and article_catalog["reference"] == "60825":
             scores[i] += 10
-        if "gomme" in sentence_article and article_catalog["référence"] == "35329":
+        if "gomme" in sentence_article and article_catalog["reference"] == "35329":
             scores[i] += 10
 
 
@@ -231,7 +231,7 @@ def correspondance_score(article, catalog):
         with open('test.txt', 'a', encoding='utf-8') as file:
             file.write(sentence_article + " --> " + "Aucun score > 0 dans le basic matching" + "\n")
         print(sentence_article, " --> ", "Aucun score > 0 dans le basic matching")
-        out = {"texte": "Aucun score > 0 ", "référence": "none"}
+        out = {"texte": "Aucun score > 0 ", "reference": "none"}
         return out
 
 
@@ -260,7 +260,7 @@ def correspondance_list_article(content_extraction, annuaire):
     Compare une liste json d'extraction avec l'annuaire pour trouver une correspondance pour chaque élément de la liste.
     :param liste: liste à comparer, liste de dicts avec clé 'name'
     :param annuaire: annuaire des articles, liste de dicts
-    :return: liste des références des articles correspondants
+    :return: liste des references des articles correspondants
     """
     listes_pre = []
     liste_articles = []

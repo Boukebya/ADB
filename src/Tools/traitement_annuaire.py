@@ -54,13 +54,13 @@ def preprocess_annuaire(annuaire):
 
 print("preprocessing annuaire")
 # use process_annuaire and save it
-with open('src/Matching/annuaire.json', 'r', encoding='utf-8') as file:
+with open('../Matching/annuaire.json', 'r', encoding='utf-8') as file:
     annuaire = json.load(file)
     annuaire = annuaire["entities"]
     annuaire = preprocess_annuaire(annuaire)
 print("saving annuaire")
 
-with open('src/Matching/annuaire3.json', 'w', encoding='utf-8') as f:
+with open('../Matching/annuaire3.json', 'w', encoding='utf-8') as f:
     json.dump(annuaire, f, ensure_ascii=False, indent=4)
 print("done")
 

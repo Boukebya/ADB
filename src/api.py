@@ -13,15 +13,14 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route('/use_vertex/<path:file_path>', methods=['GET'])
-def vertex_request(file_path):
+@app.route('/use_vertex/<path:file_path>/<classe>', methods=['GET'])
+def vertex_request(file_path,classe):
     """
     Method to test OCR using Vertex, Extraction using GPT-3 and Matching using basic comparison and GPT-3
     :param file_path: path of the file to test
     :return: json with file_path, execution_time, content_ocr, result_extraction and matching
     """
 
-    classe = ""
 
     print("timer start")
     start_time = time.time()
