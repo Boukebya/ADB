@@ -73,6 +73,12 @@ git clone https://github.com/Boukebya/ADB.git
 cd adb
 pip install -r requirements.txt
 ```
+If error no module named "pandas" or "flask" occurs, try the following command :
+```bash
+pip install pandas
+pip install flask
+```
+
 After that, you should be able to run the following command without any error
 ```bash
 python src/api.py

@@ -37,7 +37,7 @@ executing==1.2.0
 filelock==3.10.6
 filterpy==1.4.5
 fire==0.5.0
-Flask==3.0.0
+flask==3.0.0
 Flask-Cors==4.0.0
 flatbuffers==23.1.21
 fonttools==4.38.0
