@@ -6,6 +6,7 @@ from flask_cors import CORS
 from OCR.vertex_ocr import vertex_ocr
 from Extraction.gpt3_extraction import gpt3_extraction
 from Matching.levenschtein_matching import use_levenshtein
+from waitress import serve
 
 
 app = Flask(__name__)
@@ -76,4 +77,4 @@ def upload_file():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    serve(app, host='0.0.0.0', port=5000)
