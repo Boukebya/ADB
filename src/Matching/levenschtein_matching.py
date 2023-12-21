@@ -5,6 +5,7 @@ import json
 from nltk.corpus import stopwords
 from Matching.special_case import match_book, match_paper
 nltk.download('punkt')
+nltk.download('stopwords')
 
 def best_match_levenshtein(str, annuaire):
     """
