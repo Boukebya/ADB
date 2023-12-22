@@ -118,7 +118,7 @@ Some custom methods are also made do determine the good product, for example for
 # <a id="statistics" />Statistics
 
 Here is a resume of results of the project :
-## TODO : add detailled statistics image
+<img src="test_matching.png" />
 
 # <a id="tools" />Tools
 
