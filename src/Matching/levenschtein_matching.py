@@ -89,13 +89,15 @@ def preprocess_string(s):
     return tokens
 
 
-def format_to_catalog(s):
+def format_to_catalog(article):
     """
     formatte le texte pour correspondre à l'annuaire, remplace les mots par des formulations présentes dans l'annuaire,
     au cas par cas
     :param s: string à formatter
     :return: string formatée
     """
+    s = article["name"]
+
     s = s.lower()
     s = s.replace("grand cahier", "cahier 24x32")
     s = s.replace("feuilles doubles", "feuilles doubles copies doubles")
@@ -104,9 +106,14 @@ def format_to_catalog(s):
     s = s.replace("porte vues", "protege document")
     # if a4 is pre, add 21x29
     s = s.replace("pochette cartonnée", "chemise")
+    # if s = chemise, or protege document replace article["article"] by chemise or protege document
+    if "chemise" in s:
+        article["article"] = "chemise"
+    if "protege document" in s:
+        article["article"] = "protege document"
     if "a4" in s:
         s += " 21x29"
-    return s
+    return article
 
 
 def correspondance_score(article, catalog):
@@ -127,8 +134,8 @@ def correspondance_score(article, catalog):
     scores = [0] * len(catalog)
 
     # Prétraitement de l'article
-    article["name"] = format_to_catalog(article["name"])
-    article["article"] = format_to_catalog(article["article"])
+    article = format_to_catalog(article)
+    article = format_to_catalog(article)
     nombre = article["nombre"]
     nombre = str(nombre)
 
@@ -176,8 +183,6 @@ def correspondance_score(article, catalog):
             scores[i] -= 1
 
         if "agenda" in sentence_article and article_catalog["reference"] == "30456":
-            scores[i] += 10
-        if "colle" in sentence_article and article_catalog["reference"] == "79576U05":
             scores[i] += 10
         if "crayon de bois" in sentence_article and article_catalog["reference"] == "78567U12":
             scores[i] += 10

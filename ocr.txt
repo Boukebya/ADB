@@ -1,102 +1,439 @@
+```json
 [
-{
-"name": "cartable rigide",
-"article": "cartable",
-"nombre": 1
-},
-{
-"name": "crayon à papier HB",
-"article": "crayon",
-"nombre": 2
-},
-{
-"name": "gomme blanche",
-"article": "gomme",
-"nombre": 1
-},
-{
-"name": "taille-crayon à réservoir",
-"article": "taille-crayon",
-"nombre": 1
-},
-{
-"name": "stylo bleu",
-"article": "stylo",
-"nombre": 1
-},
-{
-"name": "stylo vert",
-"article": "stylo",
-"nombre": 1
-},
-{
-"name": "stylo rouge",
-"article": "stylo",
-"nombre": 1
-},
-{
-"name": "surligneur bleu",
-"article": "surligneur",
-"nombre": 1
-},
-{
-"name": "surligneur orange",
-"article": "surligneur",
-"nombre": 1
-},
-{
-"name": "paire de ciseaux à bouts ronds",
-"article": "paire de ciseaux",
-"nombre": 1
-},
-{
-"name": "tube de colle en bâton",
-"article": "tube de colle",
-"nombre": 2
-},
-{
-"name": "feutre à pointe moyenne",
-"article": "feutre",
-"nombre": 12
-},
-{
-"name": "crayon de couleurs larges",
-"article": "crayon de couleurs",
-"nombre": 12
-},
-{
-"name": "règle plate",
-"article": "règle",
-"nombre": 1
-},
-{
-"name": "ardoise effaçable à sec",
-"article": "ardoise",
-"nombre": 1
-},
-{
-"name": "gros feutre ardoise",
-"article": "feutre",
-"nombre": 2
-},
-{
-"name": "chiffon",
-"article": "chiffon",
-"nombre": 1
-},
-{
-"name": "pochette à élastiques et rabats",
-"article": "pochette à élastiques",
-"nombre": 1
-},
-{
-"name": "boite de mouchoirs",
-"article": "boite de mouchoirs",
-"nombre": 1
-},
-{
-"name": "ramette de papier blanc",
-"article": "ramette de papier",
-"nombre": 1
-}
+  {
+    "name": "feuille simple mobile perforée à grand carreau",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "feuille simple mobile perforée à petit carreau",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "copie double à grand carreau perforée",
+    "article": "copie",
+    "nombre": 1
+  },
+  {
+    "name": "pochette transparente",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "gomme",
+    "article": "gomme",
+    "nombre": 1
+  },
+  {
+    "name": "crayon bois",
+    "article": "crayon",
+    "nombre": 1
+  },
+  {
+    "name": "stylo feutre",
+    "article": "stylo",
+    "nombre": 1
+  },
+  {
+    "name": "crayon couleur",
+    "article": "crayon",
+    "nombre": 1
+  },
+  {
+    "name": "règle",
+    "article": "règle",
+    "nombre": 1
+  },
+  {
+    "name": "équerre",
+    "article": "équerre",
+    "nombre": 1
+  },
+  {
+    "name": "compas",
+    "article": "compas",
+    "nombre": 1
+  },
+  {
+    "name": "rapporteur gradué de 0° à 180°",
+    "article": "rapporteur",
+    "nombre": 1
+  },
+  {
+    "name": "ciseaux",
+    "article": "ciseaux",
+    "nombre": 1
+  },
+  {
+    "name": "colle",
+    "article": "colle",
+    "nombre": 1
+  },
+  {
+    "name": "bloc notes uni",
+    "article": "bloc notes",
+    "nombre": 1
+  },
+  {
+    "name": "papier calque",
+    "article": "papier",
+    "nombre": 1
+  },
+  {
+    "name": "papier millimétré",
+    "article": "papier",
+    "nombre": 1
+  },
+  {
+    "name": "ruban adhésif",
+    "article": "ruban adhésif",
+    "nombre": 1
+  },
+  {
+    "name": "étiquette",
+    "article": "étiquette",
+    "nombre": 1
+  },
+  {
+    "name": "classeur à levier dos 7 cm",
+    "article": "classeur",
+    "nombre": 1
+  },
+  {
+    "name": "pochette plastifiée à rabats",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "intercalaire",
+    "article": "intercalaire",
+    "nombre": 1
+  },
+  {
+    "name": "calculatrice",
+    "article": "calculatrice",
+    "nombre": 1
+  },
+  {
+    "name": "pochette plastique à rabats",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "feuille à grand carreau",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "feuille à petit carreau",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 200 pages",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "carnet",
+    "article": "carnet",
+    "nombre": 1
+  },
+  {
+    "name": "pochette à élastiques",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "gomme",
+    "article": "gomme",
+    "nombre": 1
+  },
+  {
+    "name": "crayon de bois",
+    "article": "crayon",
+    "nombre": 1
+  },
+  {
+    "name": "porte vues",
+    "article": "porte vues",
+    "nombre": 1
+  },
+  {
+    "name": "feuille simple mobile",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "feuille simple mobile",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "feuille simple mobile",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "feuille simple mobile",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "colle",
+    "article": "colle",
+    "nombre": 1
+  },
+  {
+    "name": "papier millimétré",
+    "article": "papier",
+    "nombre": 1
+  },
+  {
+    "name": "pochette plastique à rabats",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "classeur à dos 4 cm rigide",
+    "article": "classeur",
+    "nombre": 1
+  },
+  {
+    "name": "intercalaire",
+    "article": "intercalaire",
+    "nombre": 1
+  },
+  {
+    "name": "pochette transparente",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "feuille à grand carreau",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "feuille à petit carreau",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "cahier travaux pratiques",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "pochette Canson de feuilles blanches",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "pochette Canson de feuilles couleurs",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "pochette de papier calque",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "crayon de bois",
+    "article": "crayon",
+    "nombre": 1
+  },
+  {
+    "name": "gomme",
+    "article": "gomme",
+    "nombre": 1
+  },
+  {
+    "name": "taille crayon",
+    "article": "taille crayon",
+    "nombre": 1
+  },
+  {
+    "name": "règle",
+    "article": "règle",
+    "nombre": 1
+  },
+  {
+    "name": "crayon couleur",
+    "article": "crayon",
+    "nombre": 1
+  },
+  {
+    "name": "pinceau plat",
+    "article": "pinceau",
+    "nombre": 1
+  },
+  {
+    "name": "pinceau rond",
+    "article": "pinceau",
+    "nombre": 1
+  },
+  {
+    "name": "feutre noir à pointe fine",
+    "article": "feutre",
+    "nombre": 1
+  },
+  {
+    "name": "porte vues",
+    "article": "porte vues",
+    "nombre": 1
+  },
+  {
+    "name": "paire de basket",
+    "article": "paire de basket",
+    "nombre": 1
+  },
+  {
+    "name": "sac de sport",
+    "article": "sac de sport",
+    "nombre": 1
+  },
+  {
+    "name": "short",
+    "article": "short",
+    "nombre": 1
+  },
+  {
+    "name": "pantalon de survêtement",
+    "article": "pantalon",
+    "nombre": 1
+  },
+  {
+    "name": "tee-shirt",
+    "article": "tee-shirt",
+    "nombre": 1
+  },
+  {
+    "name": "sweet",
+    "article": "sweet",
+    "nombre": 1
+  },
+  {
+    "name": "Kway",
+    "article": "Kway",
+    "nombre": 1
+  },
+  {
+    "name": "maillot",
+    "article": "maillot",
+    "nombre": 1
+  },
+  {
+    "name": "lunette",
+    "article": "lunette",
+    "nombre": 1
+  },
+  {
+    "name": "kimono de judo",
+    "article": "kimono",
+    "nombre": 1
+  },
+  {
+    "name": "paire de claquette",
+    "article": "paire de claquette",
+    "nombre": 1
+  },
+  {
+    "name": "paire de ballerines",
+    "article": "paire de ballerines",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 192 pages",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "classeur rigide",
+    "article": "classeur",
+    "nombre": 1
+  },
+  {
+    "name": "classeur souple",
+    "article": "classeur",
+    "nombre": 1
+  },
+  {
+    "name": "pochette transparente perforée",
+    "article": "pochette",
+    "nombre": 1
+  },
+  {
+    "name": "stylo 4 couleurs",
+    "article": "stylo",
+    "nombre": 1
+  },
+  {
+    "name": "feuille mobile",
+    "article": "feuille",
+    "nombre": 1
+  },
+  {
+    "name": "copie double",
+    "article": "copie",
+    "nombre": 1
+  },
+  {
+    "name": "intercalaire",
+    "article": "intercalaire",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 96 pages",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 96 pages",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 96 pages",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 96 pages",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 96 pages",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 96 pages",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 96 pages",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "cahier 192 pages",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "cahier grands carreaux",
+    "article": "cahier",
+    "nombre": 1
+  },
+  {
+    "name": "porte vue",
+    "article": "porte vue",
+    "nombre": 1
+  }
 ]
+```
