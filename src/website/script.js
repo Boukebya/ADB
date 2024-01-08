@@ -1,5 +1,5 @@
 // Appel des fonctions de l'API Flask
-document.getElementById('apiButton2').addEventListener('click', () => call_vertex("src/website/uploads/file.jpg","6ème"));
+document.getElementById('apiButton2').addEventListener('click', () => call_vertex("src/website/uploads/file.jpg","toutes classes"));
 // Appel de la fonction pour enregistrer l'image dans le serveur
 document.getElementById('uploadButton').addEventListener('click', uploadFile);
 

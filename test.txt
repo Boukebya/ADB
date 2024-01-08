@@ -1,21 +1,100 @@
-cartable rigide  --> Aucun score > 0 dans le basic matching
-cartable rigide --> Aucun score > 0  
-crayon à papier hb --> crayon graphite hb bout majuscule 
-gomme blanche --> gomme plastique 
-taille-crayon à réservoir --> taille crayons metal 2 usages 
-stylo bleu --> stylo bille bic cristal pointe fine bleu 
-stylo vert --> stylo feutre pointe fine baguee vert 
-stylo rouge --> stylo bille bic cristal pointe fine rouge 
-surligneur bleu --> surligneur large grip mfirst bleu fluo
-surligneur orange --> surligneur large grip mfirst orange fluo
-paire de ciseaux à bouts ronds --> ciseaux bouts ronds 13cm 
-tube de colle en bâton --> b colle scotch 8g colle blanche 
-feutre à pointe moyenne --> feutre tableau blanc pointe moyenne ogive bleu 
-crayon de couleurs larges --> etui carton recycle 12 crayons couleurs assorties volution 17 5 cm 
-règle plate --> regle plate cristal 30 cm 
-ardoise effaçable à sec --> ardoise effacable a sec 1 face uni 1 face quadrillee seyes format 20x28cm couleurs assorties 
-gros feutre ardoise --> stylo feutre pointe fine baguee bleu 
-chiffon --> chiffonnette chiffon microfibre 20x20cm 
-pochette à élastiques et rabats --> paquet 5 pochettes chemises 3 rabats a elastiques top file carte lustree 4 10e 390g coloris pastel assortis 
-boite de mouchoirs --> boite distributrice 100 mouchoirs 
-ramette de papier blanc --> sachet 50 feuillet mobile , format a4 , quadrillé 5x5 , papier blanc 90 g. 
+etiquette  --> Aucun score > 0 dans le basic matching
+paire basket  --> Aucun score > 0 dans le basic matching
+sac sport  --> Aucun score > 0 dans le basic matching
+short  --> Aucun score > 0 dans le basic matching
+pantalon survetement  --> Aucun score > 0 dans le basic matching
+tee shirt  --> Aucun score > 0 dans le basic matching
+sweet  --> Aucun score > 0 dans le basic matching
+kway  --> Aucun score > 0 dans le basic matching
+maillot  --> Aucun score > 0 dans le basic matching
+lunette  --> Aucun score > 0 dans le basic matching
+kimono judo  --> Aucun score > 0 dans le basic matching
+paire claquette  --> Aucun score > 0 dans le basic matching
+paire ballerines  --> Aucun score > 0 dans le basic matching
+feuille simple mobile perforée à grand carreau --> sachet 50 feuillet mobile ( 100 page ) format 21x29,7 cm séyès 80 gramme colori rose 
+feuille simple mobile perforée à petit carreau --> sachet 200 feuillet mobile ( 400 page ) format a4 séyès 80 gramme blanc 
+copie double à grand carreau perforée --> sachet 50 feuilles doubles copies doubles 200 pages perforees format 17x22 cm seyes 70g blanc 
+pochette transparente --> pochette 12 crayons couleur gros module 
+gomme --> gomme plastique 
+crayon bois --> crayon graphite hexagonal bois naturel vernis hb 
+stylo feutre --> stylo feutre pointe fine baguee bleu 
+crayon couleur --> pochette 12 crayons couleur gros module 
+règle --> regle plate cristal 30 cm 
+équerre --> equerre plastique graduee 60 16 cm 
+compas --> compas scolaire maped stop system 
+rapporteur gradué de 0° à 180° --> rapporteur cristal gradue 12 cm 180 
+ciseaux --> ciseaux bouts ronds anneaux plastique 13 cm droitier 
+colle --> b colle scotch 8g colle blanche 
+bloc notes uni --> bloc steno spirale 180 pages format a5 uni 60 g 
+papier calque --> pochette 12 feuilles papier calque uni 90 g 21x29 7 cm excellence 
+papier millimétré --> pochette 12 feuille papier millimétrer , 90 gramme format 21x29,7 cm excellence 
+ruban adhésif --> rouleau adhesif ruban adhesif transparent 19 mm x 33 
+étiquette --> Aucun score > 0  
+classeur à levier dos 7 cm --> classeur a levier carton gris format a4 dos 7 cm 
+pochette plastifiée à rabats --> pochette 12 feuilles a dessin 224g format 24x32 cm excellence 
+intercalaire --> jeu 6 intercalaires intercalaire a touches neutres 17x22 cm carte lustree 225 g couleurs assorties 
+calculatrice --> calculatrice poche 10 chiffres business 
+pochette plastique à rabats --> pochette 4 marqueurs tableau blanc velleda 1711 effacable a sec pointe ogive assorti 
+feuille à grand carreau --> ramette 500 feuille papier blanc 80 gramme format a4 budget 
+feuille à petit carreau --> sachet 50 feuillet mobile ( 100 page ) format 21x29,7 cm séyès 90 gramme blanc 
+cahier 200 pages --> cahier brochure 192 page format 17x22 cm réglure séyès papier 70 gramme 
+carnet --> carnet pique 96 pages format 9x14 cm quadrille 5x5 papier 70 g 
+pochette à élastiques --> pochette 4 marqueurs permanents indelebiles universel first pointe ogive 1 a 3 mm assortis 
+gomme --> gomme plastique 
+crayon de bois --> crayon graphite hexagonal bois naturel vernis hb 
+porte vues --> protege documents couverture souple polypropylene 20 vues bleu porte vues
+feuille simple mobile --> bloc bureau 100 feuille 60 gramme format a5 quadriller 5x5 
+feuille simple mobile --> ramette 500 feuille papier blanc 80 gramme format a4 business 
+feuille simple mobile --> etui 100 feuillet mobile ( 200 page ) format a4 séyès 90 gramme colori assortir 
+feuille simple mobile --> sachet 50 feuillet mobile ( 100 page ) format 17x22 cm séyès 80 gramme colori rose 
+colle --> b colle scotch 8g colle blanche 
+papier millimétré --> pochette 12 feuille papier millimétrer , 90 gramme format 21x29,7 cm excellence 
+pochette plastique à rabats --> pochette 4 marqueurs tableau blanc velleda 1711 effacable a sec pointe ogive assorti 
+classeur à dos 4 cm rigide --> classeur polypropylene color fresh format a4 dos 4 cm rouge 
+intercalaire --> jeu 6 intercalaires intercalaire a touches neutres 17x22 cm carte lustree 225 g couleurs assorties 
+pochette transparente --> pochette 12 crayons couleur gros module 
+feuille à grand carreau --> ramette 500 feuille papier blanc 80 gramme format a4 first 
+feuille à petit carreau --> sachet 50 feuillet mobile ( 100 page ) format 17x22 cm séyès 90 gramme blanc 
+cahier travaux pratiques --> cahier travail pratique piqûr 48 page , format a4 
+pochette Canson de feuilles blanches --> sachet 50 feuillet mobile , format a4 , quadrillé 5x5 , papier blanc 90 g. 
+pochette Canson de feuilles couleurs --> sachet 50 feuillet mobile ( 100 page ) format 17x22 cm séyès 80 gramme coloris vert 
+pochette de papier calque --> pochette 12 feuilles papier calque uni 90 g 21x29 7 cm excellence 
+crayon de bois --> crayon graphite hexagonal bois naturel vernis hb 
+gomme --> gomme plastique 
+taille crayon --> taille crayons metal 2 usages 
+règle --> regle plate cristal 30 cm 
+crayon couleur --> pochette 12 crayons couleur gros module 
+pinceau plat --> etui 12 crayons couleur noris club aquarell assorties 1 pinceau gratuit 
+pinceau rond --> pinceau poney 2 
+feutre noir à pointe fine --> stylo feutre pointe fine baguee noir 
+porte vues --> protege documents couverture souple polypropylene 20 vues bleu porte vues
+paire de basket --> Aucun score > 0  
+sac de sport --> Aucun score > 0  
+short --> Aucun score > 0  
+pantalon de survêtement --> Aucun score > 0  
+tee-shirt --> Aucun score > 0  
+sweet --> Aucun score > 0  
+Kway --> Aucun score > 0  
+maillot --> Aucun score > 0  
+lunette --> Aucun score > 0  
+kimono de judo --> Aucun score > 0  
+paire de claquette --> Aucun score > 0  
+paire de ballerines --> Aucun score > 0  
+cahier 192 pages --> cahier devoir normaliser 5 x 5 piqûre 192 page , format 21 x 29,7 cm 
+classeur rigide --> classeur polypropylene semi rigide 4 anneaux ronds format a4 bleu clair 
+classeur souple --> classeur ecolier polypropylene opaque format a classer 17x22 cm 2 anneaux ronds diametre 15 mm 
+pochette transparente perforée --> intercalaires intercalaire 12 positions polypropylene pochette perforees a4 
+stylo 4 couleurs --> stylo bille bic 4 colours pointe fine 
+feuille mobile --> sachet 50 feuillet mobile ( 100 page ) format 21x29,7 cm séyès 80 gramme colori rose 
+copie double --> sachet 50 feuilles doubles copies doubles 200 pages perforees format 17x22 cm seyes 70g blanc 
+intercalaire --> jeu 6 intercalaires intercalaire a touches neutres 17x22 cm carte lustree 225 g couleurs assorties 
+cahier 96 pages --> cahier piquer 96 page 4 index , couvertur polypropylène , format a4 , seyè 
+cahier 96 pages --> piqûre 96 page , couvertur polypropylène , format 24x32 cm , seyè , colori bleu 
+cahier 96 pages --> cahier piquer 96 page 4 index , couvertur polypropylène , format a4 , seyè 
+cahier 96 pages --> piqûre 96 page , couvertur polypropylène , format 24x32 cm , seyè , coloris jaune 
+cahier 96 pages --> piqûre 96 page , couvertur polypropylène , format 24x32 cm , seyè , coloris violet 
+cahier 96 pages --> piqûre 96 page couvertur polypropylène 2 rabat format 24x32 cm seye incolore 
+cahier 96 pages --> piqûre 96 page , couvertur polypropylène , format 24x32 cm , seyè , coloris rose 
+cahier 192 pages --> piqûre 192 page , couvertur polypropylène incolore , format 24x32 cm , seyè 
+cahier grands carreaux --> piqûre 96 page couvertur polypropylène 2 rabat format 24x32 cm seye bleu 
+porte vue --> protege documents color fresh 40 vues bleu porte vues

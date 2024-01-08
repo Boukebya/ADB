@@ -21,21 +21,21 @@ def gpt3_extraction(file_path, classe):
     with open(file_path, "rb") as text_file:
         file = text_file.read().decode('utf-8')
 
-    msg = """fais une liste de toutes les fournitures scolaire"""
+    msg = """fais une liste des fournitures scolaires écrit au singulier, article par article, individuellement,"""
 
-    if classe != "":
-        msg += """ pour la classe de """
+    # if string contains more than 1 character :
+    if len(classe) > 1:
+        msg += """ pour la classe de : """
         msg += classe
         print(msg)
 
     msg += """, pas d'habits ou d'affaires de sport, dans le texte suivant sous forme :
              {
-             "name": "nom de l'article avec ses détails",
-             "article": "nom de l'article le plus important sans détails",
-             "nombre": 1 
+             "name": "nom d'un seul article avec ses détails, dimensions, poids, etc. si disponible,",
+             "article": "Mot correspondant le plus à l'article,sans détails,",
+             "nombre": 1, par défaut, si non indiqué
              },
-              name correspond au nom du produit que tu as trouvé au singulier, j'insiste, mets les articles au singulier,
-              par exemple, gommes -> gomme, cahiers -> cahier, stylos -> stylo, etc.
+              name correspond au nom du produit que tu as trouvé,
               avec ses dimensions et poids si disponible, et autres informations, 
               si la dimension pour le cahier n'est pas disponible, mets
               24x32 cm par défaut. S'il est écrit grand format, mets 24x32 cm, si c'est petit format, mets 17x22 cm.
@@ -51,6 +51,7 @@ def gpt3_extraction(file_path, classe):
               "article" correspond au nom de l'article le plus important, sans détails, crayon de bois -> crayon,
                 cahier de texte -> cahier, pochette à élastique -> pochette à élastique, etc... 
                 Le but est de garder l'information importante
+                
               nombre correspond au nombre d'articles a acheter dans la liste, si ce n'est pas indique met 1 par défaut.
               Fais bien attention à ne pas surinterpréter le texte.
               Aussi, fais attention dans le cas ou il y'a le même nom d'articles en couleur différente, par exemple,
@@ -61,11 +62,11 @@ def gpt3_extraction(file_path, classe):
 
     response = client.chat.completions.create(
         model="gpt-3.5-turbo-1106",
-        temperature=0.3,
+        temperature=0,
         messages=[
             {"role": "system",
              "content": "Vous êtes un assistant utile conçu pour extraire des fournitures scolaires du texte"
-                        " sans omission. Tu écris aux singulier les articles."},
+                        " sans omission, tu mets les fournitures au singulier"},
             {"role": "user", "content": msg + file}
         ]
     )

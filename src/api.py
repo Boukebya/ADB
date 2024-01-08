@@ -14,7 +14,7 @@ CORS(app)
 
 
 @app.route('/use_vertex/<path:file_path>/<classe>', methods=['GET'])
-def vertex_request(file_path,classe):
+def vertex_request(file_path, classe):
     """
     Method to test OCR using Vertex, Extraction using GPT-3 and Matching using basic comparison and GPT-3
     :param file_path: path of the file to test
