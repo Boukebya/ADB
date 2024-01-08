@@ -122,7 +122,7 @@ def add_item():
             data = json.load(f)
 
         # Vérification de l'unicité de la référence de l'article
-        for entity in data["entities"]:
+        for entity in data:
             if entity["reference"] == add_entry_ref.get():
                 # Si la référence existe déjà, affiche un message d'erreur et arrête la fonction
                 if error_already_exists is None:
@@ -135,7 +135,7 @@ def add_item():
             error_already_exists = None
 
         # Ajout du nouvel article au fichier JSON
-        data["entities"].append({"texte": unidecode.unidecode(add_entry_name.get()), "reference": unidecode.unidecode(add_entry_ref.get())})
+        data.append({"texte": unidecode.unidecode(add_entry_name.get()), "reference": unidecode.unidecode(add_entry_ref.get())})
         # Enregistrement des modifications dans le fichier JSON
         with open("annuaire.json", "w") as f:
                 json.dump(data, f, indent=4)
@@ -193,7 +193,7 @@ def edit_item_validation():
             data = json.load(f)
 
         # Parcours des entités pour trouver celle à modifier
-        for entity in data["entities"]:
+        for entity in data:
             if entity["reference"] == unidecode.unidecode(edit_entry_ref.get()):
                 entity["reference"] = unidecode.unidecode(edit_new_box_ref.get())
                 old_name = entity["texte"]
@@ -220,7 +220,7 @@ def edit_item_validation():
             data = json.load(f)
 
         # Parcourt toutes les entités dans les données chargées
-        for entity in data["entities"]:
+        for entity in data:
             # Vérifie si la référence actuelle de l'entité correspond à celle saisie par l'utilisateur
             if entity["reference"] == unidecode.unidecode(edit_entry_ref.get()):
                 # Si oui, met à jour le nom de l'entité avec la nouvelle valeur saisie par l'utilisateur
@@ -253,7 +253,7 @@ def edit_item_validation():
             data = json.load(f)
 
         # Parcours des entités dans le fichier JSON
-        for entity in data["entities"]:
+        for entity in data:
             # Vérifie si l'entité courante correspond à la référence entrée par l'utilisateur
             if entity["reference"] == unidecode.unidecode(edit_entry_ref.get()):
                 # Met à jour le nom et la référence de l'entité avec les nouvelles valeurs saisies
@@ -327,7 +327,7 @@ def edit_item():
             data = json.load(f)
 
         # Recherche de l'article correspondant à la référence
-        for entity in data["entities"]:
+        for entity in data:
             if entity["reference"] == unidecode.unidecode(edit_entry_ref.get()):
                 # Si l'article est trouvé, créer des champs pour entrer le nouveau nom et/ou la nouvelle référence
                 text_1 = CTkLabel(master=tabview.tab("Modifier un article"),
@@ -393,7 +393,7 @@ def delete_item():
             data = json.load(f)
 
         # Parcours les entités pour chercher celle à supprimer
-        for entity in data["entities"]:
+        for entity in data:
             if entity["reference"] == delete_entry_ref.get():
                 # Si l'entité est trouvée, affiche un message de succès
                 if error_already_exists is None:
@@ -402,7 +402,7 @@ def delete_item():
                     error_already_exists.pack(padx=20, pady=5)
                     logging.info(f"Suppression de l'article : Référence={delete_entry_ref.get()}")
                     # Supprime l'entité de la liste
-                    data["entities"].remove(entity)
+                    data.remove(entity)
                     # Sauvegarde les données mises à jour dans le fichier JSON
                     with open("annuaire.json", "w") as f:
                         json.dump(data, f, indent=4)
