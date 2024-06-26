@@ -1,5 +1,0 @@
-pandas
-Pillow
-PyPDF2
-openpyxl
-google-cloud-vision
