@@ -126,8 +126,4 @@ Some tools can still be used to custom the project :
 - One interface to modify database
 - One methods to preprocess a database
 
-# <a id="code" />Code
-
-# <a id="diagram" />Code diagram
-
 
